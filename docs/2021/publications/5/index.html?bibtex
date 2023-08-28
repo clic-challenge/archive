@@ -1,0 +1,11 @@
+
+@inproceedings{Gao_2021_CVPR,
+  author = "Y. Gao and Y. Wu and Z. Guo and Z. Zhang and Z. Chen",
+  title = "Perceptual Friendly Variable Rate Image Compression",
+  year = 2021,
+  booktitle = "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+  pages = "1916-1920",
+  month = "Jun"
+}
+
+

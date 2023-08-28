@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
+	<channel>
+		<title>Publications by K. Li</title>
+		<link>https://compression.cc/publications/k.+li//publications/k.+li/</link>
+		<description></description>
+		<atom:link href="https://compression.cc/publications/k.+li/?rss" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Variable Rate ROI Image Compression Optimized for Visual Quality, Y. Ma et al., 2021</title>
+			<link>https://compression.cc/publications/k.+li/9/</link>
+			<guid>https://compression.cc/publications/k.+li/9/</guid>
+			<description></description>
+		</item>
+		
+	</channel>
+</rss>

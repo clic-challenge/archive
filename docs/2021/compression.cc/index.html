@@ -1,0 +1,330 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CLIC &#183; Challenge on Learned Image Compression</title>
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2021_public/static/css/4.3.1/bootstrap.min.css">
+		<link rel="shortcut icon" type="image/png" href="https://storage.googleapis.com/clic2021_public/static/favicon.ico">
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2021_public/static/css/style.css">
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2021_public/static/css/dashboard.css?v=1.1">
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://storage.googleapis.com/clic2021_public/static/js/4.3.1/bootstrap.min.js"></script>
+
+		
+		
+	</head>
+	<body class="bg-light">
+		<div class="container-fluid">
+			<nav class="row navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0">
+				<a class="navbar-brand col-sm-12 col-md-2 mr-0" href="#">CLIC 2021</a>
+				<span class="navbar-text d-none d-md-block">4th Workshop and Challenge on Learned Image Compression</span>
+				<span class="navbar-text d-block d-md-none">
+					<a data-toggle="collapse" href="#collapseSidebar" class="px-3"><i data-feather="menu"></i></a>
+				</span>
+				<ul class="navbar-nav px-3">
+					<li class="nav-item text-nowrap">
+						
+						<a class="nav-link" href="/signup/">Sign up</a>
+						
+					</li>
+				</ul>
+			</nav>
+
+			<div class="row">
+				<nav id="collapseSidebar" class="collapse col-md-2 bg-light sidebar text-truncate" style="font-size: .875rem">
+					
+						<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+	<span>Workshop</span>
+</h6>
+<ul class="nav flex-column">
+	<li class="nav-item">
+		<a class="nav-link active" href="/">
+			<i data-feather="home"></i> Home
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/schedule/2/">
+			<i data-feather="calendar"></i> Dates
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/publications/">
+			<i data-feather="book-open"></i> Papers
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/cfp/">
+			<i data-feather="send"></i> Submit
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/organizers/">
+			<i data-feather="user"></i> Organizers
+		</a>
+	</li>
+</ul>
+
+<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+	<span>Challenge</span>
+</h6>
+<ul class="nav flex-column mb-2">
+	<li class="nav-item">
+		<a class="nav-link" href="/introduction/">
+			<i data-feather="file-text"></i> Introduction
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/tasks/">
+			<i data-feather="check-square"></i> Tasks
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/leaderboard/image-075/test/">
+			<i data-feather="align-justify"></i> Leaderboards
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="https://groups.google.com/g/clic-list">
+			<i data-feather="message-circle"></i> Forum
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/faq/">
+			<i data-feather="help-circle"></i> FAQ
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/submit/">
+			<i data-feather="upload"></i> Submit
+		</a>
+	</li>
+	
+</ul>
+
+<div class="d-none d-md-block">
+	<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+		<span>Past events</span>
+	</h6>
+	<ul class="nav flex-column mb-2">
+		<li class="nav-item">
+			<a class="nav-link" href="https://clic.compression.cc/">
+				<i data-feather="link"></i>
+				CLIC 2020
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://clic.compression.cc/2019/">
+				<i data-feather="link"></i>
+				CLIC 2019
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://clic.compression.cc/2018/">
+				<i data-feather="link"></i>
+				CLIC 2018
+			</a>
+		</li>
+	</ul>
+</div>
+
+					
+				</nav>
+
+				<main role="main" class="col-md-10 ml-sm-auto px-md-4 pt-3">
+					
+	
+		<div class="card mb-3">
+<div class="card-body">
+<h5 class="card-title">Introduction</h5>
+<p class="card-text">
+Our workshop aims to gather publications which will advance the field of image and video compression using machine learning and computer vision. We want to encourage the development of novel encoder/decoder architectures, novel ways to control information flow between the encoder and the decoder, new perceptual losses, and new ways to learn quantized representations.
+</p>
+<p class="card-text">
+At the workshop we will also present the winners of our annual compression challenge. Like the workshop, the challenge is designed to encourage the development of new learned codecs. But it is also an opportunity to evaluate and compare end-to-end trained approaches against classical approaches and every submission is welcome.
+</p>
+</div>
+</div>
+
+<div class="card mb-3">
+<div class="card-body">
+<h5 class="card-title">Location</h5>
+<p class="card-text">
+The workshop will be part of <a href="https://cvpr2021.thecvf.com/">CVPR 2021</a> and will be entirely virtual. The conference will take place between June 19 and June 25 and the online workshop will be held on <b>June 19</b>.</p>
+</p>
+</div>
+</div>
+
+<div class="card mb-3">
+	<div class="card-body">
+		<h5 class="card-title">Schedule</h5>
+		<p class="card-text">
+                        <div class="row">
+				<div class="col-2"><b>Time (EDT)</b></div>
+				<div class="col-4"><b>Talk/Activity</b></div>
+                                <div class="col-6"><b>Speaker</b></div>
+			</div>
+			<hr class="mt-1 mb-1">
+			<div class="row">
+				<div class="col-2">15:00</div>
+				<div class="col-4">Opening remarks</div>
+                                <div class="col-6">George Toderici (Google)</div>
+			</div>
+			<hr class="mt-1 mb-1">
+			<div class="row">
+				<div class="col-2">15:30</div>
+				<div class="col-4">Invited speaker</div>
+                                <div class="col-6">João Ascensco (University of Lisbon)</div>
+			</div>
+			<hr class="mt-1 mb-1">
+			<div class="row">
+				<div class="col-2">16:00</div>
+				<div class="col-4">Invited speaker</div>
+                                <div class="col-6">Kede Ma (City University of Hong Kong)</div>
+			</div>
+			<hr class="mt-1 mb-1">
+			<div class="row">
+				<div class="col-2">16:30</div>
+				<div class="col-4">Invited speaker</div>
+                                <div class="col-6">Rianne van den Berg (Google)</div>
+			</div>
+			<hr class="mt-1 mb-1">
+			<div class="row">
+				<div class="col-2">17:00</div>
+				<div class="col-4">Sponsored talk</div>
+                                <div class="col-6">Federico Perazzi (Facebook)</div>
+			</div>
+			<hr class="mt-1 mb-1">
+			<div class="row">
+				<div class="col-2">17:20</div>
+				<div class="col-4">Panel discussion</div>
+                                <div class="col-6"></div>
+			</div>
+			<hr class="mt-1 mb-1">
+			<div class="row">
+				<div class="col-2">17:50</div>
+				<div class="col-4">Awards ceremony</div>
+                                <div class="col-6">Nick Johnston (Google)</div>
+			</div>
+			<hr class="mt-1 mb-1">
+			<div class="row">
+				<div class="col-2">17:55</div>
+				<div class="col-4">Image track winner</div>
+                                <div class="col-6">Jing Wang (Huawei)</div>
+			</div>
+			<hr class="mt-1 mb-1">
+			<div class="row">
+				<div class="col-2">18:05</div>
+				<div class="col-4">Video track winner</div>
+                                <div class="col-6">Pierrick Philippe (Orange)</div>
+			</div>
+			<hr class="mt-1 mb-1">
+			<div class="row">
+				<div class="col-2">18:15</div>
+				<div class="col-4">Perceptual metric track winner</div>
+                                <div class="col-6">Yanding Peng (USTC, China)</div>
+			</div>
+			<hr class="mt-1 mb-1">
+			<div class="row">
+				<div class="col-2">18:25</div>
+				<div class="col-4">Poster session</div>
+                                <div class="col-6"></div>
+			</div>
+			<hr class="mt-1 mb-1">
+			<div class="row">
+				<div class="col-2">19:00</div>
+				<div class="col-4">End of the workshop</div>
+                                <div class="col-6"></div>
+			</div>
+                </p>
+		<div class="text-muted">
+			All times are Eastern Daylight Time (EDT)
+		</div>
+	</div>
+</div>
+
+<h4>Invited speakers</h4>
+
+<div class="row">
+
+<div class="col-4">
+<div class="card">
+<img src="https://storage.googleapis.com/clic2021_public/static/img/speakers/joao_ascenso.jpg" class="card-img-top" alt="Joao Ascenso">
+<div class="card-body">
+<h5 class="card-title">João Ascenso</h5>
+<h6 class="card-subtitle text-muted mb-2">University of Lisbon</h6>
+<p class="card-text">
+João Ascenso is a professor at the department of Electrical and Computer Engineering of
+Instituto Superior Técnico, University of Lisbon and is with the Multimedia Signal Processing
+Group of Instituto de Telecomunicações. João Ascenso is very active in the ISO/IEC MPEG
+and JPEG standardization activities and currently chairs the JPEG AI ad-hoc group that
+targets the evaluation and development of learning-based image compression. 
+<span id="moreTextJoao" class="collapse">He has published more than 100 papers in international conference and journals and has more than
+3400 citations over 35 papers (h-index of 26). He is an associate editor of IEEE Transactions
+on Multimedia, IEEE Transactions on Image Processing and was an associate editor of the
+IEEE Signal Processing Letters. He is an elected member of the IEEE Multimedia Signal
+Processing Technical Committee. He acts as member of the Organizing Committees of well-
+known international conferences, such as IEEE ICME 2020, IEEE MMSP 2020, IEEE ISM 2020,
+among others. His current research interests include visual coding, quality assessment, light-
+fields, point clouds and holography processing, indexing and searching of multimedia
+content and visual sensor networks.</span> <a id="readMoreJoao" data-toggle="collapse" href="#moreTextJoao">(read more)</a>
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-4">
+<div class="card">
+<img src="https://storage.googleapis.com/clic2021_public/static/img/speakers/kede_ma.jpg" class="card-img-top" alt="Kede Ma">
+<div class="card-body">
+<h5 class="card-title">Kede Ma</h5>
+<h6 class="card-subtitle text-muted mb-2">City University of Hong Kong</h6>
+<p class="card-text">
+Kede Ma is an Assistant Professor with the Department of Computer Science at City University of Hong Kong (CityU). He received the B.E. degree from the University of Science and Technology of China (USTC) in 2012, the MASc. and Ph.D. degrees from the University of Waterloo, in 2014 and 2017, respectively. Prior to joining CityU, he was a Research Associate with Howard Hughes Medical Institute and New York University, from 2018 to 2019. <span id="moreTextKede" class="collapse">Dr. Ma’s research interests span perceptual image processing, computational vision, computational photography, and multimedia forensics. In recent years, he primarily focused on image/video quality assessment, based on which better image/video processing algorithms that are much “healthier” for our visual systems can be created.</span> <a id="readMoreKede" data-toggle="collapse" href="#moreTextKede">(read more)</a>
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-4">
+<div class="card">
+<img src="https://storage.googleapis.com/clic2021_public/static/img/speakers/rianne_van_den_berg.jpg" class="card-img-top" alt="Rianne van den Berg">
+<div class="card-body">
+<h5 class="card-title">Rianne van den Berg</h5>
+<h6 class="card-subtitle text-muted mb-2">Google</h6>
+<div class="text">
+Rianne is a research scientist at Google Brain in Amsterdam, the Netherlands. She received her PhD in theoretical condensed matter physics in 2016 at the University of Amsterdam, and she was a postdoctoral researcher in machine learning at the University of Amsterdam with Prof. Max Welling. Her research interests are in generative modeling, source compression, variational inference and normalizing flows and in the intersection of machine learning and the physical sciences.
+</div>
+</div>
+</div>
+</div>
+
+</div>
+	
+
+					<hr>
+					<div class="container-fluid text-center text-muted sponsors">
+						Sponsored by<br>
+						<a href="https://google.com" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/google.png" height="40"></a>
+						<a href="https://twitter.com" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/twitter.png" height="70"></a>
+						<a href="https://www.vision.ee.ethz.ch" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/cvl.png" height="38"></a>
+						<a href="https://apple.com" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/apple.png" height="60"></a>
+						<a href="https://netflix.com" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/netflix.png" height="65"></a>
+						<a href="https://www.facebook.com/facebookrealitylabs" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/frl.png" height="65"></a>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		
+		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script>
+			feather.replace()
+		</script>
+	</body>
+</html>

@@ -1,0 +1,11 @@
+
+@inproceedings{Brummer_2021_CVPR,
+  author = "B. Brummer and C. D. Vleeschouwer",
+  title = "End-to-End Optimized Image Compression With Competition of Prior Distributions",
+  year = 2021,
+  booktitle = "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+  pages = "1890-1894",
+  month = "Jun"
+}
+
+

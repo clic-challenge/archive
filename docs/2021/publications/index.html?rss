@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
+	<channel>
+		<title>Publications</title>
+		<link>https://compression.cc/publications//publications/</link>
+		<description></description>
+		<atom:link href="https://compression.cc/publications/?rss" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>MCM: Multi-channel Context Model for Entropy in Generative Image Compression, Y. Chen et al., 2021</title>
+			<link>https://compression.cc/publications/33/</link>
+			<guid>https://compression.cc/publications/33/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Learned Inter-frame Compression for CLIC 2021, C.-P. Chang et al., 2021</title>
+			<link>https://compression.cc/publications/32/</link>
+			<guid>https://compression.cc/publications/32/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>ROI Perceptual Metric, Y. Ma et al., 2021</title>
+			<link>https://compression.cc/publications/31/</link>
+			<guid>https://compression.cc/publications/31/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Hierarchical Temporal Structure for End-to-End Neural Network-based Video Compression, J. Bégaint et al., 2021</title>
+			<link>https://compression.cc/publications/30/</link>
+			<guid>https://compression.cc/publications/30/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Learning-based Video Coding for CLIC 2021, D. Alexandre et al., 2021</title>
+			<link>https://compression.cc/publications/29/</link>
+			<guid>https://compression.cc/publications/29/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Hybrid Video Coding for CLIC 2021, D. Alexandre et al., 2021</title>
+			<link>https://compression.cc/publications/28/</link>
+			<guid>https://compression.cc/publications/28/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Learned Dual Perceptual Image Similarity for Compressed Image, J. Liu et al., 2021</title>
+			<link>https://compression.cc/publications/27/</link>
+			<guid>https://compression.cc/publications/27/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Coding standards as anchors for the CVPR CLIC video track, P. Philippe et al., 2021</title>
+			<link>https://compression.cc/publications/26/</link>
+			<guid>https://compression.cc/publications/26/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Conditional Coding and Variable Bitrate for Practical Learned Video Coding, T. Ladune et al., 2021</title>
+			<link>https://compression.cc/publications/25/</link>
+			<guid>https://compression.cc/publications/25/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Approach of Team HHC: A Method for Low Bitrate Image Compression, C. Wu, 2021</title>
+			<link>https://compression.cc/publications/24/</link>
+			<guid>https://compression.cc/publications/24/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Quality enhancement of VVC intra-frame coding based on HGRDN, T. Fu et al., 2021</title>
+			<link>https://compression.cc/publications/23/</link>
+			<guid>https://compression.cc/publications/23/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Perceptual Learned Image Compression With Continuous Rate Adaptation, S. Gao et al., 2021</title>
+			<link>https://compression.cc/publications/22/</link>
+			<guid>https://compression.cc/publications/22/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Attentional Multi-scale Back Projection Network for Low Bit-rate Image Compression, G. Gao et al., 2021</title>
+			<link>https://compression.cc/publications/21/</link>
+			<guid>https://compression.cc/publications/21/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Perceptually-Guided Lossy Image Compression, A. Lytchier et al., 2021</title>
+			<link>https://compression.cc/publications/20/</link>
+			<guid>https://compression.cc/publications/20/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Improved Neural Image Compression: A New Two-Stage Quantization Strategy, Z. Guo et al., 2021</title>
+			<link>https://compression.cc/publications/19/</link>
+			<guid>https://compression.cc/publications/19/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>An Adaptive In-Loop Filter based on Neural Network for Video Coding, J. Zhang et al., 2021</title>
+			<link>https://compression.cc/publications/18/</link>
+			<guid>https://compression.cc/publications/18/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>A Universal Encoder Rate Distortion Optimization Framework for Learned Compression, J. Zhao et al., 2021</title>
+			<link>https://compression.cc/publications/17/</link>
+			<guid>https://compression.cc/publications/17/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Beyond VVC: Towards Perceptual Quality Optimized Video Compression Using Multi-Scale Hybrid Approaches, Z. Huang et al., 2021</title>
+			<link>https://compression.cc/publications/16/</link>
+			<guid>https://compression.cc/publications/16/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>End-to-End Optimized Image Compression With Competition of Prior Distributions, B. Brummer et al., 2021</title>
+			<link>https://compression.cc/publications/15/</link>
+			<guid>https://compression.cc/publications/15/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Learned Video Compression With Intra-Guided Enhancement and Implicit Motion Information, N. Zou et al., 2021</title>
+			<link>https://compression.cc/publications/14/</link>
+			<guid>https://compression.cc/publications/14/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Multi-Metric Fusion Network for Image Quality Assessment, Y. Peng et al., 2021</title>
+			<link>https://compression.cc/publications/13/</link>
+			<guid>https://compression.cc/publications/13/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Deep Image Compression With Latent Optimization and Piece-Wise Quantization Approximation, Y. Wu et al., 2021</title>
+			<link>https://compression.cc/publications/12/</link>
+			<guid>https://compression.cc/publications/12/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Subjective Quality Optimized Efficient Image Compression, X. Wang et al., 2021</title>
+			<link>https://compression.cc/publications/11/</link>
+			<guid>https://compression.cc/publications/11/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Image Compression With Recurrent Neural Network and Generalized Divisive Normalization, K. Islam et al., 2021</title>
+			<link>https://compression.cc/publications/10/</link>
+			<guid>https://compression.cc/publications/10/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Variable Rate ROI Image Compression Optimized for Visual Quality, Y. Ma et al., 2021</title>
+			<link>https://compression.cc/publications/9/</link>
+			<guid>https://compression.cc/publications/9/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>DANICE: Domain Adaptation Without Forgetting in Neural Image Compression, S. Katakol et al., 2021</title>
+			<link>https://compression.cc/publications/8/</link>
+			<guid>https://compression.cc/publications/8/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>End-to-End Learned Image Compression With Augmented Normalizing Flows, Y.-H. Ho et al., 2021</title>
+			<link>https://compression.cc/publications/7/</link>
+			<guid>https://compression.cc/publications/7/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Learned Image Compression With Super-Resolution Residual Modules and DISTS Optimization, A. Suzuki et al., 2021</title>
+			<link>https://compression.cc/publications/6/</link>
+			<guid>https://compression.cc/publications/6/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Perceptual Friendly Variable Rate Image Compression, Y. Gao et al., 2021</title>
+			<link>https://compression.cc/publications/5/</link>
+			<guid>https://compression.cc/publications/5/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Deep Learning Based Spatial-Temporal In-Loop Filtering for Versatile Video Coding, C. D. K. Pham et al., 2021</title>
+			<link>https://compression.cc/publications/4/</link>
+			<guid>https://compression.cc/publications/4/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Perceptual Image Compression Using Relativistic Average Least Squares GANs, Z. Cheng et al., 2021</title>
+			<link>https://compression.cc/publications/3/</link>
+			<guid>https://compression.cc/publications/3/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Rate-Distortion Optimized Learning-Based Image Compression Using an Adaptive Hierachical Autoencoder With Conditional Hyperprior, F. Brand et al., 2021</title>
+			<link>https://compression.cc/publications/2/</link>
+			<guid>https://compression.cc/publications/2/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Self Texture Transfer Networks for Low Bitrate Image Compression, S. Iwai et al., 2021</title>
+			<link>https://compression.cc/publications/1/</link>
+			<guid>https://compression.cc/publications/1/</guid>
+			<description></description>
+		</item>
+		
+	</channel>
+</rss>

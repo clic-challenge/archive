@@ -1,0 +1,11 @@
+
+@inproceedings{Cheng_2021_CVPR,
+  author = "Z. Cheng and T. Fu and J. Hu and L. Guo and S. Wang and X. Zhao and D. Zhou and Y. Song",
+  title = "Perceptual Image Compression Using Relativistic Average Least Squares GANs",
+  year = 2021,
+  booktitle = "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+  pages = "1895-1900",
+  month = "Jun"
+}
+
+

@@ -1,0 +1,55 @@
+organizers:
+    - name: George Toderici
+      affiliation: "Google"
+      bio: George Toderici received his Ph.D. in Computer Science from the University of Houston in 2007 where his research focused on 2D-to-3D face recognition, and joined Google in 2008. His current work at Google Research is focused on lossy multimedia compression using neural networks. His past projects at Google include the design of neural-network architectures and classical approaches for video classification, action recognition, YouTube channel recommendations, and video enhancement. He has helped organize the THUMOS-2014 and YouTube-8M (CVPR 2017, ECCV 2018) video classification challenges, and contributed to the design of the Sports-1M dataset. He has also served as Area Chair for the ACM Multimedia Conference in 2014, and is a regular reviewer for CVPR, ICCV, and NIPS.
+      email: gtoderici@google.com
+      image: george
+
+    - name: Michele Covell
+      affiliation: "Google"
+      bio: Michele Covell joined Google as a research scientist in 2005. Since 2015, she has worked on applications of neural networks for image and video compression, first for better parameter control on H.264 and more recently on using neural networks directly for image compression.  For the first 4 years after joining Google, Michele worked on audio and video fingerprinting, used for copyright protection by YouTube.  She received awards for this work for technical innovation and financial impact and the YT Content Id System received a Technical Emmy in 2013.  In between, she worked in various parts of Google, including Chrome Media, helping to evaluate and acquire the open-source compression codecs needed for the Chrome effort.  Before joining Google,  at HP Labs, she worked on streaming content-distribution networks for mobile.  That work was listed among the "top 40 accomplishments in HP Labs' [then] 40-year history".  She has also worked on audio and video processing at Interval Research Corporation (a private think tank) and acoustic noise control at SRI International.  She received her PhD from MIT and her bachelors from University of Michigan.
+      email: covell@google.com
+      image: michele
+    
+    - name: Wenzhe Shi
+      affiliation: "Twitter"
+      bio: Wenzhe Shi works at Magic Pony of Twitter as a computer vision research lead. He received his Ph.D. training under Prof. Daniel Rueckert in the Biomedical Image Analysis group within Imperial College London from 2009 to 2012 where he stayed as a research associate from 2012 to 2014. He joined Magic Pony 2015 as one of the first employees. The company was acquired by Twitter for 150M in 2016. He has published over 100 scientific papers in top-tier academic journals and conferences, and is inventor of more than 20 patents. His projects at Twitter includes super-resolution, compression, frame interpolation, image/video classification and recommendation. Wenzhe has also served as a regular reviewer for some of the top computer vision and medical image analysis journals and conferences (CVPR, ICCV, MICCAI, IEEE-TMI, IEEE-MEDIA, etc).
+      email: wshi@twitter.com
+      image: wenzhe
+    
+    - name: Radu Timofte
+      affiliation: "ETH Zurich"
+      bio: Radu Timofte is research group leader in the Computer Vision Laboratory, at ETH Zurich, Switzerland. He obtained a PhD degree in Electrical Engineering at the KU Leuven, Belgium in 2013, the MSc at the Univ. of Eastern Finland in 2007, and the Dipl. Eng. at the Technical Univ. of Iasi, Romania in 2006. He serves as a reviewer for top journals (such as TPAMI, TIP, IJCV, TNNLS, TCSVT, CVIU, PR) and conferences (ICCV, CVPR, ECCV, NIPS), as area chair for ACCV 2018 and as area editor for Elsevier’s CVIU journal. His work received a best scientific paper award at ICPR 2012, the best paper award at CVVT workshop (ECCV 2012), the best paper award at ChaLearn LAP workshop (ICCV 2015), the best scientific poster award at EOS 2017, the honorable mention award at FG 2017, and his team won a number of challenges including traffic sign detection (IJCNN 2013) and apparent age estimation (ICCV 2015). He is co-founder of Merantix and organizer of NTIRE ‘16, ’17 and ’18 events. His current research interests include sparse and collaborative representations, deep learning, optical flow, compression, image restoration and enhancement.
+      email: radu.timofte@vision.ee.ethz.ch
+      image: radu
+    
+    - name: Lucas Theis
+      affiliation: "Twitter"
+      bio: Lucas Theis is a machine learning researcher at Twitter. He studied Cognitive Science in Osnabrück before starting a PhD at the Max Planck Research School in Tübingen, Germany, in 2009. Here, he worked on generative modeling of natural images with Matthias Bethge, in particular using deep learning. After finishing his PhD, he started to work on image compression and super-resolution for Magic Pony Technologies in London – a startup which got acquired by Twitter in 2016. Other work includes papers on variational inference, saliency prediction, and computational neuroscience. Lucas has served as a reviewer for some of the top machine learning journals and conferences (JMLR, CVPR, ICML, NIPS, ICLR).
+      email: ltheis@twitter.com 
+      image: lucas
+    
+    - name: Johannes Ballé
+      affiliation: "Google"
+      bio: Johannes Ballé received his PhD in Electrical Engineering from RWTH Aachen University in 2013. He then worked at New York University's Center for Neural Science as a postdoc until early 2017, when he joined Google in Mountain View. His work revolves around classical topics of signal processing; image and video compression; representation of images using generative and probabilistic models; and models of visual perception of texture, as well as images in general. He has served as a reviewer of numerous publications in the fields of image compression and signal processing (e.g., IEEE Transactions on Image Processing, Picture Coding Symposium).
+      email: jballe@google.com
+      image: johannes
+    
+    - name: Eirikur Agustsson
+      affiliation: "Google / ETH Zurich"
+      bio: Eirikur Agustsson will soon defend his PhD thesis at the Computer Vision Lab of ETH Zurich and has recently joined Google as a Research Scientist within the Machine Intelligence group. He has mainly worked on image and network compression using neural networks, almost lossless analog compression, image-super-resolution and generative adversarial networks. He has reviewed for many of the top computer vision and machine learning conferences and journals (such as NIPS, CVPR and IEEE Transactions on Pattern Analysis and Machine Intelligence) and co-organized numerous workshops (the WebVision challenge & workshop at CVPR '17 and '18, the NTIRE challenge & workshop at CVPR '17 and CLIC at CVPR '18).
+      email: eirikur@google.com
+      image: eirikur
+    
+    
+    - name: Nick Johnston
+      affiliation: "Google"
+      bio: Nick Johnston works as a Software Engineer within the Machine Intelligence group at Google. He has previously published image compression work at CVPR. His research interests are in leveraging the power of deep learning and computer vision for improved rate-distortion performance in image compression. Additionally, he is interested in neural network optimization for mobile devices and embedded systems. Nick received his BSc in Computer Engineering from Iowa State University.
+      email: nickj@google.com
+      image: nick
+    
+    - name: Fabian Mentzer
+      affiliation: "ETH Zurich"
+      bio: Fabian Mentzer studied Information Technology and Electrical Engineering at ETH Zurich, with a focus on information and communication theory. He is now a second year PhD candidate at the Computer Vision Lab of ETH Zurich, under the supervision of Prof. Luc Van Gool. His focus is on improving learned image compression using deep neural networks and investigating the feature representations learned by such networks, with works published at NIPS, ICLR and CVPR so far.
+      email: mentzerf@vision.ee.ethz.ch
+      image: fabian

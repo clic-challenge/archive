@@ -1,0 +1,9 @@
+
+@inproceedings{Liu2022a,
+  author = "J. Liu and X. Li and Y. Peng and T. Yu and Z. Chen",
+  title = "SwinIQA: Learned Swin Distance for Compressed Image Quality Assessment",
+  year = 2022,
+  journal = "5th Challenge on Learned Image Compression"
+}
+
+

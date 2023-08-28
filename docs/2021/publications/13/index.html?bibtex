@@ -1,0 +1,11 @@
+
+@inproceedings{Peng_2021_CVPR,
+  author = "Y. Peng and J. Xu and Z. Luo and W. Zhou and Z. Chen",
+  title = "Multi-Metric Fusion Network for Image Quality Assessment",
+  year = 2021,
+  booktitle = "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+  pages = "1857-1860",
+  month = "Jun"
+}
+
+

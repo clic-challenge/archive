@@ -1,0 +1,9 @@
+
+@inproceedings{Lin2022a,
+  author = "C. Lin and Y. Ho and M. Chen and W. Peng and H. Hang",
+  title = "Learned Video Compression with Conditional Augmented Normalizing Flows",
+  year = 2022,
+  journal = "5th Challenge on Learned Image Compression"
+}
+
+

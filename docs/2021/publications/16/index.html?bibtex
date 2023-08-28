@@ -1,0 +1,11 @@
+
+@inproceedings{Huang_2021_CVPR,
+  author = "Z. Huang and K. Lin and C. Jia and S. Wang and S. Ma",
+  title = "Beyond VVC: Towards Perceptual Quality Optimized Video Compression Using Multi-Scale Hybrid Approaches",
+  year = 2021,
+  booktitle = "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+  pages = "1866-1869",
+  month = "Jun"
+}
+
+

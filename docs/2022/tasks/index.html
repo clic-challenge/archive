@@ -1,0 +1,366 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CLIC &#183; Challenge on Learned Image Compression</title>
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2022_public/static/css/4.3.1/bootstrap.min.css">
+		<link rel="shortcut icon" type="image/png" href="https://storage.googleapis.com/clic2022_public/static/favicon.ico">
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2022_public/static/css/style.css">
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2022_public/static/css/dashboard.css?v=1.1">
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://storage.googleapis.com/clic2022_public/static/js/4.3.1/bootstrap.min.js"></script>
+
+		
+		
+	</head>
+	<body class="bg-light">
+		<div class="container-fluid">
+			<nav class="row navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0">
+				<a class="navbar-brand col-sm-12 col-md-2 mr-0" href="index.html#">CLIC 2022</a>
+				<span class="navbar-text d-none d-md-block">5th Workshop and Challenge on Learned Image Compression</span>
+				<span class="navbar-text d-block d-md-none">
+					<a data-toggle="collapse" href="index.html#collapseSidebar" class="px-3"><i data-feather="menu"></i></a>
+				</span>
+				<ul class="navbar-nav px-3">
+					<li class="nav-item text-nowrap">
+						
+						<a class="nav-link" href="../signup/index.html">Sign up</a>
+						
+					</li>
+				</ul>
+			</nav>
+
+			<div class="row">
+				<nav id="collapseSidebar" class="collapse col-md-2 bg-light sidebar text-truncate" style="font-size: .875rem">
+					
+						<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+	<span>Workshop</span>
+</h6>
+<ul class="nav flex-column">
+	<li class="nav-item">
+		<a class="nav-link" href="../index.html">
+			<i data-feather="home"></i> Home
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../schedule/2/index.html">
+			<i data-feather="calendar"></i> Dates
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../publications/index.html">
+			<i data-feather="book-open"></i> Papers
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../cfp/index.html">
+			<i data-feather="send"></i> Submit
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../organizers/index.html">
+			<i data-feather="user"></i> Organizers
+		</a>
+	</li>
+</ul>
+
+<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+	<span>Challenge</span>
+</h6>
+<ul class="nav flex-column mb-2">
+	<li class="nav-item">
+		<a class="nav-link" href="../introduction/index.html">
+			<i data-feather="file-text"></i> Introduction
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link active" href="index.html">
+			<i data-feather="check-square"></i> Tasks
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../leaderboard/image_075/test/index.html">
+			<i data-feather="align-justify"></i> Leaderboards
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="https://groups.google.com/g/clic-list">
+			<i data-feather="message-circle"></i> Forum
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../faq/index.html">
+			<i data-feather="help-circle"></i> FAQ
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../submit/index.html">
+			<i data-feather="upload"></i> Submit
+		</a>
+	</li>
+	
+</ul>
+
+<div class="d-none d-md-block">
+	<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+		<span>Past events</span>
+	</h6>
+	<ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                        <a class="nav-link" href="https://clic.compression.cc/2021">
+                                <i data-feather="link"></i>
+                                CLIC 2021
+                        </a>
+                </li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://clic.compression.cc/">
+				<i data-feather="link"></i>
+				CLIC 2020
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://clic.compression.cc/2019/">
+				<i data-feather="link"></i>
+				CLIC 2019
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://clic.compression.cc/2018/">
+				<i data-feather="link"></i>
+				CLIC 2018
+			</a>
+		</li>
+	</ul>
+</div>
+
+					
+				</nav>
+
+				<main role="main" class="col-md-10 ml-sm-auto px-md-4 pt-3">
+					
+	
+		<h2>Tasks</h2>
+
+<div class="card mb-3">
+<div class="card-body">
+<p class="card-text">There are three challenge tracks:
+<ul>
+<li><a href="index.html#image">Image Compression</a></li>
+<li><a href="index.html#video">Video Compression</a></li>
+<li><a href="index.html#perceptual">Perceptual Metrics</a></li>
+</ul>
+</p>
+</div>
+</div>
+
+<!-- -----------------------------------------------------  -->
+<!-- - IMAGE ---------------------------------------------  -->
+<!-- -----------------------------------------------------  -->
+<div class="card mb-3" id="image">
+<div class="card-body">
+<h5 class="card-title">Image compression</h5>
+<h6 class="text-muted">Task</h6>
+<p class="card-text">
+The goal is to compress a corpus of images to three bitrates:
+</p>
+<ul>
+<li>0.3bpp (bits per pixel)</li>
+<li>0.15bpp</li>
+<li>0.075bpp </li>
+</ul>
+<p class="card-text">
+The winners will be chosen based on a <strong>human rating task</strong>.
+The raters compare the images to the uncompressed image and chose the
+preferred codec.
+</p>
+<p class="card-text">
+
+For guidance, several objective metrics will be shown on the leaderboard but not
+considered for prizes.
+</p>
+<h6 class="text-muted">Data</h6>
+<p class="card-text">We provide a <strong>validation set</strong> that reflects the (hidden) test data.
+Validation set statistics:
+</p>
+<ul>
+<li>30 images, collected from <a href="https://unsplash.com">Unsplash</a>. </li>
+<li>Provided as <code>png</code> files.</li>
+<li>Images resized such that the longer side is 2048.</li>
+<li><strong><a href="https://storage.googleapis.com/clic2022_public/validation_sets/images.zip">Download Here</a> (250MB)</strong>. <strong>Note:</strong> Updated March 3rd to reduce from 300 to 30 images.</li>
+</li>
+</ul>
+
+Test set:
+<ul>
+<li><strong><a href="https://storage.googleapis.com/clic2022_public/test_sets/image_test_30.zip">Download Here</a> (130 MB)</strong>
+</li>
+</ul>
+
+<p class="card-text">
+The images are released using the <a
+href="https://unsplash.com/license">Unsplash</a> license. Please contact the
+organiziers if
+you have objections to any of the released pictures.
+</p>
+
+<h6 class="text-muted">Submission Guidelines</h6>
+<ul>
+<li>The decoder size should not exceed 250MB.</li>
+</ul>
+</div>
+</div>
+
+
+<!-- -----------------------------------------------------  -->
+<!-- - VIDEO ---------------------------------------------  -->
+<!-- -----------------------------------------------------  -->
+<div class="card mb-3" id="video">
+<div class="card-body">
+<h5 class="card-title">Video compression</h5>
+<h6 class="text-muted">Task</h6>
+<p class="card-text">
+The goal is to compress a corpus of videos to an average bitrate of 
+</p>
+<ul>
+<li>1 mbps (mega bits per second, i.e., 1 000 000 bits per second, so, e.g., for a corpus of 100 10second videos, you would use 1 000 000 000 bits.)</li>
+<li>0.1 mbps </li>
+</ul>
+<p class="card-text">
+The winners will be chosen based on a <strong>human rating task</strong>.
+The raters compare the compressed videos to the uncompressed videos and chose the
+preferred codec.
+</p>
+<p class="card-text">
+For guidance, several objective metrics will be shown on the leaderboard but not
+considered for prizes.
+</p>
+<h6 class="text-muted">Data</h6>
+<p class="card-text">We provide a <strong>validation set</strong> that reflects the (hidden) test data.
+Validation set statistics:
+</p>
+
+<ul>
+<li>292 videos, split into 3 sets: 4 near lossless, 40 webcam, 248 general.</li>
+
+<li>Provided as <code>mp4</code> files.</li>
+<li>Videos are either 720p or 1080p.</li>
+<li>Duration is exactly 10 seconds for all.</li>
+<li>The FPS varies from 15fps to 60fps, with the bulk of the videos in the 25-30 fps range.</li>
+<li><a href="https://storage.googleapis.com/clic2022_public/validation_sets/videos.zip">Download the full validation set here</a> (2.4 GB).</li>
+<li>During the validation phase, we evaluate on
+    the <a href="https://raw.githubusercontent.com/fab-jul/clic2021-devkit/main/clic2022/validation_ids.txt">30 video IDs published here</a>.
+</li>
+<li><strong><a href="https://storage.googleapis.com/clic2022_public/validation_sets/video_30/video_valid_30.zip">Download the 30 video subset needed for the validation phase here</a> (367MB)</strong>.</li>
+<li>Use <a href="https://github.com/fab-jul/clic2021-devkit/tree/main/clic2022">the devkit for converting to PNG</a> if needed.</li>
+</ul>
+
+Test set:
+<ul>
+<li><strong><a href="https://storage.cloud.google.com/clic2022_public/test_sets/video_test_30.zip">Download Here</a> (180 MB)</strong>
+</li>
+</ul>
+
+<p class="card-text">
+Please contact the organiziers if you have objections to any of the released videos.
+</p>
+
+<h6 class="text-muted">Submission Guidelines</h6>
+<ul>
+<li>The decoder size should not exceed <strong>1GB</strong>.</li>
+<li><strong>IMPORTANT</strong>: Submissions only need to compress 30 videos of the validation set, see above.</li>
+<li>We provide the videos as mp4, but we will expect submissions to <strong>output three PNGs per frame</strong>:
+    one for Y, U, and V channels.  Please use <a href="https://github.com/fab-jul/clic2021-devkit/tree/main/clic2022">the devkit for converting to PNGs</a>, if you want to train on PNGs.</li>
+    Or look at the Example Submission below.
+</ul>
+
+<h6 class="text-muted">Example Submission</h6>
+The devkit contains <a href="https://github.com/fab-jul/clic2021-devkit/tree/main/clic2022/example_video_submission">
+    an example submission based on H264.
+</a> It showcases the format expected by the server.
+</div>
+</div>
+
+<!-- -----------------------------------------------------  -->
+<!-- - PERCEPTUAL ----------------------------------------  -->
+<!-- -----------------------------------------------------  -->
+<div class="card" id="perceptual">
+<div class="card-body">
+<h5 class="card-title" id="perceptual">Perceptual metrics</h5>
+<p class="card-text">
+In the perceptual metric track you will need to design a metric to rank the participants of the image
+compression task. Given a pair of images (one being the original and the other being a distorted image)
+your metric will need to generate a score. We can compare methods A and B by generating scores two
+scores d(O, A) and d(O, B), where O is the original image. If d(O, A) < d(O, B), the metric prefers
+method A over method B. </p>
+<p class="card-text">
+To evaluate your metric, we will compare the metric's preferences with the preferences of human
+raters. In our image compression evaluation, human raters are presented with three images (O, A,
+B) and asked to pick one of A or B. The winner of the perceptual metric challenge is chosen
+based on who predicted the correct preference the largest number of times.
+</p>
+
+<h6 class="text-muted">Development Kit</h6>
+<p>
+The <a
+href="https://github.com/fab-jul/clic2021-devkit/blob/main/README.md#perceptual-challenge">development
+kit</a> is provided as an example of what is expected from participants. It is in no way
+intended to contain data representative of the final challenge simply because that is not
+possible. The final test set will be created from the files uploaded by the participants in the
+compression challenge, and as a result it’s simply impossible for us to provide data which will
+match that distribution in the validation set.
+<p>
+<p>To get the devkit, use:</p>
+<p class="card-text">
+<code>git clone https://github.com/fab-jul/clic2021-devkit.git</code>
+</p>
+
+<h6 class="text-muted">Data</h6>
+<ul>
+<li><a
+href="https://storage.googleapis.com/clic2021_public/perceptual/clic_2021_perceptual_valid.zip">Validation
+images (clic_2021_perceptual_valid.zip, 2.1GB)</a></li>
+<li><a
+href="https://storage.googleapis.com/clic2021_public/perceptual/test/clic_2021_perceptual_test.txt">Test
+image URLs (clic_2021_perceptual_test.txt, 1KB)</a></li>
+<li><a href="https://storage.googleapis.com/clic2021_public/perceptual/test/clic_2021_test.zip">CSV
+file (clic_2021_test.zip, 1.6MB)</a></li>
+<li><strong>(New, April 8, 2022)</strong> <a href="https://github.com/fab-jul/clic2021-devkit#2022-test-data-released-april-8th-2022">2022 Test Data Release</a></li>
+</ul>
+<p class="card-text">
+The full details of the tasks are contained in the <a
+href="https://github.com/fab-jul/clic2021-devkit/blob/main/README.md#perceptual-challenge">README</a>
+file of the repository.
+</p>
+<p class="card-text">
+The 2021 <a href="https://github.com/fab-jul/clic2021-devkit/blob/main/README.md#test-data-updated-on-january-20th-2022-with-the-release-of-the-oracle">test data</a> may be used to train new models for this year's competition. Please note that the link above contains pointers to the raw data (unfiltered) which we collected from raters. Therefore, it is possible that certain pairs of images might have been rated both ways (i.e., one rater might have disagreed with the other). It is up to the participants to do any data cleanup that might be necessary.
+</p>
+</div>
+</div>
+	
+
+					<hr>
+					<div class="container-fluid text-center text-muted sponsors">
+						Sponsored by<br>
+						<a href="https://google.com" target="_blank"><img src="https://storage.googleapis.com/clic2022_public/static/img/sponsors/google.png" height="40"></a>
+						<a href="https://www.vision.ee.ethz.ch" target="_blank"><img src="https://storage.googleapis.com/clic2022_public/static/img/sponsors/cvl.png" height="38"></a>
+						<a href="https://apple.com" target="_blank"><img src="https://storage.googleapis.com/clic2022_public/static/img/sponsors/apple.png" height="60"></a>
+						<a href="https://netflix.com" target="_blank"><img src="https://storage.googleapis.com/clic2022_public/static/img/sponsors/netflix.png" height="65"></a>
+						<a href="https://interdigital.com" target="_blank"><img src="https://storage.googleapis.com/clic2022_public/static/img/sponsors/interdigital.png" height="30"></a>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		
+		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script>
+			feather.replace()
+		</script>
+	</body>
+</html>

@@ -1,0 +1,238 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CLIC &#183; Challenge on Learned Image Compression</title>
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2022_public/static/css/4.3.1/bootstrap.min.css">
+		<link rel="shortcut icon" type="image/png" href="https://storage.googleapis.com/clic2022_public/static/favicon.ico">
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2022_public/static/css/style.css">
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2022_public/static/css/dashboard.css?v=1.1">
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://storage.googleapis.com/clic2022_public/static/js/4.3.1/bootstrap.min.js"></script>
+
+		
+	
+		
+	<link rel="unapi-server" type="application/xml" title="unAPI" href="../unapi/index.html"/>
+
+	
+		<meta name="citation_date" content="2022" />
+		<meta name="citation_title" content="SwinIQA: Learned Swin Distance for Compressed Image Quality Assessment" />
+		<meta name="citation_author" content="J. Liu" />
+		<meta name="citation_author" content="X. Li" />
+		<meta name="citation_author" content="Y. Peng" />
+		<meta name="citation_author" content="T. Yu" />
+		<meta name="citation_author" content="Z. Chen" />
+		<meta name="citation_journal_title" content="5th Challenge on Learned Image Compression" />
+		<meta name="citation_pdf_url" content="https://storage.googleapis.com/clic2022_public/publications/35.pdf" />
+	
+
+	</head>
+	<body class="bg-light">
+		<div class="container-fluid">
+			<nav class="row navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0">
+				<a class="navbar-brand col-sm-12 col-md-2 mr-0" href="index.html#">CLIC 2022</a>
+				<span class="navbar-text d-none d-md-block">5th Workshop and Challenge on Learned Image Compression</span>
+				<span class="navbar-text d-block d-md-none">
+					<a data-toggle="collapse" href="index.html#collapseSidebar" class="px-3"><i data-feather="menu"></i></a>
+				</span>
+				<ul class="navbar-nav px-3">
+					<li class="nav-item text-nowrap">
+						
+						<a class="nav-link" href="../../signup/index.html">Sign up</a>
+						
+					</li>
+				</ul>
+			</nav>
+
+			<div class="row">
+				<nav id="collapseSidebar" class="collapse col-md-2 bg-light sidebar text-truncate" style="font-size: .875rem">
+					
+						<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+	<span>Workshop</span>
+</h6>
+<ul class="nav flex-column">
+	<li class="nav-item">
+		<a class="nav-link" href="../../index.html">
+			<i data-feather="home"></i> Home
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../../schedule/2/index.html">
+			<i data-feather="calendar"></i> Dates
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../index.html">
+			<i data-feather="book-open"></i> Papers
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../../cfp/index.html">
+			<i data-feather="send"></i> Submit
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../../organizers/index.html">
+			<i data-feather="user"></i> Organizers
+		</a>
+	</li>
+</ul>
+
+<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+	<span>Challenge</span>
+</h6>
+<ul class="nav flex-column mb-2">
+	<li class="nav-item">
+		<a class="nav-link" href="../../introduction/index.html">
+			<i data-feather="file-text"></i> Introduction
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../../tasks/index.html">
+			<i data-feather="check-square"></i> Tasks
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../../leaderboard/image_075/test/index.html">
+			<i data-feather="align-justify"></i> Leaderboards
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="https://groups.google.com/g/clic-list">
+			<i data-feather="message-circle"></i> Forum
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../../faq/index.html">
+			<i data-feather="help-circle"></i> FAQ
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../../submit/index.html">
+			<i data-feather="upload"></i> Submit
+		</a>
+	</li>
+	
+</ul>
+
+<div class="d-none d-md-block">
+	<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+		<span>Past events</span>
+	</h6>
+	<ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                        <a class="nav-link" href="https://clic.compression.cc/2021">
+                                <i data-feather="link"></i>
+                                CLIC 2021
+                        </a>
+                </li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://clic.compression.cc/">
+				<i data-feather="link"></i>
+				CLIC 2020
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://clic.compression.cc/2019/">
+				<i data-feather="link"></i>
+				CLIC 2019
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://clic.compression.cc/2018/">
+				<i data-feather="link"></i>
+				CLIC 2018
+			</a>
+		</li>
+	</ul>
+</div>
+
+					
+				</nav>
+
+				<main role="main" class="col-md-10 ml-sm-auto px-md-4 pt-3">
+					
+	
+	<div class="card mb-3">
+		<div class="card-body">
+			
+
+
+	
+	J. Liu, 
+	
+	X. Li, 
+	
+	Y. Peng, 
+	
+	T. Yu, and 
+	
+	Z. Chen
+	<br />
+
+<b><a href="index.html" class="title">SwinIQA: Learned Swin Distance for Compressed Image Quality Assessment</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/35.pdf">PDF</a>,
+
+
+<a href="index.html%3Fris">RIS</a>,
+<a href="index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="17"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=SwinIQA%3A+Learned+Swin+Distance+for+Compressed+Image+Quality+Assessment&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=J.+Liu&amp;rft.au=X.+Li&amp;rft.au=Y.+Peng&amp;rft.au=T.+Yu&amp;rft.au=Z.+Chen"></span>
+<br/>
+		</div>
+	</div>
+	<div class="card mb-3">
+		<div class="card-body">
+			<h5 class="card-title">Reference</h5>
+			<pre lang="bibtex">@inproceedings{Liu2022a,
+  author = "J. Liu and X. Li and Y. Peng and T. Yu and Z. Chen",
+  title = "SwinIQA: Learned Swin Distance for Compressed Image Quality Assessment",
+  year = 2022,
+  journal = "5th Challenge on Learned Image Compression"
+}
+</pre>
+		</div>
+	</div>
+	
+
+					<hr>
+					<div class="container-fluid text-center text-muted sponsors">
+						Sponsored by<br>
+						<a href="https://google.com" target="_blank"><img src="https://storage.googleapis.com/clic2022_public/static/img/sponsors/google.png" height="40"></a>
+						<a href="https://www.vision.ee.ethz.ch" target="_blank"><img src="https://storage.googleapis.com/clic2022_public/static/img/sponsors/cvl.png" height="38"></a>
+						<a href="https://apple.com" target="_blank"><img src="https://storage.googleapis.com/clic2022_public/static/img/sponsors/apple.png" height="60"></a>
+						<a href="https://netflix.com" target="_blank"><img src="https://storage.googleapis.com/clic2022_public/static/img/sponsors/netflix.png" height="65"></a>
+						<a href="https://interdigital.com" target="_blank"><img src="https://storage.googleapis.com/clic2022_public/static/img/sponsors/interdigital.png" height="30"></a>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		
+		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script>
+			feather.replace()
+		</script>
+	</body>
+</html>

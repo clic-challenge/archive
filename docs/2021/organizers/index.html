@@ -1,0 +1,341 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CLIC &#183; Challenge on Learned Image Compression</title>
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2021_public/static/css/4.3.1/bootstrap.min.css">
+		<link rel="shortcut icon" type="image/png" href="https://storage.googleapis.com/clic2021_public/static/favicon.ico">
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2021_public/static/css/style.css">
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2021_public/static/css/dashboard.css?v=1.1">
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://storage.googleapis.com/clic2021_public/static/js/4.3.1/bootstrap.min.js"></script>
+
+		
+		
+	</head>
+	<body class="bg-light">
+		<div class="container-fluid">
+			<nav class="row navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0">
+				<a class="navbar-brand col-sm-12 col-md-2 mr-0" href="index.html#">CLIC 2021</a>
+				<span class="navbar-text d-none d-md-block">4th Workshop and Challenge on Learned Image Compression</span>
+				<span class="navbar-text d-block d-md-none">
+					<a data-toggle="collapse" href="index.html#collapseSidebar" class="px-3"><i data-feather="menu"></i></a>
+				</span>
+				<ul class="navbar-nav px-3">
+					<li class="nav-item text-nowrap">
+						
+						<a class="nav-link" href="../signup/index.html">Sign up</a>
+						
+					</li>
+				</ul>
+			</nav>
+
+			<div class="row">
+				<nav id="collapseSidebar" class="collapse col-md-2 bg-light sidebar text-truncate" style="font-size: .875rem">
+					
+						<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+	<span>Workshop</span>
+</h6>
+<ul class="nav flex-column">
+	<li class="nav-item">
+		<a class="nav-link" href="../index.html">
+			<i data-feather="home"></i> Home
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../schedule/2/index.html">
+			<i data-feather="calendar"></i> Dates
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../publications/index.html">
+			<i data-feather="book-open"></i> Papers
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../cfp/index.html">
+			<i data-feather="send"></i> Submit
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link active" href="index.html">
+			<i data-feather="user"></i> Organizers
+		</a>
+	</li>
+</ul>
+
+<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+	<span>Challenge</span>
+</h6>
+<ul class="nav flex-column mb-2">
+	<li class="nav-item">
+		<a class="nav-link" href="../introduction/index.html">
+			<i data-feather="file-text"></i> Introduction
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../tasks/index.html">
+			<i data-feather="check-square"></i> Tasks
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../leaderboard/image-075/test/index.html">
+			<i data-feather="align-justify"></i> Leaderboards
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="https://groups.google.com/g/clic-list">
+			<i data-feather="message-circle"></i> Forum
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../faq/index.html">
+			<i data-feather="help-circle"></i> FAQ
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../submit/index.html">
+			<i data-feather="upload"></i> Submit
+		</a>
+	</li>
+	
+</ul>
+
+<div class="d-none d-md-block">
+	<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+		<span>Past events</span>
+	</h6>
+	<ul class="nav flex-column mb-2">
+		<li class="nav-item">
+			<a class="nav-link" href="https://clic.compression.cc/">
+				<i data-feather="link"></i>
+				CLIC 2020
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://clic.compression.cc/2019/">
+				<i data-feather="link"></i>
+				CLIC 2019
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://clic.compression.cc/2018/">
+				<i data-feather="link"></i>
+				CLIC 2018
+			</a>
+		</li>
+	</ul>
+</div>
+
+					
+				</nav>
+
+				<main role="main" class="col-md-10 ml-sm-auto px-md-4 pt-3">
+					
+	
+		<div class="row mb-3">
+
+<div class="col-3">
+<div class="card">
+<img src="https://storage.googleapis.com/clic2021_public/static/img/organizers/george.jpg" class="card-img-top" alt="George Toderici">
+<div class="card-body">
+<h5 class="card-title">George Toderici</h5>
+<h6 class="card-subtitle text-muted mb-2">Google</h6>
+<p class="card-text small">
+George Toderici received his Ph.D. in Computer Science from the University of Houston in 2007 where his research focused on 2D-to-3D face recognition, and joined Google in 2008. His current work at Google Research is focused on lossy multimedia compression using neural networks. His past projects at Google include <span id="moreTextGeorge" class="collapse">the design of neural network architectures and classical approaches for video classification, action recognition, YouTube channel recommendations, and video enhancement. He has helped organize the THUMOS-2014 and YouTube-8M (CVPR 2017, ECCV 2018) video classification challenges, and contributed to the design of the Sports-1M dataset. He has also served as Area Chair for the ACM Multimedia Conference in 2014, and is a regular reviewer for CVPR, ICCV, and NIPS.</span> <a data-toggle="collapse" href="index.html#moreTextGeorge">(read more)</a>
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-3">
+<div class="card">
+<img src="https://storage.googleapis.com/clic2021_public/static/img/organizers/wenzhe.jpg" class="card-img-top" alt="Wenzhe Shi">
+<div class="card-body">
+<h5 class="card-title">Wenzhe Shi</h5>
+<h6 class="card-subtitle text-muted mb-2">Twitter</h6>
+<p class="card-text small">
+Wenzhe Shi works at Magic Pony of Twitter as a computer vision research lead. He received his Ph.D. training under Prof. Daniel Rueckert in the Biomedical Image Analysis group within Imperial College London from 2009 to 2012 where he stayed as a research associate from 2012 to 2014. He joined Magic Pony 2015 as one
+<span id="moreTextWenzhe" class="collapse">of the first employees. The company was acquired by Twitter for 150M in 2016. He has published over 100 scientific papers in top-tier academic journals and conferences, and is inventor of more than 20 patents. His projects at Twitter includes super-resolution, compression, frame interpolation, image/video classification and recommendation. Wenzhe has also served as a regular reviewer for some of the top computer vision and medical image analysis journals and conferences (CVPR, ICCV, MICCAI, IEEE-TMI, IEEE-MEDIA, etc).</span> <a data-toggle="collapse" href="index.html#moreTextWenzhe">(read more)</a>
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-3">
+<div class="card">
+<img src="https://storage.googleapis.com/clic2021_public/static/img/organizers/radu.jpg" class="card-img-top" alt="Radu Timofte">
+<div class="card-body">
+<h5 class="card-title">Radu Timofte</h5>
+<h6 class="card-subtitle text-muted mb-2">ETH Zürich</h6>
+<p class="card-text small">
+Radu Timofte is research group leader in the Computer Vision Laboratory, at ETH Zurich, Switzerland. He obtained a PhD degree in Electrical Engineering at the KU Leuven, Belgium in 2013, the MSc at the Univ. of Eastern Finland in 2007, and the Dipl. Eng. at the Technical Univ. of Iasi, Romania in 2006. He serves a
+<span id="moreTextRadu" class="collapse">reviewer for top journals (such as TPAMI, TIP, IJCV, TNNLS, TCSVT, CVIU, PR) and conferences (ICCV, CVPR, ECCV, NIPS), as area chair for ACCV 2018 and as area editor for Elsevier’s CVIU journal. His work received a best scientific paper award at ICPR 2012, the best paper award at CVVT workshop (ECCV 2012), the best paper award at ChaLearn LAP workshop (ICCV 2015), the best scientific poster award at EOS 2017, the honorable mention award at FG 2017, and his team won a number of challenges including traffic sign detection (IJCNN 2013) and apparent age estimation (ICCV 2015). He is co-founder of Merantix and organizer of NTIRE ‘16, ’17 and ’18 events. His current research interests include sparse and collaborative representations, deep learning, optical flow, compression, image restoration and enhancement.</span> <a data-toggle="collapse" href="index.html#moreTextRadu">(read more)</a>
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-3">
+<div class="card">
+<img src="https://storage.googleapis.com/clic2021_public/static/img/organizers/lucas.jpg" class="card-img-top" alt="Lucas Theis">
+<div class="card-body">
+<h5 class="card-title">Lucas Theis</h5>
+<h6 class="card-subtitle text-muted mb-2">Google</h6>
+<p class="card-text small">
+Lucas Theis is a machine learning researcher at Google. He studied Cognitive Science in Osnabrück before starting a PhD at the Max Planck Research School in Tübingen, Germany, in 2009. Here, he worked on generative modeling of natural images with Matthias Bethge, in particular using deep learning. After finishing
+<span id="moreTextLucas" class="collapse">his PhD, he started to work on image compression and super-resolution for Magic Pony Technologies in London – a startup which got acquired by Twitter in 2016. Lucas started working for Google in 2020 where he continues to work on neural compression. Other work includes papers on variational inference, saliency prediction, and computational neuroscience. Lucas has served as a reviewer for some of the top machine learning journals and conferences (JMLR, CVPR, ICML, NIPS, ICLR).</span> <a data-toggle="collapse" href="index.html#moreTextLucas">(read more)</a>
+</p>
+</div>
+</div>
+</div>
+
+</div>
+<div class="row mb-3">
+
+<div class="col-3">
+<div class="card">
+<img src="https://storage.googleapis.com/clic2021_public/static/img/organizers/johannes.jpg" class="card-img-top" alt="Johannes Ballé">
+<div class="card-body">
+<h5 class="card-title">Johannes Ballé</h5>
+<h6 class="card-subtitle text-muted mb-2">Google</h6>
+<p class="card-text small">
+Johannes Ballé is a Research Scientist at Google. His current work focuses on data compression, rate–distortion optimization and models of visual perception. He defended his master's and doctoral theses on signal processing and image compression at RWTH Aachen University in 2007 and 2012, respectively, working with J.-R. Ohm. <span id="moreTextJohannes" class="collapse">This was followed by a brief collaboration with J. Portilla at CSIC in Madrid, Spain, and a postdoctoral fellowship at NYU’s Center for Neural Science with E.P. Simoncelli. There, he studied the relationship between perception and image statistics, and pioneered the use of stochastic rate–distortion optimization and deep learning for end-to-end optimized image compression. He joined Google in early 2017 to continue working in this line of research. Johannes has served as a reviewer for top-tier publications in both machine learning and image processing, such as NeurIPS, ICLR, ICML, Picture Coding Symposium and several IEEE Transactions, and has been a co-organizer of the Workshop and Challenge on Learned Image Compression (CLIC) since 2018.</span> <a data-toggle="collapse" href="index.html#moreTextJohannes">(read more)</a>
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-3">
+<div class="card">
+<img src="https://storage.googleapis.com/clic2021_public/static/img/organizers/eirikur.jpg" class="card-img-top" alt="Eirikur Agustsson">
+<div class="card-body">
+<h5 class="card-title">Eirikur Agustsson</h5>
+<h6 class="card-subtitle text-muted mb-2">Google</h6>
+<p class="card-text small">
+Eirikur Agustsson is a Senior Research Scientist at Google Research in Zurich, focusing on learned compression. He has mainly worked on image and video compression using neural networks, almost lossless analog compression, image-super-resolution and generative adversarial networks. <span id="moreTextEirikur" class="collapse"> He has reviewed for many of the top computer vision and machine learning conferences and journals (such as NeurIPS, ICML, ICLR, CVPR and IEEE Transactions on Pattern Analysis and Machine Intelligence) and co-organized numerous workshops (the WebVision challenge & workshop at CVPR '17 and '18, the NTIRE challenge & workshop at CVPR '17 and the CLIC Workshop & Challenge on Learned Image Compression since CVPR '18).
+</span> <a data-toggle="collapse" href="index.html#moreTextEirikur">(read more)</a>
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-3">
+<div class="card">
+<img src="https://storage.googleapis.com/clic2021_public/static/img/organizers/nick.jpg" class="card-img-top" alt="Nick Johnston">
+<div class="card-body">
+<h5 class="card-title">Nick Johnston</h5>
+<h6 class="card-subtitle text-muted mb-2">Google</h6>
+<p class="card-text small">
+Nick Johnston works as a Software Engineer within the Machine Intelligence group at Google. He has previously published image compression work at CVPR. His research interests are in leveraging the power of deep learning and computer vision for improved rate-distortion performance in image compression. 
+<span id="moreTextNick" class="collapse">Additionally, he is interested in neural network optimization for mobile devices and embedded systems. Nick received his BSc in Computer Engineering from Iowa State University.</span> <a data-toggle="collapse" href="index.html#moreTextNick">(read more)</a>
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-3">
+<div class="card">
+<img src="https://storage.googleapis.com/clic2021_public/static/img/organizers/fabian.jpg" class="card-img-top" alt="Fabian Mentzer">
+<div class="card-body">
+<h5 class="card-title">Fabian Mentzer</h5>
+<h6 class="card-subtitle text-muted mb-2">Google</h6>
+<p class="card-text small">
+Fabian Mentzer is a third year PhD candidate at the Computer Vision Lab of ETH Zurich, under the supervision of Prof. Luc Van Gool. He's exploring neural-network based image compression, with work published at CVPR, NeurIPS, ICCV, and ICLR. Prior to pursuing the PhD,
+<span id="moreTextFabian" class="collapse">he studied Information Technology and Electrical Engineering at ETH Zurich, with a focus on information and communication theory.</span> <a data-toggle="collapse" href="index.html#moreTextFabian">(read more)</a>
+</p>
+</div>
+</div>
+</div>
+
+</div>
+<div class="row">
+
+<div class="col-3 mb-3">
+<div class="card">
+<img src="https://storage.googleapis.com/clic2021_public/static/img/organizers/zeina.jpg" class="card-img-top" alt="Zeina Sinno">
+<div class="card-body">
+<h5 class="card-title">Zeina Sinno</h5>
+<h6 class="card-subtitle text-muted mb-2">Apple</h6>
+<p class="card-text small">
+Zeina Sinno is a software engineer at Apple. Her interests include machine learning with applications to video processing and multimedia. She received her M.S. and Ph.D. degrees in electrical and computer engineering from The University of Texas at Austin in 2015 and 2019, respectively. 
+ <span id="moreTextZeina" class="collapse">
+She is a reviewer for the IEEE Transactions on Image Processing, IEEE Transactions on Circuits Systems and Video Technology, IEEE Transactions on Multimedia, IEEE Access, PCS, and ICIP.
+</span> <a data-toggle="collapse" href="index.html#moreTextZeina">(read more)</a>
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-3 mb-3">
+<div class="card">
+<img src="https://storage.googleapis.com/clic2021_public/static/img/organizers/andrey.jpg" class="card-img-top" alt="Andrey Norkin">
+<div class="card-body">
+<h5 class="card-title">Andrey Norkin</h5>
+<h6 class="card-subtitle text-muted mb-2">Netflix</h6>
+<p class="card-text small">
+Andrey Norkin received the M.Sc. degree in computer engineering from Ural State Technical University, Yekaterinburg, Russia, in 2001 and the Doctor of Science degree in signal processing from Tampere University of Technology, Tampere, Finland, in 2007.
+ <span id="moreTextAndrey" class="collapse">
+From 2008 to 2015, he was with Ericsson, Sweden, conducting research on video compression and 3D video. In 2014, he worked on video encoding techniques for TV broadcasting products at Ericsson TV, Southampton, UK. Since 2015, Dr. Norkin has been with Netflix, USA as a Senior Research Scientist working on encoding techniques for OTT video streaming, High Dynamic Range (HDR) video, and new video compression algorithms. He has participated in ITU-T and MPEG efforts on developing video compression standards,  having multiple technical contributions and coordinating work in certain areas of the codec development. Andrey has been actively contributing to the Alliance for Open Media (AOM) development of the AV1 video codec where he is currently a co-chair of the Codec Working Group. Dr. Norkin's research interests include video compression, OTT streaming, HDR video, and machine learning techniques.</span> <a data-toggle="collapse" href="index.html#moreTextAndrey">(read more)</a>
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-3 mb-3">
+<div class="card">
+<img src="https://storage.googleapis.com/clic2021_public/static/img/organizers/krishna.jpg" class="card-img-top" alt="Krishna Rapaka">
+<div class="card-body">
+<h5 class="card-title">Krishna Rapaka</h5>
+<h6 class="card-subtitle text-muted mb-2">Apple</h6>
+<p class="card-text small">
+Krishna Rapaka currently works as a Software Engineer at Apple.  In the last two decades, his research interests focussed in the areas of multimedia compression/processing using hybrid and neural network architectures, design of embedded codecs for mobile and streaming applications. He was involved in the 
+ <span id="moreTextKrishna" class="collapse">standardization of scalable and screen content extensions of HEVC codec and architected hardware codecs in Qualcomm and Texas Instruments. He is a reviewer for TCSVT, ICIP, CVPR, SPIE and co-chaired for activities in JCT-VC/MPEG and AOM. Krishna received his MaSc in electrical engineering from the University of Waterloo, Canada.</span> <a data-toggle="collapse" href="index.html#moreTextKrishna">(read more)</a>
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-3 mb-3">
+<div class="card">
+<img src="https://storage.googleapis.com/clic2021_public/static/img/organizers/erfan.jpg" class="card-img-top" alt="Erfan Noury">
+<div class="card-body">
+<h5 class="card-title">Erfan Noury</h5>
+<h6 class="card-subtitle text-muted mb-2">Apple</h6>
+<p class="card-text small">
+Erfan Noury is a ML Research Engineer in the Camera team at Apple, and a Master’s student in the Computer Vision lab. at University of Maryland, Baltimore County, under the supervision of Prof. Hamed Pirsiavash. His research interests include self-supervised representation learning in computer vision, and image compression.
+</p>
+</div>
+</div>
+</div>
+
+</div>
+	
+
+					<hr>
+					<div class="container-fluid text-center text-muted sponsors">
+						Sponsored by<br>
+						<a href="https://google.com" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/google.png" height="40"></a>
+						<a href="https://twitter.com" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/twitter.png" height="70"></a>
+						<a href="https://www.vision.ee.ethz.ch" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/cvl.png" height="38"></a>
+						<a href="https://apple.com" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/apple.png" height="60"></a>
+						<a href="https://netflix.com" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/netflix.png" height="65"></a>
+						<a href="https://www.facebook.com/facebookrealitylabs" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/frl.png" height="65"></a>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		
+		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script>
+			feather.replace()
+		</script>
+	</body>
+</html>

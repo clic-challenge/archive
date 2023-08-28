@@ -1,0 +1,1 @@
+In this paper, we propose a learned video compression framework with feature-level residuals. We combine two different residual coding models into an ensemble model. A step-by-step strategy is proposed to improve training efficiency.

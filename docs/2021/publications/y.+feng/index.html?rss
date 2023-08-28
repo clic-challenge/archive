@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
+	<channel>
+		<title>Publications by Y. Feng</title>
+		<link>https://compression.cc/publications/y.+feng//publications/y.+feng/</link>
+		<description></description>
+		<atom:link href="https://compression.cc/publications/y.+feng/?rss" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>MCM: Multi-channel Context Model for Entropy in Generative Image Compression, Y. Chen et al., 2021</title>
+			<link>https://compression.cc/publications/y.+feng/33/</link>
+			<guid>https://compression.cc/publications/y.+feng/33/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Perceptual Learned Image Compression With Continuous Rate Adaptation, S. Gao et al., 2021</title>
+			<link>https://compression.cc/publications/y.+feng/22/</link>
+			<guid>https://compression.cc/publications/y.+feng/22/</guid>
+			<description></description>
+		</item>
+		
+	</channel>
+</rss>

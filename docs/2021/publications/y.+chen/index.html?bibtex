@@ -1,0 +1,20 @@
+
+@inproceedings{Chen2021a,
+  author = "Y. Chen and Q. Yuan and X. wu and Z. Zhang and Y. Feng",
+  title = "MCM: Multi-channel Context Model for Entropy in Generative Image Compression",
+  year = 2021,
+  booktitle = "4th Challenge on Learned Image Compression",
+  month = "Jun"
+}
+
+
+@inproceedings{Ma_2021_CVPR,
+  author = "Y. Ma and Y. Zhai and C. Yang and J. Yang and R. Wang and J. Zhou and K. Li and Y. Chen and R. Wang",
+  title = "Variable Rate ROI Image Compression Optimized for Visual Quality",
+  year = 2021,
+  booktitle = "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+  pages = "1936-1940",
+  month = "Jun"
+}
+
+

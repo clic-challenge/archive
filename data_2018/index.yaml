@@ -1,0 +1,95 @@
+news: >
+    <b>2019:</b>The latest version of our workshop/challenge is available <a href="http://www.compression.cc">here!</a>.<br>
+    <b>Jun 19:</b> Workshop and challenge papers can be found <a href="http://openaccess.thecvf.com/CVPR2018_workshops/CVPR2018_W50.py">here</a><br>
+    <b>May 31:</b> The <a href="/leaderboard">winners</a> of the challenge have been announced!
+    We have the following winners: <ul><li>TucodecTNGcnn4p (<a href="results/?sort=mos">MOS</a> and <a href="results/?sort=msssim">MS-SSIMM</a>)</li> <li>iipTiramisu (<a href="results/?sort=psnr">PSNR</a>)</li> <li>xvc (fastest <a href="results/?sort=mos">top entry</a>)</li> </ul>
+
+description: >
+    Our workshop aims to gather publications which will advance the field of image compression with and without neural networks. Even with the long history of signal-processing oriented compression, taking new approaches to image processing have great potential, due to the proliferation of high-resolution cell-phone images and special hardware (e.g., GPUs). The potential in this area has already been demonstrated using recurrent neural networks, convolutional neural networks, and adversarial learning, many of these matching the best image-compression standards when measured on perceptual metrics. As such, we are interested in the various techniques associated with this class of methods. Broadly speaking, we would like to encourage the development of novel encoder/decoder architectures, novel ways to control information flow between the encoder and the decoder, and learn how to quantize (or learn to quantize) better.  
+    
+    
+    
+
+
+speakers:
+    - name: Oren Rippel
+      affiliation: "WaveOne" 
+      bio: "Oren Rippel is co-founder and the CTO of WaveOne, a startup working on compression using machine learning. He completed his Ph.D. at MIT with advisor Ryan Adams, and was a research fellow in the Harvard Intelligent Probabilistic Systems group. Oren previously also worked at Facebook AI Research."
+      image: "OrenRippel.jpg"
+      width: 3
+    - name: Jim Bankoski
+      affiliation: "Google" 
+      bio: "Jim Bankoski is a Director at Google responsible for Google's video, audio, and image compression efforts. He's the former CTO of On2 Technologies and a technical contributor to all of On2 / Google's video codecs from Tm2x through VP9, including video codecs widely used in Flash, Skype and now WebM."
+      image: "JimBankoski.png"
+      width: 3
+    - name: Jens Ohm
+      affiliation: RWTH Aachen
+      bio: "Jens-Rainer Ohm holds the chair position of the Institute of Communication Engineering at RWTH Aachen University, Germany since 2000. His research and teaching activities cover the areas of motion-compensated and 3-D image/video processing and analysis, multimedia signal compression, transmission and content description, audio signal analysis, as well as fundamental topics of signal processing and digital communication systems. Since 1998, he participates in the work of the Moving Picture Experts Group (MPEG). He has been chairing/co-chairing various standardization activities in video coding, namely the MPEG Video Subgroup since 2002, the Joint Video Team (JVT) of MPEG and ITU-T SG 16 VCEG from 2005 to 2009, and currently, the Joint Collaborative Team on Video Coding (JCT-VC), as well as the Joint Video Exploration Team (JVET). Prof. Ohm has authored textbooks on multimedia signal processing, analysis and coding, on communication engineering and signal transmission, as well as numerous papers in the fields mentioned above." 
+      image: "JensOhm.jpg"
+      width: 3
+    - name: Touradj Ebrahimi 
+      affiliation: EPFL
+      bio: Prof. Touradj EBRAHIMI (EPFL) received his M.Sc. and Ph.D., both in Electrical Engineering, from the Swiss Federal Institute of Technology (EPFL), Lausanne, Switzerland, in 1989 and 1992 respectively. In 1993, he was a research engineer at the Corporate Research Laboratories of Sony Corporation in Tokyo, where he conducted research on advanced video compression techniques for storage applications. In 1994, he served as a research consultant at AT&T Bell Laboratories working on very low bitrate video coding. He is currently Professor at EPFL heading its Multimedia Signal Processing Group. He was also adjunct Professor with the Center of Quantifiable Quality of Service at Norwegian University of Science and Technology (NTNU) from 2008 to 2012. He is currently the Convenor of JPEG (Joint Photographic Experts Group) standardization committee. Prof. Ebrahimi has been the recipient of various distinctions and awards, such as the IEEE and Swiss national ASE award, the SNF-PROFILE grant for advanced researchers, Four ISO-Certificates for key contributions to MPEG-4 and JPEG 2000, and the best paper award of IEEE Trans. on Consumer Electronics . He became a Fellow of the international society for optical engineering (SPIE) in 2003. Prof. Ebrahimi has initiated more than two-dozen National, European and International cooperation projects with leading companies and research institutes around the world. He is also the head of the Swiss delegation to MPEG, JPEG and SC29, and acts as the Chairman of Advisory Group on Management in SC29. He is a co-founder of Genista SA, a high-tech start-up company in the field of multimedia quality metrics. In 2002, he founded Emitall SA, start-up active in the area of media security and surveillance. In 2005, he founded EMITALL Surveillance SA, a start-up active in the field of privacy and protection. He is or has been associate Editor with various IEEE, SPIE, and EURASIP journals, such as IEEE Signal Processing Magazine, IEEE Trans. on Image Processing, IEEE Trans. on Multimedia, EURASIP Image Communication Journal, EURASIP Journal of Applied Signal Processing, SPIE Optical Engineering Magazine. Prof. Ebrahimi is a member of Scientific Advisory Board of various start-up and established companies in the general field of Information Technology. He has served as Scientific Expert and Evaluator for Research Funding Agencies such as those of European Commission, The Greek Ministry of Development, The Austrian National Foundation for Scientific Research, The Portuguese Science Foundation, as well as a number of Venture Capital Companies active in the field of Information Technologies and Communication Systems. His research interests include still, moving, and 3D image processing and coding, visual information security (rights protection,  watermarking, authentication, data integrity, steganography), new media, and human computer interfaces (smart vision, brain computer interface).He is the author or the co-author of more than 200 research publications, and holds 14 patents. Prof. Ebrahimi is a member of IEEE, SPIE, ACM and IS&T.
+      image: "ebrahimi.jpg"
+      width: 3
+
+schedule: 
+    - title: Poster Setup
+      time: 08:10
+
+    - title: Opening Remarks
+      time: 08:30
+
+    - title: Invited Speaker (Touradj Ebrahimi) 
+      time: 08:45
+
+    - title: Invited Speaker (Oren Rippel) (<a href="slides/bourdev.pdf">Slides</a>)
+      time: 09:05
+
+    - title: Invited Speaker (Jim Bankoski) (<a href="slides/bankoski.pdf">Slides</a>)
+
+      time: 09:25
+
+    - title: Invited Speaker (Jens-Rainer Ohm) (<a href="slides/ohm.pdf">Slides</a>)
+
+      time: 09:45
+
+    - title: Break & Poster Session
+      time: 10:05
+
+    - title: Team xvc (Fastest top method)
+      time: 11:15
+
+    - title: Team iipTiramisu (Best PSNR)
+      time: 11:25
+
+    - title: Team TucodecTNGcnn4p (Best MS-SSIM and MOS)
+      time: 11:35
+
+    - title: Panel Discussion
+      time: 11:45
+
+    - title: Awards Ceremony
+      time: 12:25
+
+    - title: Social Event (Lunch and discussions)
+      time: 12:35
+
+dates:
+    - date: December 22nd, 2017 
+      title: Challenge announcement and the training part of the dataset released
+
+    - date: January 15th, 2018
+      title: The validation part of the dataset released, online validation server is made available
+
+    - date: April 15th, 2018 
+      title: The test set is released
+
+    - date: April 22nd, 2018 
+      title: The competition closes and participants are expected to have submitted their decoder and compressed images
+
+    - date: April 26th, 2018 
+      title: Deadline for paper submission
+
+    - date: May 29th, 2018
+      title: Release of paper reviews and challenge results

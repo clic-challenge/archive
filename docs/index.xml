@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workshop and Challenge on Learned Image Compression on Challenge on Learned Image Compression</title>
+    <link>http://www.compression.cc/</link>
+    <description>Recent content in Workshop and Challenge on Learned Image Compression on Challenge on Learned Image Compression</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://www.compression.cc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Us</title>
+      <link>http://www.compression.cc/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.compression.cc/about/</guid>
+      <description>Content in about.yaml</description>
+    </item>
+    
+    <item>
+      <title>IMCL MSSSIM Talk</title>
+      <link>http://www.compression.cc/talks/imcl-msssim-talk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.compression.cc/talks/imcl-msssim-talk/</guid>
+      <description>IMCL MSSSIM Talk  This browser does not support PDFs. Please download the PDF to view it: Download PDF.
+  </description>
+    </item>
+    
+    <item>
+      <title>Lu Yu Talk</title>
+      <link>http://www.compression.cc/talks/lu-yu-talk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.compression.cc/talks/lu-yu-talk/</guid>
+      <description>Lu Yu Talk   This browser does not support PDFs. Please download the PDF to view it: Download PDF.
+  </description>
+    </item>
+    
+    <item>
+      <title>TODO</title>
+      <link>http://www.compression.cc/callforpapers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.compression.cc/callforpapers/</guid>
+      <description>TODO Todo.</description>
+    </item>
+    
+  </channel>
+</rss>

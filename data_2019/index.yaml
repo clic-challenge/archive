@@ -1,0 +1,106 @@
+news: >
+    <b>Nov 1:</b> We have been approved for the Third Workshop and Challenge on Learned Image Compression at CVPR 2020. More information on the updated challenge and schedule will be available in the coming weeks.
+    <b>May 16:</b> Evaluation of the test phase is complete. The <a href="/results">winners</a> of the challenge have been announced! We have the following winners: 
+    <ul>
+    <li>TucodecPSNR - Best in PSNR</li>
+    <li>TucodecSSIM - Best in MS-SSIM and MOS</li>
+    <li>ETRIDGUlite - Fastest in Top MOS</li>
+    <li>TucodecPSNR40dB - Best in Transparent Track</li>
+    </ul>
+    <b>Apr 22:</b> The validation phase has ended and the test phase has begun. Test set released. </br>
+    <b>Dec 18:</b> The website of the 2019 edition of the workshop/challenge is online! <br>
+    <b>Jan 10:</b> The evaluation server is online! <br>
+    <b>Jan 19:</b> The leaderboard is up! <br>
+    <b>Feb 8:</b> The prizes, of value more than 20000$, <a href="challenge">have been announced</a>!<br>
+    <b>Mar 26:</b> The submission server for paper submissions is online.<br>
+
+description: >
+    Our workshop aims to gather publications which will advance the field of image compression with and without neural networks. Even with the long history of signal-processing oriented compression, taking new approaches to image processing have great potential, due to the proliferation of high-resolution cell-phone images and special hardware (e.g., GPUs). The potential in this area has already been demonstrated using recurrent neural networks, convolutional neural networks, and adversarial learning, many of these matching the best image-compression standards when measured on perceptual metrics. As such, we are interested in the various techniques associated with this class of methods. Broadly speaking, we would like to encourage the development of novel encoder/decoder architectures, novel ways to control information flow between the encoder and the decoder, and learn how to quantize (or learn to quantize) better.  
+
+location: >
+        The workshop is held on June 17th in conjunction with CVPR 2019, which will will take place at the Long Beach Convention Center in Long Beach, CA.
+        More information about the location and hotels can be found at http://cvpr2019.thecvf.com/
+
+speakers_width: 4
+speakers:
+    - name: Anne Aaron
+      affiliation: "Netflix" 
+      bio: "Anne Aaron is Director of Video Algorithms at Netflix and leads the team responsible for video analysis, processing and encoding in the Netflix cloud-based media pipeline. The team is tasked with generating the best quality video streams for millions of Netflix members worldwide. The team is also actively involved in defining next-generation video through academic research collaboration and standardization work. Prior to Netflix, Anne had technical lead roles at Cisco, working on the software deployed with millions of Flip Video cameras, Dyyno, an early stage startup which developed a real-time peer-to-peer video distribution system, and Modulus Video, a broadcast video encoder company.  During her Ph.D. studies at Stanford University, she was a member of the Image, Video and Multimedia Systems Laboratory, led by Prof. Bernd Girod. Her research was one of the pioneering work in the sub-field of Distributed Video Coding. Anne is originally from Manila, Philippines. She holds B.S. degrees in Physics and Computer Engineering from Ateneo de Manila University and M.S. and Ph.D. degrees in Electrical Engineering from Stanford University. Anne was recognized by Forbes as one of America’s Top 50 Women In Tech in 2018.  Anne recently binged on Ozark, Bodyguard and Bojack Horseman.  "
+      image: anne.jpg
+      width: 4
+    - name: Aaron van den Oord
+      affiliation: "DeepMind" 
+      bio: "Aaron van den Oord works as a research scientist at DeepMind, London. His research focuses on generative models and representation learning. Aaron completed his PhD at the University of Ghent in Belgium where he worked on generative models, image compression and music recommendation. After he joined DeepMind in 2015 he made important contributions to the field of generative modeling with autoregressive networks, including PixelRNN, PixelCNN and WaveNet. He also developed new techniques for speeding up generative models for text-to-speech synthesis, which are now used in Google products such as the Google Assistant. In Aaron's most recent work he focused on representation learning with VQ-VAE and Contrastive Predictive Coding."
+      image: aaron.jpg
+      width: 4
+    - name: Luca Versari
+      affiliation: Google
+      bio: "Luca Versari is a software engineer at Google AI, and works as a core member of the JPEG XL development team. He is responsible for the algorithms and technical architecture of the image quality related aspects of JPEG XL, including integral transforms, color spaces, intra/inter-frame copying, progressive decoding, animation, context modeling, tiling, entropy coding, codec optimization, and integration of psychovisual modeling. Before his Google employment Luca studied algorithms for pattern matching, graphs, hashing and data compression in the University of Pisa, Italy."
+      image: luca.jpg
+      width: 4
+
+schedule:
+    - title: Poster Setup
+      time: 8:00 AM to 8:30 AM
+    - title: Welcome and Schedule Overview
+      time: 8:30 AM to 8:35 AM
+    - title: "Invited Speaker: Anne Aaron"
+      time: 8:35 AM to 8:55 AM
+    - title: "Invited Speaker: Aaron van den Oord"
+      time: 8:55 AM to 9:15 AM
+    - title: "Invited Speaker: Luca Versari"
+      time: 9:15 AM to 9:35 AM
+    - title: Break
+      time: 9:35 AM to 9:45 AM
+    - title: Introduction of Dataset and Challenge
+      time: 9:45 AM to 10:05 AM
+    - title: Fastest Entry (among top-5 for 0.15bpp) [ETRIDGUlite]
+      time: 10:05 AM to 10:15 AM
+    - title: Best in PSNR [TucodecPSNR]
+      time: 10:15 AM to 10:25 AM
+    - title: 2nd Place Entry (transparent) [Pikpik]
+      time: 10:25 AM to 10:35 AM
+    - title: Best in MS-SSIM and MOS [TucodecSSIM]
+      time: 10:35 AM to 10:45 AM
+    - title: 1st Place Entry (transparent) [TucodecPSNR40dB]
+      time: 10:45 AM to 10:55 AM
+    - title: Award Ceremony
+      time: 10:55 AM to 11:00 AM
+    - title: Panel Discussion
+      time: 11:00 AM to 11:45 AM
+    - title: Poster Session
+      time: 11:45 AM to 12:30 PM
+
+dates:
+    - date: December 17th 2018
+      title: Development phase & announcement. The training part of the dataset released.
+
+    - date: January 8th, 2019
+      title: The validation part of the dataset released, online validation server is made available.
+
+    - date: April 8th, 2019
+      title: Deadline for regular paper submission.
+
+    - date: April 22th, 2019
+      title: Final decoders must be submitted.
+
+    - date: April 22nd, 2019
+      title: The test set is released.
+
+    - date: April 22nd, 2019
+      title: Regular paper decision notification.
+
+    - date: April 29th, 2019
+      title: The competition closes and participants are expected to have submitted their solutions along with the compressed versions of the test set.
+
+    - date: May 8th, 2019
+      title: Deadline for challenge paper submission and factsheets.
+
+    - date: May 15th, 2019
+      title: Results are released to the participants.
+
+    - date: May 22nd, 2019
+      title: Challenge paper decision notification
+
+    - date: May 30th, 2019
+      title: Camera ready deadline (all papers)

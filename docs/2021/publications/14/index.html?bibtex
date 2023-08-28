@@ -1,0 +1,11 @@
+
+@inproceedings{Zou_2021_CVPR,
+  author = "N. Zou and H. Zhang and F. Cricri and H. R. Tavakoli and J. Lainema and E. Aksu and M. Hannuksela and E. Rahtu",
+  title = "Learned Video Compression With Intra-Guided Enhancement and Implicit Motion Information",
+  year = 2021,
+  booktitle = "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+  pages = "1870-1874",
+  month = "Jun"
+}
+
+

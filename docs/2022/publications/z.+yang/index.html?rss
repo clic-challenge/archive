@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
+	<channel>
+		<title>Publications by Z. Yang</title>
+		<link>https://compression.cc/publications/z.+yang//publications/z.+yang/</link>
+		<description></description>
+		<atom:link href="https://compression.cc/publications/z.+yang/?rss" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>ROI Image codec Optimized for Visual Quality, Y. Ma et al., 2022</title>
+			<link>https://compression.cc/publications/z.+yang/28/</link>
+			<guid>https://compression.cc/publications/z.+yang/28/</guid>
+			<description>With the development of compression technology, objective metrics (e.g. PSNR, MS-SSIM) cannot satisfy our need, especially in extreme low bit-rate compression, thus more attention is being paid on perceptual quality. People have different standards for objective evaluation. For this reason, we simplify the topic with the consideration that people will strict more on interested region, so a ROI(region of interest) based image compression model is proposed. For the ROI, we expect its reconstructed part to be more accurate, while the background, distortion is tolerable, and fake texture can be generated. Firstly, a weighted mask from saliency map is used. Secondly, to balance the difference of ROI and background area, different losses are applied separately. What’s more, GAN and LPIPS are utilized to generate more texture in background. At last, variable rate method is adopted to realize rate control, and it performs well with perceptual metric. Experiment shows that our method can achieve better performance both in visual and objective quality.</description>
+		</item>
+		
+		<item>
+			<title>Image Quality Assessment with Transformers and Multi-Metric Fusion Modules, W. Jiang et al., 2022</title>
+			<link>https://compression.cc/publications/z.+yang/25/</link>
+			<guid>https://compression.cc/publications/z.+yang/25/</guid>
+			<description>Image quality assessment is crucial for low-level vision tasks such as compression, super-resolution, denoising and etc. It guides researchers how to design networks, design loss functions, and decide the optimization direction of networks. A good quality assessment metric should comform to people&#x27;s subjective feelings as much as possible. Traditional PSNR and MS-SSIM have more and more obvious shortcomings in quality evaluation With the popularity of GANs. Inspired by metrics such as LPIPS, IQT, etc., we decided to design a metric that is learned by the network itself. In this paper, we use a ConvNeXt-Tiny network to extract features and calculate nonlinear residuals between reference images and distorted images. We feed residuals into a transformer to compare the degree of distortion. In addition, we use multi-metric fusion to improve the performance of our network. Our model achieves 0.780 accuracy on CLIC validation set.</description>
+		</item>
+		
+		<item>
+			<title>PO-ELIC: Perception-Oriented Efficient Learned Image Coding, D. He et al., 2022</title>
+			<link>https://compression.cc/publications/z.+yang/6/</link>
+			<guid>https://compression.cc/publications/z.+yang/6/</guid>
+			<description>In the past years, learned image compression (LIC) has achieved remarkable performance. The recent LIC methods outperform VVC in both PSNR and MS-SSIM. However, the low bit-rate reconstructions of LIC suffer from artifacts such as blurring, color drifting and texture missing. Moreover, those varied artifacts make image quality metrics correlate badly with human perceptual quality. In this paper, we propose PO-ELIC, i.e., Perception-Oriented Efficient Learned Image Coding. To be specific, we adapt ELIC, one of the state-of-the-art LIC models, with adversarial training techniques. We apply a mixture of losses including hinge-form adversarial loss, Charbonnier loss, and style loss, to finetune the model towards better perceptual quality. Experimental results demonstrate that our method achieves comparable perceptual quality with HiFiC with much lower bitrate.</description>
+		</item>
+		
+	</channel>
+</rss>

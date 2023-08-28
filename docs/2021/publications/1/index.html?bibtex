@@ -1,0 +1,11 @@
+
+@inproceedings{Iwai_2021_CVPR,
+  author = "S. Iwai and T. Miyazaki and Y. Sugaya and S. Omachi",
+  title = "Self Texture Transfer Networks for Low Bitrate Image Compression",
+  year = 2021,
+  booktitle = "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+  pages = "1901-1905",
+  month = "Jun"
+}
+
+

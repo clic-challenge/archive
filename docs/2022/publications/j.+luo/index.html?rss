@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
+	<channel>
+		<title>Publications by J. Luo</title>
+		<link>https://compression.cc/publications/j.+luo//publications/j.+luo/</link>
+		<description></description>
+		<atom:link href="https://compression.cc/publications/j.+luo/?rss" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>PO-ELIC: Perception-Oriented Efficient Learned Image Coding, D. He et al., 2022</title>
+			<link>https://compression.cc/publications/j.+luo/6/</link>
+			<guid>https://compression.cc/publications/j.+luo/6/</guid>
+			<description>In the past years, learned image compression (LIC) has achieved remarkable performance. The recent LIC methods outperform VVC in both PSNR and MS-SSIM. However, the low bit-rate reconstructions of LIC suffer from artifacts such as blurring, color drifting and texture missing. Moreover, those varied artifacts make image quality metrics correlate badly with human perceptual quality. In this paper, we propose PO-ELIC, i.e., Perception-Oriented Efficient Learned Image Coding. To be specific, we adapt ELIC, one of the state-of-the-art LIC models, with adversarial training techniques. We apply a mixture of losses including hinge-form adversarial loss, Charbonnier loss, and style loss, to finetune the model towards better perceptual quality. Experimental results demonstrate that our method achieves comparable perceptual quality with HiFiC with much lower bitrate.</description>
+		</item>
+		
+	</channel>
+</rss>

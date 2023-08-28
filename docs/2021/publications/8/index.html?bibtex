@@ -1,0 +1,12 @@
+
+@inproceedings{Katakol_2021_CVPR,
+  author = "S. Katakol and L. Herranz and F. Yang and M. Mrak",
+  title = "DANICE: Domain Adaptation Without Forgetting in Neural Image Compression",
+  year = 2021,
+  booktitle = "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+  pages = "1921-1925",
+  month = "Jun",
+  url = "https://arxiv.org/abs/2104.09370"
+}
+
+

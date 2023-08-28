@@ -1,0 +1,898 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CLIC &#183; Challenge on Learned Image Compression</title>
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2021_public/static/css/4.3.1/bootstrap.min.css">
+		<link rel="shortcut icon" type="image/png" href="https://storage.googleapis.com/clic2021_public/static/favicon.ico">
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2021_public/static/css/style.css">
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2021_public/static/css/dashboard.css?v=1.1">
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://storage.googleapis.com/clic2021_public/static/js/4.3.1/bootstrap.min.js"></script>
+
+		
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css">
+
+	</head>
+	<body class="bg-light">
+		<div class="container-fluid">
+			<nav class="row navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0">
+				<a class="navbar-brand col-sm-12 col-md-2 mr-0" href="index.html#">CLIC 2021</a>
+				<span class="navbar-text d-none d-md-block">4th Workshop and Challenge on Learned Image Compression</span>
+				<span class="navbar-text d-block d-md-none">
+					<a data-toggle="collapse" href="index.html#collapseSidebar" class="px-3"><i data-feather="menu"></i></a>
+				</span>
+				<ul class="navbar-nav px-3">
+					<li class="nav-item text-nowrap">
+						
+						<a class="nav-link" href="../../../signup/index.html">Sign up</a>
+						
+					</li>
+				</ul>
+			</nav>
+
+			<div class="row">
+				<nav id="collapseSidebar" class="collapse col-md-2 bg-light sidebar text-truncate" style="font-size: .875rem">
+					
+						<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+	<span>Workshop</span>
+</h6>
+<ul class="nav flex-column">
+	<li class="nav-item">
+		<a class="nav-link" href="../../../index.html">
+			<i data-feather="home"></i> Home
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../../../schedule/2/index.html">
+			<i data-feather="calendar"></i> Dates
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../../../publications/index.html">
+			<i data-feather="book-open"></i> Papers
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../../../cfp/index.html">
+			<i data-feather="send"></i> Submit
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../../../organizers/index.html">
+			<i data-feather="user"></i> Organizers
+		</a>
+	</li>
+</ul>
+
+<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+	<span>Challenge</span>
+</h6>
+<ul class="nav flex-column mb-2">
+	<li class="nav-item">
+		<a class="nav-link" href="../../../introduction/index.html">
+			<i data-feather="file-text"></i> Introduction
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../../../tasks/index.html">
+			<i data-feather="check-square"></i> Tasks
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link active" href="../../image-075/test/index.html">
+			<i data-feather="align-justify"></i> Leaderboards
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="https://groups.google.com/g/clic-list">
+			<i data-feather="message-circle"></i> Forum
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../../../faq/index.html">
+			<i data-feather="help-circle"></i> FAQ
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../../../submit/index.html">
+			<i data-feather="upload"></i> Submit
+		</a>
+	</li>
+	
+</ul>
+
+<div class="d-none d-md-block">
+	<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+		<span>Past events</span>
+	</h6>
+	<ul class="nav flex-column mb-2">
+		<li class="nav-item">
+			<a class="nav-link" href="https://clic.compression.cc/">
+				<i data-feather="link"></i>
+				CLIC 2020
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://clic.compression.cc/2019/">
+				<i data-feather="link"></i>
+				CLIC 2019
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://clic.compression.cc/2018/">
+				<i data-feather="link"></i>
+				CLIC 2018
+			</a>
+		</li>
+	</ul>
+</div>
+
+					
+				</nav>
+
+				<main role="main" class="col-md-10 ml-sm-auto px-md-4 pt-3">
+					
+	<h2>Leaderboards</h2>
+
+	<ul class="nav nav-tabs pt-2">
+		
+		<li class="nav-item">
+			<a class="nav-link" href="../../image-075/test/index.html">Image 075 (test)</a>
+		</li>
+		
+		<li class="nav-item">
+			<a class="nav-link active" href="index.html">Image 150 (test)</a>
+		</li>
+		
+		<li class="nav-item">
+			<a class="nav-link" href="../../image-300/test/index.html">Image 300 (test)</a>
+		</li>
+		
+		<li class="nav-item">
+			<a class="nav-link" href="../../perceptual/test/index.html">Perceptual (test)</a>
+		</li>
+		
+		<li class="nav-item">
+			<a class="nav-link" href="../../video/test/index.html">Video (test)</a>
+		</li>
+		
+	</ul>
+
+	<div class="bg-white border-left border-bottom border-right rounded-bottom mb-2">
+		<table
+			class="table table-borderless table-hover text-center"
+			data-toggle="table"
+			data-classes="table table-hover text-center"
+			data-sort-name="ELO"
+			data-sort-order="desc">
+			<thead>
+				
+					<tr>
+						<th scope="col" data-sortable="true">Team</th>
+						
+						<th scope="col" data-sortable="true" data-field="MSSSIM">MSSSIM</th>
+						
+						<th scope="col" data-sortable="true" data-field="PSNR">PSNR</th>
+						
+						<th scope="col" data-sortable="true" data-field="FID">FID</th>
+						
+						<th scope="col" data-sortable="true" data-field="ELO">ELO <i class="fas fa-award text-warning"></i></th>
+						
+						<th scope="col" data-sortable="true">
+							<a data-toggle="tooltip" data-placement="top" title="Bytes">
+								Data size
+							</a>
+						</th>
+						<th scope="col" data-sortable="true">
+							<a data-toggle="tooltip" data-placement="top" title="Bytes">
+								Decoder size
+							</a>
+						</th>
+						<th scope="col" data-sortable="true">
+							<a data-toggle="tooltip" data-placement="top" title="Seconds">
+								Decoding time
+							</a>
+						</th>
+						<th scope="col" data-sortable="true">Date</th>
+					</tr>
+				
+			</thead>
+			<tbody>
+				
+					
+						<tr>
+							
+								<td>IMCL_IMG_MSSSIM</td>
+							
+							
+								
+									<td>0.98057</td>
+								
+							
+								
+									<td>30.000</td>
+								
+							
+								
+									<td>211.574</td>
+								
+							
+								
+									<td>1966</td>
+								
+							
+							<td>2952289</td>
+							<td>201247273</td>
+							<td>5748</td>
+							<td>Mar 25, 02:32</td>
+						</tr>
+					
+						<tr>
+							
+								<td>SRCX_DLIC_SSIM</td>
+							
+							
+								
+									<td>0.97180</td>
+								
+							
+								
+									<td>28.621</td>
+								
+							
+								
+									<td>213.915</td>
+								
+							
+								
+									<td></td>
+								
+							
+							<td>2953201</td>
+							<td>115756434</td>
+							<td>7933</td>
+							<td>Mar 25, 02:49</td>
+						</tr>
+					
+						<tr>
+							
+								<td>HHC</td>
+							
+							
+								
+									<td>0.97544</td>
+								
+							
+								
+									<td>29.450</td>
+								
+							
+								
+									<td>209.631</td>
+								
+							
+								
+									<td></td>
+								
+							
+							<td>2903389</td>
+							<td>109961348</td>
+							<td>3023</td>
+							<td>Mar 25, 02:51</td>
+						</tr>
+					
+						<tr>
+							
+								<td>NJUVision</td>
+							
+							
+								
+									<td>0.95209</td>
+								
+							
+								
+									<td>28.643</td>
+								
+							
+								
+									<td>166.203</td>
+								
+							
+								
+									<td>1968</td>
+								
+							
+							<td>2919132</td>
+							<td>204165673</td>
+							<td>972</td>
+							<td>Mar 25, 03:15</td>
+						</tr>
+					
+						<tr>
+							
+								<td>SRCX_DLIC_PQE</td>
+							
+							
+								
+									<td>0.97105</td>
+								
+							
+								
+									<td>28.717</td>
+								
+							
+								
+									<td>223.561</td>
+								
+							
+								
+									<td>1848</td>
+								
+							
+							<td>2954053</td>
+							<td>115777803</td>
+							<td>7836</td>
+							<td>Mar 25, 05:15</td>
+						</tr>
+					
+						<tr>
+							
+								<td>wp2</td>
+							
+							
+								
+									<td>0.96043</td>
+								
+							
+								
+									<td>30.018</td>
+								
+							
+								
+									<td>222.892</td>
+								
+							
+								
+									<td>1714</td>
+								
+							
+							<td>2953342</td>
+							<td>833762</td>
+							<td>43</td>
+							<td>Mar 25, 14:24</td>
+						</tr>
+					
+						<tr>
+							
+								<td>hdgg</td>
+							
+							
+								
+									<td>0.96635</td>
+								
+							
+								
+									<td>29.373</td>
+								
+							
+								
+									<td>152.585</td>
+								
+							
+								
+									<td>2201</td>
+								
+							
+							<td>2835600</td>
+							<td>206415551</td>
+							<td>15637</td>
+							<td>Mar 25, 14:38</td>
+						</tr>
+					
+						<tr>
+							
+								<td><a href="../../../publications/5/index.html">IMCL_PQ</a></td>
+							
+							
+								
+									<td>0.97458</td>
+								
+							
+								
+									<td>28.631</td>
+								
+							
+								
+									<td>157.808</td>
+								
+							
+								
+									<td>2189</td>
+								
+							
+							<td>2927188</td>
+							<td>192342310</td>
+							<td>5109</td>
+							<td>Mar 25, 15:06</td>
+						</tr>
+					
+						<tr>
+							
+								<td><a href="../../../publications/23/index.html">ANTxNN_PSNR</a></td>
+							
+							
+								
+									<td>0.96699</td>
+								
+							
+								
+									<td>32.319</td>
+								
+							
+								
+									<td>225.587</td>
+								
+							
+								
+									<td></td>
+								
+							
+							<td>2941297</td>
+							<td>27711182</td>
+							<td>485</td>
+							<td>Apr 02, 18:38</td>
+						</tr>
+					
+						<tr>
+							
+								<td><a href="../../../publications/24/index.html">HHC</a></td>
+							
+							
+								
+									<td>0.97604</td>
+								
+							
+								
+									<td>29.526</td>
+								
+							
+								
+									<td>215.085</td>
+								
+							
+								
+									<td>1769</td>
+								
+							
+							<td>2948371</td>
+							<td>109961348</td>
+							<td>3114</td>
+							<td>Mar 26, 02:28</td>
+						</tr>
+					
+						<tr>
+							
+								<td><a href="../../../publications/20/index.html">DeepRender</a></td>
+							
+							
+								
+									<td>0.95031</td>
+								
+							
+								
+									<td>29.577</td>
+								
+							
+								
+									<td>156.557</td>
+								
+							
+								
+									<td>2219</td>
+								
+							
+							<td>2953581</td>
+							<td>241660717</td>
+							<td>9075</td>
+							<td>Mar 26, 22:27</td>
+						</tr>
+					
+						<tr>
+							
+								<td><a href="../../../publications/3/index.html">ANTxNN</a></td>
+							
+							
+								
+									<td>0.96293</td>
+								
+							
+								
+									<td>30.659</td>
+								
+							
+								
+									<td>157.848</td>
+								
+							
+								
+									<td>2113</td>
+								
+							
+							<td>2954278</td>
+							<td>195158831</td>
+							<td>11100</td>
+							<td>Mar 27, 03:15</td>
+						</tr>
+					
+						<tr>
+							
+								<td><a href="../../../publications/22/index.html">MIATL_NG</a></td>
+							
+							
+								
+									<td>0.95054</td>
+								
+							
+								
+									<td>28.574</td>
+								
+							
+								
+									<td>164.610</td>
+								
+							
+								
+									<td>2190</td>
+								
+							
+							<td>2937564</td>
+							<td>232105436</td>
+							<td>8536</td>
+							<td>Mar 27, 06:39</td>
+						</tr>
+					
+						<tr>
+							
+								<td>DeepMC</td>
+							
+							
+								
+									<td>0.96880</td>
+								
+							
+								
+									<td>32.498</td>
+								
+							
+								
+									<td>233.482</td>
+								
+							
+								
+									<td></td>
+								
+							
+							<td>2954248</td>
+							<td>246177918</td>
+							<td>2598</td>
+							<td>Mar 27, 09:03</td>
+						</tr>
+					
+						<tr>
+							
+								<td>DaYuYu</td>
+							
+							
+								
+									<td>0.95834</td>
+								
+							
+								
+									<td>29.918</td>
+								
+							
+								
+									<td>242.195</td>
+								
+							
+								
+									<td></td>
+								
+							
+							<td>2889629</td>
+							<td>194992920</td>
+							<td>24505</td>
+							<td>Mar 27, 15:12</td>
+						</tr>
+					
+						<tr>
+							
+								<td><a href="../../../publications/33/index.html">anf</a></td>
+							
+							
+								
+									<td>0.96361</td>
+								
+							
+								
+									<td>30.353</td>
+								
+							
+								
+									<td>147.282</td>
+								
+							
+								
+									<td>2229</td>
+								
+							
+							<td>2953675</td>
+							<td>173268200</td>
+							<td>7883</td>
+							<td>Mar 27, 18:33</td>
+						</tr>
+					
+						<tr>
+							
+								<td><a href="../../../publications/9/index.html">Sub201</a></td>
+							
+							
+								
+									<td>0.96717</td>
+								
+							
+								
+									<td>29.414</td>
+								
+							
+								
+									<td>151.924</td>
+								
+							
+								
+									<td>2205</td>
+								
+							
+							<td>2951374</td>
+							<td>206415551</td>
+							<td>12528</td>
+							<td>Mar 27, 19:36</td>
+						</tr>
+					
+						<tr>
+							
+								<td><a href="../../../publications/17/index.html">DeepMC</a></td>
+							
+							
+								
+									<td>0.96886</td>
+								
+							
+								
+									<td>32.507</td>
+								
+							
+								
+									<td>235.816</td>
+								
+							
+								
+									<td>1769</td>
+								
+							
+							<td>2954411</td>
+							<td>246177918</td>
+							<td>2668</td>
+							<td>Mar 28, 05:13</td>
+						</tr>
+					
+						<tr>
+							
+								<td>iiclab</td>
+							
+							
+								
+									<td>0.96364</td>
+								
+							
+								
+									<td>27.468</td>
+								
+							
+								
+									<td>158.066</td>
+								
+							
+								
+									<td></td>
+								
+							
+							<td>2723152</td>
+							<td>201997939</td>
+							<td>7405</td>
+							<td>Mar 29, 13:07</td>
+						</tr>
+					
+						<tr>
+							
+								<td>neurov2</td>
+							
+							
+								
+									<td>0.96080</td>
+								
+							
+								
+									<td>27.022</td>
+								
+							
+								
+									<td>201.351</td>
+								
+							
+								
+									<td>1875</td>
+								
+							
+							<td>2764352</td>
+							<td>192605340</td>
+							<td>8522</td>
+							<td>Mar 24, 21:17</td>
+						</tr>
+					
+						<tr>
+							
+								<td>HM_HEVC</td>
+							
+							
+								
+									<td>0.95549</td>
+								
+							
+								
+									<td>30.181</td>
+								
+							
+								
+									<td>225.415</td>
+								
+							
+								
+									<td>1782</td>
+								
+							
+							<td>2949265</td>
+							<td>2042097</td>
+							<td>224</td>
+							<td>Mar 31, 08:07</td>
+						</tr>
+					
+						<tr>
+							
+								<td>VTM_VVC</td>
+							
+							
+								
+									<td>0.96346</td>
+								
+							
+								
+									<td>31.216</td>
+								
+							
+								
+									<td>211.229</td>
+								
+							
+								
+									<td>1842</td>
+								
+							
+							<td>2949226</td>
+							<td>43105665</td>
+							<td>497</td>
+							<td>Apr 02, 07:31</td>
+						</tr>
+					
+						<tr>
+							
+								<td>IVPG</td>
+							
+							
+								
+									<td>0.96759</td>
+								
+							
+								
+									<td>30.056</td>
+								
+							
+								
+									<td>193.420</td>
+								
+							
+								
+									<td>1761</td>
+								
+							
+							<td>2825834</td>
+							<td>51979717</td>
+							<td>12788</td>
+							<td>Mar 25, 01:55</td>
+						</tr>
+					
+						<tr>
+							
+								<td>ANTxNN_SSIM</td>
+							
+							
+								
+									<td>0.97984</td>
+								
+							
+								
+									<td>30.026</td>
+								
+							
+								
+									<td>219.416</td>
+								
+							
+								
+									<td></td>
+								
+							
+							<td>2950809</td>
+							<td>129668506</td>
+							<td>10252</td>
+							<td>Mar 25, 01:55</td>
+						</tr>
+					
+				
+			</tbody>
+		</table>
+	</div>
+
+	<div class="text-muted">
+		<i class="fas fa-award text-warning"></i>
+		
+		Winners are determined based on a perceptual quality test using human evaluators
+		
+	</div>
+
+					<hr>
+					<div class="container-fluid text-center text-muted sponsors">
+						Sponsored by<br>
+						<a href="https://google.com" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/google.png" height="40"></a>
+						<a href="https://twitter.com" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/twitter.png" height="70"></a>
+						<a href="https://www.vision.ee.ethz.ch" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/cvl.png" height="38"></a>
+						<a href="https://apple.com" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/apple.png" height="60"></a>
+						<a href="https://netflix.com" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/netflix.png" height="65"></a>
+						<a href="https://www.facebook.com/facebookrealitylabs" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/frl.png" height="65"></a>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		
+	<script src="https://kit.fontawesome.com/fad7201c05.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>
+	<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+
+		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script>
+			feather.replace()
+		</script>
+	</body>
+</html>

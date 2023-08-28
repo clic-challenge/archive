@@ -1,0 +1,11 @@
+
+@inproceedings{Ho_2021_CVPR,
+  author = "Y.-H. Ho and C.-C. Chan and W.-H. Peng and H.-M. Hang",
+  title = "End-to-End Learned Image Compression With Augmented Normalizing Flows",
+  year = 2021,
+  booktitle = "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+  pages = "1931-1935",
+  month = "Jun"
+}
+
+

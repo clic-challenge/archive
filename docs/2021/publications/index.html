@@ -1,0 +1,1498 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CLIC &#183; Challenge on Learned Image Compression</title>
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2021_public/static/css/4.3.1/bootstrap.min.css">
+		<link rel="shortcut icon" type="image/png" href="https://storage.googleapis.com/clic2021_public/static/favicon.ico">
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2021_public/static/css/style.css">
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2021_public/static/css/dashboard.css?v=1.1">
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://storage.googleapis.com/clic2021_public/static/js/4.3.1/bootstrap.min.js"></script>
+
+		
+	
+		
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="index.html%3Frss" />
+	<link rel="unapi-server" type="application/xml" title="unAPI" href="unapi/index.html"/>
+
+	</head>
+	<body class="bg-light">
+		<div class="container-fluid">
+			<nav class="row navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0">
+				<a class="navbar-brand col-sm-12 col-md-2 mr-0" href="index.html#">CLIC 2021</a>
+				<span class="navbar-text d-none d-md-block">4th Workshop and Challenge on Learned Image Compression</span>
+				<span class="navbar-text d-block d-md-none">
+					<a data-toggle="collapse" href="index.html#collapseSidebar" class="px-3"><i data-feather="menu"></i></a>
+				</span>
+				<ul class="navbar-nav px-3">
+					<li class="nav-item text-nowrap">
+						
+						<a class="nav-link" href="../signup/index.html">Sign up</a>
+						
+					</li>
+				</ul>
+			</nav>
+
+			<div class="row">
+				<nav id="collapseSidebar" class="collapse col-md-2 bg-light sidebar text-truncate" style="font-size: .875rem">
+					
+						<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+	<span>Workshop</span>
+</h6>
+<ul class="nav flex-column">
+	<li class="nav-item">
+		<a class="nav-link" href="../index.html">
+			<i data-feather="home"></i> Home
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../schedule/2/index.html">
+			<i data-feather="calendar"></i> Dates
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link active" href="index.html">
+			<i data-feather="book-open"></i> Papers
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../cfp/index.html">
+			<i data-feather="send"></i> Submit
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../organizers/index.html">
+			<i data-feather="user"></i> Organizers
+		</a>
+	</li>
+</ul>
+
+<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+	<span>Challenge</span>
+</h6>
+<ul class="nav flex-column mb-2">
+	<li class="nav-item">
+		<a class="nav-link" href="../introduction/index.html">
+			<i data-feather="file-text"></i> Introduction
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../tasks/index.html">
+			<i data-feather="check-square"></i> Tasks
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../leaderboard/image-075/test/index.html">
+			<i data-feather="align-justify"></i> Leaderboards
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="https://groups.google.com/g/clic-list">
+			<i data-feather="message-circle"></i> Forum
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../faq/index.html">
+			<i data-feather="help-circle"></i> FAQ
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../submit/index.html">
+			<i data-feather="upload"></i> Submit
+		</a>
+	</li>
+	
+</ul>
+
+<div class="d-none d-md-block">
+	<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+		<span>Past events</span>
+	</h6>
+	<ul class="nav flex-column mb-2">
+		<li class="nav-item">
+			<a class="nav-link" href="https://clic.compression.cc/">
+				<i data-feather="link"></i>
+				CLIC 2020
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://clic.compression.cc/2019/">
+				<i data-feather="link"></i>
+				CLIC 2019
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://clic.compression.cc/2018/">
+				<i data-feather="link"></i>
+				CLIC 2018
+			</a>
+		</li>
+	</ul>
+</div>
+
+					
+				</nav>
+
+				<main role="main" class="col-md-10 ml-sm-auto px-md-4 pt-3">
+					
+<div class="card mb-2">
+	<div class="card-body">
+		<h5 class="card-title">Workshop and challenge papers</h5>
+		
+		
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	Y. Chen, 
+	
+	Q. Yuan, 
+	
+	X. wu, 
+	
+	Z. Zhang, and 
+	
+	Y. Feng
+	<br />
+
+<b><a href="33/index.html" class="title">MCM: Multi-channel Context Model for Entropy in Generative Image Compression</a></b>
+
+<br/>
+
+	<i>4th Challenge on Learned Image Compression,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/37_CLIC2021.pdf">PDF</a>,
+
+
+<a href="33/index.html%3Fris">RIS</a>,
+<a href="33/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="33"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=MCM%3A+Multi-channel+Context+Model+for+Entropy+in+Generative+Image+Compression&amp;rft.date=2021-6-1&amp;rft.au=Y.+Chen&amp;rft.au=Q.+Yuan&amp;rft.au=X.+wu&amp;rft.au=Z.+Zhang&amp;rft.au=Y.+Feng"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	C.-P. Chang, 
+	
+	C.-H. Lin, 
+	
+	W.-H. Peng, and 
+	
+	H.-M. Hang
+	<br />
+
+<b><a href="32/index.html" class="title">Learned Inter-frame Compression for CLIC 2021</a></b>
+
+<br/>
+
+	<i>4th Challenge on Learned Image Compression,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/39_CLIC2021.pdf">PDF</a>,
+
+
+<a href="32/index.html%3Fris">RIS</a>,
+<a href="32/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="32"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Learned+Inter-frame+Compression+for+CLIC+2021&amp;rft.date=2021-6-1&amp;rft.au=C.-P.+Chang&amp;rft.au=C.-H.+Lin&amp;rft.au=W.-H.+Peng&amp;rft.au=H.-M.+Hang"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	Y. Ma, 
+	
+	Y. Zhai, 
+	
+	J. Yang, 
+	
+	C. Yang, and 
+	
+	R. Wang
+	<br />
+
+<b><a href="31/index.html" class="title">ROI Perceptual Metric</a></b>
+
+<br/>
+
+	<i>4th Challenge on Learned Image Compression,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/38_CLIC2021.pdf">PDF</a>,
+
+
+<a href="31/index.html%3Fris">RIS</a>,
+<a href="31/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="31"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=ROI+Perceptual+Metric&amp;rft.date=2021-6-1&amp;rft.au=Y.+Ma&amp;rft.au=Y.+Zhai&amp;rft.au=J.+Yang&amp;rft.au=C.+Yang&amp;rft.au=R.+Wang"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	J. Bégaint, 
+	
+	F. Racape, 
+	
+	S. Feltman, and 
+	
+	A. Pushparaja
+	<br />
+
+<b><a href="30/index.html" class="title">Hierarchical Temporal Structure for End-to-End Neural Network-based Video Compression</a></b>
+
+<br/>
+
+	<i>4th Challenge on Learned Image Compression,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/35_CLIC2021.pdf">PDF</a>,
+
+
+<a href="30/index.html%3Fris">RIS</a>,
+<a href="30/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="30"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Hierarchical+Temporal+Structure+for+End-to-End+Neural+Network-based+Video+Compression&amp;rft.date=2021-6-1&amp;rft.au=J.+B%C3%A9gaint&amp;rft.au=F.+Racape&amp;rft.au=S.+Feltman&amp;rft.au=A.+Pushparaja"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	D. Alexandre, 
+	
+	W.-H. Peng, and 
+	
+	H.-M. Hang
+	<br />
+
+<b><a href="29/index.html" class="title">Learning-based Video Coding for CLIC 2021</a></b>
+
+<br/>
+
+	<i>4th Challenge on Learned Image Compression,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/32_CLIC2021.pdf">PDF</a>,
+
+
+<a href="29/index.html%3Fris">RIS</a>,
+<a href="29/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="29"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Learning-based+Video+Coding+for+CLIC+2021&amp;rft.date=2021-6-1&amp;rft.au=D.+Alexandre&amp;rft.au=W.-H.+Peng&amp;rft.au=H.-M.+Hang"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	D. Alexandre, 
+	
+	W.-H. Peng, and 
+	
+	H.-M. Hang
+	<br />
+
+<b><a href="28/index.html" class="title">Hybrid Video Coding for CLIC 2021</a></b>
+
+<br/>
+
+	<i>4th Challenge on Learned Image Compression,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/31_CLIC2021.pdf">PDF</a>,
+
+
+<a href="28/index.html%3Fris">RIS</a>,
+<a href="28/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="28"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Hybrid+Video+Coding+for+CLIC+2021&amp;rft.date=2021-6-1&amp;rft.au=D.+Alexandre&amp;rft.au=W.-H.+Peng&amp;rft.au=H.-M.+Hang"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	J. Liu, 
+	
+	S. Sun, 
+	
+	Y. Lu, 
+	
+	X. Li, and 
+	
+	Z. Chen
+	<br />
+
+<b><a href="27/index.html" class="title">Learned Dual Perceptual Image Similarity for Compressed Image</a></b>
+
+<br/>
+
+	<i>4th Challenge on Learned Image Compression,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/29_CLIC2021.pdf">PDF</a>,
+
+
+<a href="27/index.html%3Fris">RIS</a>,
+<a href="27/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="27"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Learned+Dual+Perceptual+Image+Similarity+for+Compressed+Image&amp;rft.date=2021-6-1&amp;rft.au=J.+Liu&amp;rft.au=S.+Sun&amp;rft.au=Y.+Lu&amp;rft.au=X.+Li&amp;rft.au=Z.+Chen"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	P. Philippe and 
+	
+	T. Ladune
+	<br />
+
+<b><a href="26/index.html" class="title">Coding standards as anchors for the CVPR CLIC video track</a></b>
+
+<br/>
+
+	<i>4th Challenge on Learned Image Compression,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/27_CLIC2021.pdf">PDF</a>,
+
+
+<a href="26/index.html%3Fris">RIS</a>,
+<a href="26/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="26"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Coding+standards+as+anchors+for+the+CVPR+CLIC+video+track&amp;rft.date=2021-6-1&amp;rft.au=P.+Philippe&amp;rft.au=T.+Ladune"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	T. Ladune, 
+	
+	P. Philippe, 
+	
+	W. Hamidouche, 
+	
+	L. Zhang, and 
+	
+	O. Deforges
+	<br />
+
+<b><a href="25/index.html" class="title">Conditional Coding and Variable Bitrate for Practical Learned Video Coding</a></b>
+
+<br/>
+
+	<i>4th Challenge on Learned Image Compression,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/26_CLIC2021.pdf">PDF</a>,
+
+
+<a href="25/index.html%3Fris">RIS</a>,
+<a href="25/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="25"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Conditional+Coding+and+Variable+Bitrate+for+Practical+Learned+Video+Coding&amp;rft.date=2021-6-1&amp;rft.au=T.+Ladune&amp;rft.au=P.+Philippe&amp;rft.au=W.+Hamidouche&amp;rft.au=L.+Zhang&amp;rft.au=O.+Deforges"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	C. Wu
+	<br />
+
+<b><a href="24/index.html" class="title">Approach of Team HHC: A Method for Low Bitrate Image Compression</a></b>
+
+<br/>
+
+	<i>4th Challenge on Learned Image Compression,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/23_CLIC2021.pdf">PDF</a>,
+
+
+<a href="24/index.html%3Fris">RIS</a>,
+<a href="24/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="24"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Approach+of+Team+HHC%3A+A+Method+for+Low+Bitrate+Image+Compression&amp;rft.date=2021-6-1&amp;rft.au=C.+Wu"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	T. Fu, 
+	
+	Z. Cheng, 
+	
+	J. Hu, 
+	
+	L. Guo, 
+	
+	S. Wang, 
+	
+	X. Zhao, 
+	
+	D. Zhou, and 
+	
+	Y. Song
+	<br />
+
+<b><a href="23/index.html" class="title">Quality enhancement of VVC intra-frame coding based on HGRDN</a></b>
+
+<br/>
+
+	<i>4th Challenge on Learned Image Compression,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/20_CLIC2021.pdf">PDF</a>,
+
+
+<a href="23/index.html%3Fris">RIS</a>,
+<a href="23/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="23"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Quality+enhancement+of+VVC+intra-frame+coding+based+on+HGRDN&amp;rft.date=2021-6-1&amp;rft.au=T.+Fu&amp;rft.au=Z.+Cheng&amp;rft.au=J.+Hu&amp;rft.au=L.+Guo&amp;rft.au=S.+Wang&amp;rft.au=X.+Zhao&amp;rft.au=D.+Zhou&amp;rft.au=Y.+Song"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	<a href="s.+gao/index.html" class="author">S. Gao</a>,
+	
+	<a href="y.+shi/index.html" class="author">Y. Shi</a>,
+	
+	<a href="t.+guo/index.html" class="author">T. Guo</a>,
+	
+	<a href="z.+qiu/index.html" class="author">Z. Qiu</a>,
+	
+	<a href="y.+ge/index.html" class="author">Y. Ge</a>,
+	
+	<a href="z.+cui/index.html" class="author">Z. Cui</a>,
+	
+	<a href="y.+feng/index.html" class="author">Y. Feng</a>,
+	
+	<a href="j.+wang/index.html" class="author">J. Wang</a>,
+	 <i>et al.</i><br />
+
+<b><a href="22/index.html" class="title">Perceptual Learned Image Compression With Continuous Rate Adaptation</a></b>
+
+<br/>
+
+	<i>4th Challenge on Learned Image Compression,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/19_CLIC2021.pdf">PDF</a>,
+
+
+<a href="22/index.html%3Fris">RIS</a>,
+<a href="22/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="22"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Perceptual+Learned+Image+Compression+With+Continuous+Rate+Adaptation&amp;rft.date=2021-6-1&amp;rft.au=S.+Gao&amp;rft.au=Y.+Shi&amp;rft.au=T.+Guo&amp;rft.au=Z.+Qiu&amp;rft.au=Y.+Ge&amp;rft.au=Z.+Cui&amp;rft.au=Y.+Feng&amp;rft.au=J.+Wang&amp;rft.au=B.+Bai"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	G. Gao, 
+	
+	R. Pan, 
+	
+	P. You, 
+	
+	S. Han, 
+	
+	Y. Zhang, and 
+	
+	H. Lee
+	<br />
+
+<b><a href="21/index.html" class="title">Attentional Multi-scale Back Projection Network for Low Bit-rate Image Compression</a></b>
+
+<br/>
+
+	<i>4th Challenge on Learned Image Compression,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/18_CLIC2021.pdf">PDF</a>,
+
+
+<a href="21/index.html%3Fris">RIS</a>,
+<a href="21/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="21"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Attentional+Multi-scale+Back+Projection+Network+for+Low+Bit-rate+Image+Compression&amp;rft.date=2021-6-1&amp;rft.au=G.+Gao&amp;rft.au=R.+Pan&amp;rft.au=P.+You&amp;rft.au=S.+Han&amp;rft.au=Y.+Zhang&amp;rft.au=H.+Lee"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	A. Lytchier, 
+	
+	J. Xu, 
+	
+	C. Finlay, 
+	
+	C. Cursio, 
+	
+	V. Koshkina, 
+	
+	C. Besenbruch, and 
+	
+	A. Zafar
+	<br />
+
+<b><a href="20/index.html" class="title">Perceptually-Guided Lossy Image Compression</a></b>
+
+<br/>
+
+	<i>4th Challenge on Learned Image Compression,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/17_CLIC2021.pdf">PDF</a>,
+
+
+<a href="20/index.html%3Fris">RIS</a>,
+<a href="20/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="20"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Perceptually-Guided+Lossy+Image+Compression&amp;rft.date=2021-6-1&amp;rft.au=A.+Lytchier&amp;rft.au=J.+Xu&amp;rft.au=C.+Finlay&amp;rft.au=C.+Cursio&amp;rft.au=V.+Koshkina&amp;rft.au=C.+Besenbruch&amp;rft.au=A.+Zafar"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	Z. Guo, 
+	
+	R. Feng, 
+	
+	Y. Wu, and 
+	
+	Z. Chen
+	<br />
+
+<b><a href="19/index.html" class="title">Improved Neural Image Compression: A New Two-Stage Quantization Strategy</a></b>
+
+<br/>
+
+	<i>4th Challenge on Learned Image Compression,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/14_CLIC2021.pdf">PDF</a>,
+
+
+<a href="19/index.html%3Fris">RIS</a>,
+<a href="19/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="19"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Improved+Neural+Image+Compression%3A+A+New+Two-Stage+Quantization+Strategy&amp;rft.date=2021-6-1&amp;rft.au=Z.+Guo&amp;rft.au=R.+Feng&amp;rft.au=Y.+Wu&amp;rft.au=Z.+Chen"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	J. Zhang, 
+	
+	X. Zeng, 
+	
+	Z. Li, 
+	
+	X. Hu, 
+	
+	N. Wang, and 
+	
+	D. Zhang
+	<br />
+
+<b><a href="18/index.html" class="title">An Adaptive In-Loop Filter based on Neural Network for Video Coding</a></b>
+
+<br/>
+
+	<i>4th Challenge on Learned Image Compression,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/09_CLIC2021.pdf">PDF</a>,
+
+
+<a href="18/index.html%3Fris">RIS</a>,
+<a href="18/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="18"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=An+Adaptive+In-Loop+Filter+based+on+Neural+Network+for+Video+Coding&amp;rft.date=2021-6-1&amp;rft.au=J.+Zhang&amp;rft.au=X.+Zeng&amp;rft.au=Z.+Li&amp;rft.au=X.+Hu&amp;rft.au=N.+Wang&amp;rft.au=D.+Zhang"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	J. Zhao, 
+	
+	B. Li, 
+	
+	J. Li, 
+	
+	R. Xiong, and 
+	
+	Y. Lu
+	<br />
+
+<b><a href="17/index.html" class="title">A Universal Encoder Rate Distortion Optimization Framework for Learned Compression</a></b>
+
+<br/>
+
+	<i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/Zhao_A_Universal_Encoder_Rate_Distortion_Optimization_Framework_CVPRW_2021_paper.pdf">PDF</a>,
+
+
+<a href="17/index.html%3Fris">RIS</a>,
+<a href="17/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="17"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=A+Universal+Encoder+Rate+Distortion+Optimization+Framework+for+Learned+Compression&amp;rft.date=2021-6-1&amp;rft.au=J.+Zhao&amp;rft.au=B.+Li&amp;rft.au=J.+Li&amp;rft.au=R.+Xiong&amp;rft.au=Y.+Lu"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	Z. Huang, 
+	
+	K. Lin, 
+	
+	C. Jia, 
+	
+	S. Wang, and 
+	
+	S. Ma
+	<br />
+
+<b><a href="16/index.html" class="title">Beyond VVC: Towards Perceptual Quality Optimized Video Compression Using Multi-Scale Hybrid Approaches</a></b>
+
+<br/>
+
+	<i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/Huang_Beyond_VVC_Towards_Perceptual_Quality_CVPRW_2021_paper.pdf">PDF</a>,
+
+
+<a href="16/index.html%3Fris">RIS</a>,
+<a href="16/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="16"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Beyond+VVC%3A+Towards+Perceptual+Quality+Optimized+Video+Compression+Using+Multi-Scale+Hybrid+Approaches&amp;rft.date=2021-6-1&amp;rft.au=Z.+Huang&amp;rft.au=K.+Lin&amp;rft.au=C.+Jia&amp;rft.au=S.+Wang&amp;rft.au=S.+Ma"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	B. Brummer and 
+	
+	C. D. Vleeschouwer
+	<br />
+
+<b><a href="15/index.html" class="title">End-to-End Optimized Image Compression With Competition of Prior Distributions</a></b>
+
+<br/>
+
+	<i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/Brummer_End-to-End_Optimized_Image_Compression_With_Competition_CVPRW_2021_paper.pdf">PDF</a>,
+
+
+<a href="15/index.html%3Fris">RIS</a>,
+<a href="15/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="15"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=End-to-End+Optimized+Image+Compression+With+Competition+of+Prior+Distributions&amp;rft.date=2021-6-1&amp;rft.au=B.+Brummer&amp;rft.au=C.+D.+Vleeschouwer"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	N. Zou, 
+	
+	H. Zhang, 
+	
+	F. Cricri, 
+	
+	H. R. Tavakoli, 
+	
+	J. Lainema, 
+	
+	E. Aksu, 
+	
+	M. Hannuksela, and 
+	
+	E. Rahtu
+	<br />
+
+<b><a href="14/index.html" class="title">Learned Video Compression With Intra-Guided Enhancement and Implicit Motion Information</a></b>
+
+<br/>
+
+	<i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/Zou_Learned_Video_Compression_With_Intra-Guided_Enhancement_CVPRW_2021_paper.pdf">PDF</a>,
+
+
+<a href="14/index.html%3Fris">RIS</a>,
+<a href="14/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="14"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Learned+Video+Compression+With+Intra-Guided+Enhancement+and+Implicit+Motion+Information&amp;rft.date=2021-6-1&amp;rft.au=N.+Zou&amp;rft.au=H.+Zhang&amp;rft.au=F.+Cricri&amp;rft.au=H.+R.+Tavakoli&amp;rft.au=J.+Lainema&amp;rft.au=E.+Aksu&amp;rft.au=M.+Hannuksela&amp;rft.au=E.+Rahtu"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	Y. Peng, 
+	
+	J. Xu, 
+	
+	Z. Luo, 
+	
+	W. Zhou, and 
+	
+	Z. Chen
+	<br />
+
+<b><a href="13/index.html" class="title">Multi-Metric Fusion Network for Image Quality Assessment</a></b>
+
+<br/>
+
+	<i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/Peng_Multi-Metric_Fusion_Network_for_Image_Quality_Assessment_CVPRW_2021_paper.pdf">PDF</a>,
+
+
+<a href="13/index.html%3Fris">RIS</a>,
+<a href="13/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="13"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Multi-Metric+Fusion+Network+for+Image+Quality+Assessment&amp;rft.date=2021-6-1&amp;rft.au=Y.+Peng&amp;rft.au=J.+Xu&amp;rft.au=Z.+Luo&amp;rft.au=W.+Zhou&amp;rft.au=Z.+Chen"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	Y. Wu, 
+	
+	Z. Qi, 
+	
+	H. Zheng, 
+	
+	L. Tao, and 
+	
+	W. Gao
+	<br />
+
+<b><a href="12/index.html" class="title">Deep Image Compression With Latent Optimization and Piece-Wise Quantization Approximation</a></b>
+
+<br/>
+
+	<i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/Wu_Deep_Image_Compression_With_Latent_Optimization_CVPRW_2021_paper.pdf">PDF</a>,
+
+
+<a href="12/index.html%3Fris">RIS</a>,
+<a href="12/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="12"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Deep+Image+Compression+With+Latent+Optimization+and+Piece-Wise+Quantization+Approximation&amp;rft.date=2021-6-1&amp;rft.au=Y.+Wu&amp;rft.au=Z.+Qi&amp;rft.au=H.+Zheng&amp;rft.au=L.+Tao&amp;rft.au=W.+Gao"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	X. Wang, 
+	
+	T. Chen, and 
+	
+	Z. Ma
+	<br />
+
+<b><a href="11/index.html" class="title">Subjective Quality Optimized Efficient Image Compression</a></b>
+
+<br/>
+
+	<i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/Wang_Subjective_Quality_Optimized_Efficient_Image_Compression_CVPRW_2021_paper.pdf">PDF</a>,
+
+
+<a href="11/index.html%3Fris">RIS</a>,
+<a href="11/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="11"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Subjective+Quality+Optimized+Efficient+Image+Compression&amp;rft.date=2021-6-1&amp;rft.au=X.+Wang&amp;rft.au=T.+Chen&amp;rft.au=Z.+Ma"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	K. Islam, 
+	
+	L. M. Dang, 
+	
+	S. Lee, and 
+	
+	H. Moon
+	<br />
+
+<b><a href="10/index.html" class="title">Image Compression With Recurrent Neural Network and Generalized Divisive Normalization</a></b>
+
+<br/>
+
+	<i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/Islam_Image_Compression_With_Recurrent_Neural_Network_CVPRW_2021_paper.pdf">PDF</a>,
+
+
+<a href="10/index.html%3Fris">RIS</a>,
+<a href="10/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="10"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Image+Compression+With+Recurrent+Neural+Network+and+Generalized+Divisive+Normalization&amp;rft.date=2021-6-1&amp;rft.au=K.+Islam&amp;rft.au=L.+M.+Dang&amp;rft.au=S.+Lee&amp;rft.au=H.+Moon"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	<a href="y.+ma/index.html" class="author">Y. Ma</a>,
+	
+	<a href="y.+zhai/index.html" class="author">Y. Zhai</a>,
+	
+	<a href="c.+yang/index.html" class="author">C. Yang</a>,
+	
+	<a href="j.+yang/index.html" class="author">J. Yang</a>,
+	
+	<a href="r.+wang/index.html" class="author">R. Wang</a>,
+	
+	<a href="j.+zhou/index.html" class="author">J. Zhou</a>,
+	
+	<a href="k.+li/index.html" class="author">K. Li</a>,
+	
+	<a href="y.+chen/index.html" class="author">Y. Chen</a>,
+	 <i>et al.</i><br />
+
+<b><a href="9/index.html" class="title">Variable Rate ROI Image Compression Optimized for Visual Quality</a></b>
+
+<br/>
+
+	<i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/Ma_Variable_Rate_ROI_Image_Compression_Optimized_for_Visual_Quality_CVPRW_2021_pape.pdf">PDF</a>,
+
+
+<a href="9/index.html%3Fris">RIS</a>,
+<a href="9/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="9"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Variable+Rate+ROI+Image+Compression+Optimized+for+Visual+Quality&amp;rft.date=2021-6-1&amp;rft.au=Y.+Ma&amp;rft.au=Y.+Zhai&amp;rft.au=C.+Yang&amp;rft.au=J.+Yang&amp;rft.au=R.+Wang&amp;rft.au=J.+Zhou&amp;rft.au=K.+Li&amp;rft.au=Y.+Chen&amp;rft.au=R.+Wang"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	S. Katakol, 
+	
+	L. Herranz, 
+	
+	F. Yang, and 
+	
+	M. Mrak
+	<br />
+
+<b><a href="8/index.html" class="title">DANICE: Domain Adaptation Without Forgetting in Neural Image Compression</a></b>
+
+<br/>
+
+	<i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops,
+	
+	
+	2021</i><br />
+
+
+
+<a class="link" rel="external" href="https://arxiv.org/abs/2104.09370">URL</a>,
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/Katakol_DANICE_Domain_Adaptation_Without_Forgetting_CVPRW_2021_paper.pdf">PDF</a>,
+
+	<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/Katakol_DANICE_Domain_Adaptation_CVPRW_2021_supplemental.pdf">Supplemental</a>,
+
+
+<a href="8/index.html%3Fris">RIS</a>,
+<a href="8/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="8"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=DANICE%3A+Domain+Adaptation+Without+Forgetting+in+Neural+Image+Compression&amp;rft.date=2021-6-1&amp;rft.au=S.+Katakol&amp;rft.au=L.+Herranz&amp;rft.au=F.+Yang&amp;rft.au=M.+Mrak"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	Y.-H. Ho, 
+	
+	C.-C. Chan, 
+	
+	W.-H. Peng, and 
+	
+	H.-M. Hang
+	<br />
+
+<b><a href="7/index.html" class="title">End-to-End Learned Image Compression With Augmented Normalizing Flows</a></b>
+
+<br/>
+
+	<i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/Ho_End-to-End_Learned_Image_Compression_With_Augmented_Normalizing_Flows_CVPRW_2021.pdf">PDF</a>,
+
+
+<a href="7/index.html%3Fris">RIS</a>,
+<a href="7/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="7"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=End-to-End+Learned+Image+Compression+With+Augmented+Normalizing+Flows&amp;rft.date=2021-6-1&amp;rft.au=Y.-H.+Ho&amp;rft.au=C.-C.+Chan&amp;rft.au=W.-H.+Peng&amp;rft.au=H.-M.+Hang"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	A. Suzuki, 
+	
+	H. Akutsu, 
+	
+	T. Naruko, 
+	
+	K. Tsubota, and 
+	
+	K. Aizawa
+	<br />
+
+<b><a href="6/index.html" class="title">Learned Image Compression With Super-Resolution Residual Modules and DISTS Optimization</a></b>
+
+<br/>
+
+	<i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/Suzuki_Learned_Image_Compression_With_Super-Resolution_CVPRW_2021_paper.pdf">PDF</a>,
+
+
+<a href="6/index.html%3Fris">RIS</a>,
+<a href="6/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="6"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Learned+Image+Compression+With+Super-Resolution+Residual+Modules+and+DISTS+Optimization&amp;rft.date=2021-6-1&amp;rft.au=A.+Suzuki&amp;rft.au=H.+Akutsu&amp;rft.au=T.+Naruko&amp;rft.au=K.+Tsubota&amp;rft.au=K.+Aizawa"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	Y. Gao, 
+	
+	Y. Wu, 
+	
+	Z. Guo, 
+	
+	Z. Zhang, and 
+	
+	Z. Chen
+	<br />
+
+<b><a href="5/index.html" class="title">Perceptual Friendly Variable Rate Image Compression</a></b>
+
+<br/>
+
+	<i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/Gao_Perceptual_Friendly_Variable_Rate_Image_Compression_CVPRW_2021_paper.pdf">PDF</a>,
+
+
+<a href="5/index.html%3Fris">RIS</a>,
+<a href="5/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="5"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Perceptual+Friendly+Variable+Rate+Image+Compression&amp;rft.date=2021-6-1&amp;rft.au=Y.+Gao&amp;rft.au=Y.+Wu&amp;rft.au=Z.+Guo&amp;rft.au=Z.+Zhang&amp;rft.au=Z.+Chen"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	C. D. K. Pham, 
+	
+	C. Fu, and 
+	
+	J. Zhou
+	<br />
+
+<b><a href="4/index.html" class="title">Deep Learning Based Spatial-Temporal In-Loop Filtering for Versatile Video Coding</a></b>
+
+<br/>
+
+	<i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/Pham_Deep_Learning_Based_Spatial-Temporal_In-Loop_Filtering_CVPRW_2021_paper.pdf">PDF</a>,
+
+
+<a href="4/index.html%3Fris">RIS</a>,
+<a href="4/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="4"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Deep+Learning+Based+Spatial-Temporal+In-Loop+Filtering+for+Versatile+Video+Coding&amp;rft.date=2021-6-1&amp;rft.au=C.+D.+K.+Pham&amp;rft.au=C.+Fu&amp;rft.au=J.+Zhou"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	Z. Cheng, 
+	
+	T. Fu, 
+	
+	J. Hu, 
+	
+	L. Guo, 
+	
+	S. Wang, 
+	
+	X. Zhao, 
+	
+	D. Zhou, and 
+	
+	Y. Song
+	<br />
+
+<b><a href="3/index.html" class="title">Perceptual Image Compression Using Relativistic Average Least Squares GANs</a></b>
+
+<br/>
+
+	<i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/Cheng_Perceptual_Image_Compression_CVPRW_2021_paper.pdf">PDF</a>,
+
+
+<a href="3/index.html%3Fris">RIS</a>,
+<a href="3/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="3"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Perceptual+Image+Compression+Using+Relativistic+Average+Least+Squares+GANs&amp;rft.date=2021-6-1&amp;rft.au=Z.+Cheng&amp;rft.au=T.+Fu&amp;rft.au=J.+Hu&amp;rft.au=L.+Guo&amp;rft.au=S.+Wang&amp;rft.au=X.+Zhao&amp;rft.au=D.+Zhou&amp;rft.au=Y.+Song"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	F. Brand, 
+	
+	K. Fischer, and 
+	
+	A. Kaup
+	<br />
+
+<b><a href="2/index.html" class="title">Rate-Distortion Optimized Learning-Based Image Compression Using an Adaptive Hierachical Autoencoder With Conditional Hyperprior</a></b>
+
+<br/>
+
+	<i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/Brand_Rate-Distortion_Optimized_Learning-Based_Image_Compression_CVPRW_2021_paper.pdf">PDF</a>,
+
+
+<a href="2/index.html%3Fris">RIS</a>,
+<a href="2/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="2"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Rate-Distortion+Optimized+Learning-Based+Image+Compression+Using+an+Adaptive+Hierachical+Autoencoder+With+Conditional+Hyperprior&amp;rft.date=2021-6-1&amp;rft.au=F.+Brand&amp;rft.au=K.+Fischer&amp;rft.au=A.+Kaup"></span>
+
+				</p>
+			
+			<p class="card-text">
+					
+
+
+	
+	S. Iwai, 
+	
+	T. Miyazaki, 
+	
+	Y. Sugaya, and 
+	
+	S. Omachi
+	<br />
+
+<b><a href="1/index.html" class="title">Self Texture Transfer Networks for Low Bitrate Image Compression</a></b>
+
+<br/>
+
+	<i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops,
+	
+	
+	2021</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2021_public/publications/Iwai_Self_Texture_Transfer_Networks_for_Low_Bitrate_Image_Compression_CVPRW_2021_pa.pdf">PDF</a>,
+
+
+<a href="1/index.html%3Fris">RIS</a>,
+<a href="1/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="1"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.btitle=Self+Texture+Transfer+Networks+for+Low+Bitrate+Image+Compression&amp;rft.date=2021-6-1&amp;rft.au=S.+Iwai&amp;rft.au=T.+Miyazaki&amp;rft.au=Y.+Sugaya&amp;rft.au=S.+Omachi"></span>
+
+				</p>
+			
+		
+	</div>
+</div>
+
+<div class="card">
+	<div class="card-body">
+		<h5 class="card-title">Proceedings</h5>
+		<p class="card-text">
+			<ul>
+				<li><a href="https://openaccess.thecvf.com/CVPR2021_workshops/CLIC">CLIC 2021</a></li>
+				<li>
+					<a href="https://openaccess.thecvf.com/CVPR2020_workshops/CVPR2020_w7">CLIC 2020</a>
+					(<a href="https://challenge.compression.cc/publications/">including challenge papers</a>)
+				</li>
+				<li><a href="https://openaccess.thecvf.com/CVPR2019_workshops/CVPR2019_CLIC_2019">CLIC 2019</a></li>
+				<li><a href="https://openaccess.thecvf.com/CVPR2018_workshops/CVPR2018_W50">CLIC 2018</a></li>
+			</ul>
+		</p>
+	</div>
+</div>
+
+					<hr>
+					<div class="container-fluid text-center text-muted sponsors">
+						Sponsored by<br>
+						<a href="https://google.com" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/google.png" height="40"></a>
+						<a href="https://twitter.com" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/twitter.png" height="70"></a>
+						<a href="https://www.vision.ee.ethz.ch" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/cvl.png" height="38"></a>
+						<a href="https://apple.com" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/apple.png" height="60"></a>
+						<a href="https://netflix.com" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/netflix.png" height="65"></a>
+						<a href="https://www.facebook.com/facebookrealitylabs" target="_blank"><img src="https://storage.googleapis.com/clic2021_public/static/img/sponsors/frl.png" height="65"></a>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		
+		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script>
+			feather.replace()
+		</script>
+	</body>
+</html>

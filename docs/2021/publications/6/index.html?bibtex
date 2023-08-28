@@ -1,0 +1,11 @@
+
+@inproceedings{Suzuki_2021_CVPR,
+  author = "A. Suzuki and H. Akutsu and T. Naruko and K. Tsubota and K. Aizawa",
+  title = "Learned Image Compression With Super-Resolution Residual Modules and DISTS Optimization",
+  year = 2021,
+  booktitle = "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+  pages = "1906-1910",
+  month = "Jun"
+}
+
+

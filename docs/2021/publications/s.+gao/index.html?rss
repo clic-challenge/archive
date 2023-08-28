@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
+	<channel>
+		<title>Publications by S. Gao</title>
+		<link>https://compression.cc/publications/s.+gao//publications/s.+gao/</link>
+		<description></description>
+		<atom:link href="https://compression.cc/publications/s.+gao/?rss" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Perceptual Learned Image Compression With Continuous Rate Adaptation, S. Gao et al., 2021</title>
+			<link>https://compression.cc/publications/s.+gao/22/</link>
+			<guid>https://compression.cc/publications/s.+gao/22/</guid>
+			<description></description>
+		</item>
+		
+	</channel>
+</rss>

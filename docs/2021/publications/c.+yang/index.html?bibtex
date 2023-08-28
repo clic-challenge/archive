@@ -1,0 +1,20 @@
+
+@inproceedings{Ma2021b,
+  author = "Y. Ma and Y. Zhai and J. Yang and C. Yang and R. Wang",
+  title = "ROI Perceptual Metric",
+  year = 2021,
+  booktitle = "4th Challenge on Learned Image Compression",
+  month = "Jun"
+}
+
+
+@inproceedings{Ma_2021_CVPR,
+  author = "Y. Ma and Y. Zhai and C. Yang and J. Yang and R. Wang and J. Zhou and K. Li and Y. Chen and R. Wang",
+  title = "Variable Rate ROI Image Compression Optimized for Visual Quality",
+  year = 2021,
+  booktitle = "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+  pages = "1936-1940",
+  month = "Jun"
+}
+
+

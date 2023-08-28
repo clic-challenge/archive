@@ -1,0 +1,11 @@
+
+@inproceedings{Islam_2021_CVPR,
+  author = "K. Islam and L. M. Dang and S. Lee and H. Moon",
+  title = "Image Compression With Recurrent Neural Network and Generalized Divisive Normalization",
+  year = 2021,
+  booktitle = "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+  pages = "1875-1879",
+  month = "Jun"
+}
+
+

@@ -1,0 +1,21 @@
+
+@inproceedings{Ma_2021_CVPR,
+  author = "Y. Ma and Y. Zhai and C. Yang and J. Yang and R. Wang and J. Zhou and K. Li and Y. Chen and R. Wang",
+  title = "Variable Rate ROI Image Compression Optimized for Visual Quality",
+  year = 2021,
+  booktitle = "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+  pages = "1936-1940",
+  month = "Jun"
+}
+
+
+@inproceedings{Pham_2021_CVPR,
+  author = "C. D. K. Pham and C. Fu and J. Zhou",
+  title = "Deep Learning Based Spatial-Temporal In-Loop Filtering for Versatile Video Coding",
+  year = 2021,
+  booktitle = "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+  pages = "1861-1865",
+  month = "Jun"
+}
+
+

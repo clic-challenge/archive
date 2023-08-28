@@ -1,0 +1,9 @@
+
+@inproceedings{Brand2022a,
+  author = "F. Brand and K. Fischer and A. Kopte and M. Windsheimer and A. Kaup",
+  title = "RDONet: Rate-Distortion Optimized Learned Image Compression with Variable Depth",
+  year = 2022,
+  journal = "5th Challenge on Learned Image Compression"
+}
+
+

@@ -1,0 +1,1361 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CLIC &#183; Challenge on Learned Image Compression</title>
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2022_public/static/css/4.3.1/bootstrap.min.css">
+		<link rel="shortcut icon" type="image/png" href="https://storage.googleapis.com/clic2022_public/static/favicon.ico">
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2022_public/static/css/style.css">
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2022_public/static/css/dashboard.css?v=1.1">
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://storage.googleapis.com/clic2022_public/static/js/4.3.1/bootstrap.min.js"></script>
+
+		
+	
+		
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="index.html%3Frss" />
+	<link rel="unapi-server" type="application/xml" title="unAPI" href="unapi/index.html"/>
+
+	</head>
+	<body class="bg-light">
+		<div class="container-fluid">
+			<nav class="row navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0">
+				<a class="navbar-brand col-sm-12 col-md-2 mr-0" href="index.html#">CLIC 2022</a>
+				<span class="navbar-text d-none d-md-block">5th Workshop and Challenge on Learned Image Compression</span>
+				<span class="navbar-text d-block d-md-none">
+					<a data-toggle="collapse" href="index.html#collapseSidebar" class="px-3"><i data-feather="menu"></i></a>
+				</span>
+				<ul class="navbar-nav px-3">
+					<li class="nav-item text-nowrap">
+						
+						<a class="nav-link" href="../signup/index.html">Sign up</a>
+						
+					</li>
+				</ul>
+			</nav>
+
+			<div class="row">
+				<nav id="collapseSidebar" class="collapse col-md-2 bg-light sidebar text-truncate" style="font-size: .875rem">
+					
+						<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+	<span>Workshop</span>
+</h6>
+<ul class="nav flex-column">
+	<li class="nav-item">
+		<a class="nav-link" href="../index.html">
+			<i data-feather="home"></i> Home
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../schedule/2/index.html">
+			<i data-feather="calendar"></i> Dates
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link active" href="index.html">
+			<i data-feather="book-open"></i> Papers
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../cfp/index.html">
+			<i data-feather="send"></i> Submit
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../organizers/index.html">
+			<i data-feather="user"></i> Organizers
+		</a>
+	</li>
+</ul>
+
+<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+	<span>Challenge</span>
+</h6>
+<ul class="nav flex-column mb-2">
+	<li class="nav-item">
+		<a class="nav-link" href="../introduction/index.html">
+			<i data-feather="file-text"></i> Introduction
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../tasks/index.html">
+			<i data-feather="check-square"></i> Tasks
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../leaderboard/image_075/test/index.html">
+			<i data-feather="align-justify"></i> Leaderboards
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="https://groups.google.com/g/clic-list">
+			<i data-feather="message-circle"></i> Forum
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../faq/index.html">
+			<i data-feather="help-circle"></i> FAQ
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="../submit/index.html">
+			<i data-feather="upload"></i> Submit
+		</a>
+	</li>
+	
+</ul>
+
+<div class="d-none d-md-block">
+	<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+		<span>Past events</span>
+	</h6>
+	<ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                        <a class="nav-link" href="https://clic.compression.cc/2021">
+                                <i data-feather="link"></i>
+                                CLIC 2021
+                        </a>
+                </li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://clic.compression.cc/">
+				<i data-feather="link"></i>
+				CLIC 2020
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://clic.compression.cc/2019/">
+				<i data-feather="link"></i>
+				CLIC 2019
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://clic.compression.cc/2018/">
+				<i data-feather="link"></i>
+				CLIC 2018
+			</a>
+		</li>
+	</ul>
+</div>
+
+					
+				</nav>
+
+				<main role="main" class="col-md-10 ml-sm-auto px-md-4 pt-3">
+					
+<div class="card mb-2">
+	<div class="card-body">
+		<h5 class="card-title">Workshop and challenge papers</h5>
+		
+		
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	Y. Ma, 
+	
+	Y. Zhai, 
+	
+	W. Jiang, 
+	
+	I. Li, 
+	
+	Z. Yang, and 
+	
+	R. Wang
+	<br />
+
+<b><a href="28/index.html" class="title">ROI Image codec Optimized for Visual Quality</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/52.pdf">PDF</a>,
+
+
+	<a class="link" rel="external" href="https://storage.googleapis.com/clic2022_public/reconstructions/PKUSZ-201.tar.gz">Reconstructions</a>,
+
+<a href="28/index.html%3Fris">RIS</a>,
+<a href="28/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="28"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=ROI+Image+codec+Optimized+for+Visual+Quality&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=Y.+Ma&amp;rft.au=Y.+Zhai&amp;rft.au=W.+Jiang&amp;rft.au=I.+Li&amp;rft.au=Z.+Yang&amp;rft.au=R.+Wang"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	L. Yu, 
+	
+	Z. Wang, 
+	
+	Y. Ye, 
+	
+	L. Zhu, and 
+	
+	S. Wang
+	<br />
+
+<b><a href="27/index.html" class="title">A Soft-ranked Index Fusion Framework with Saliency Weighting for Image Quality Assessment</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/51.pdf">PDF</a>,
+
+
+<a href="27/index.html%3Fris">RIS</a>,
+<a href="27/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="27"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=A+Soft-ranked+Index+Fusion+Framework+with+Saliency+Weighting+for+Image+Quality+Assessment&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=L.+Yu&amp;rft.au=Z.+Wang&amp;rft.au=Y.+Ye&amp;rft.au=L.+Zhu&amp;rft.au=S.+Wang"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	R. Gupta, 
+	
+	S. V, 
+	
+	N. Kapoor, 
+	
+	R. Jaiswal, 
+	
+	N. S., and 
+	
+	K. Kulkarni
+	<br />
+
+<b><a href="26/index.html" class="title">User-Guided Variable Rate Learned Image Compression</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/50.pdf">PDF</a>,
+
+	<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/50-supp.pdf">Supplementary</a>,
+
+
+<a href="26/index.html%3Fris">RIS</a>,
+<a href="26/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="26"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=User-Guided+Variable+Rate+Learned+Image+Compression&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=R.+Gupta&amp;rft.au=S.+V&amp;rft.au=N.+Kapoor&amp;rft.au=R.+Jaiswal&amp;rft.au=N.+S.&amp;rft.au=K.+Kulkarni"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	W. Jiang, 
+	
+	I. Li, 
+	
+	Y. Ma, 
+	
+	Y. Zhai, 
+	
+	Z. Yang, and 
+	
+	R. Wang
+	<br />
+
+<b><a href="25/index.html" class="title">Image Quality Assessment with Transformers and Multi-Metric Fusion Modules</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/49.pdf">PDF</a>,
+
+
+<a href="25/index.html%3Fris">RIS</a>,
+<a href="25/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="25"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=Image+Quality+Assessment+with+Transformers+and+Multi-Metric+Fusion+Modules&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=W.+Jiang&amp;rft.au=I.+Li&amp;rft.au=Y.+Ma&amp;rft.au=Y.+Zhai&amp;rft.au=Z.+Yang&amp;rft.au=R.+Wang"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	E. Cole, 
+	
+	Q. Meng, 
+	
+	J. Pauly, and 
+	
+	S. Vasanawala
+	<br />
+
+<b><a href="24/index.html" class="title">Learned Compression of High Dimensional Image Datasets</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/47.pdf">PDF</a>,
+
+
+<a href="24/index.html%3Fris">RIS</a>,
+<a href="24/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="24"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=Learned+Compression+of+High+Dimensional+Image+Datasets&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=E.+Cole&amp;rft.au=Q.+Meng&amp;rft.au=J.+Pauly&amp;rft.au=S.+Vasanawala"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	G. He, 
+	
+	Y. Wang, 
+	
+	L. Xu, 
+	
+	W. Zhang, 
+	
+	M. Sun, and 
+	
+	X. Wen
+	<br />
+
+<b><a href="23/index.html" class="title">Focused Feature Differentiation Network for Image Quality Assessment</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/46.pdf">PDF</a>,
+
+
+<a href="23/index.html%3Fris">RIS</a>,
+<a href="23/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="23"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=Focused+Feature+Differentiation+Network+for+Image+Quality+Assessment&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=G.+He&amp;rft.au=Y.+Wang&amp;rft.au=L.+Xu&amp;rft.au=W.+Zhang&amp;rft.au=M.+Sun&amp;rft.au=X.+Wen"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	D. Alexandre, 
+	
+	H. Hang, and 
+	
+	W. Peng
+	<br />
+
+<b><a href="22/index.html" class="title">Hierarchical B-frame with Conditional Video Coding</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/45.pdf">PDF</a>,
+
+
+<a href="22/index.html%3Fris">RIS</a>,
+<a href="22/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="22"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=Hierarchical+B-frame+with+Conditional+Video+Coding&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=D.+Alexandre&amp;rft.au=H.+Hang&amp;rft.au=W.+Peng"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	Z. Liu, 
+	
+	L. Herranz, 
+	
+	F. Yang, 
+	
+	S. Zhang, 
+	
+	S. Wan, 
+	
+	M. Mrak, and 
+	
+	M. Blanch
+	<br />
+
+<b><a href="21/index.html" class="title">Slimmable Video Codec</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/44.pdf">PDF</a>,
+
+
+<a href="21/index.html%3Fris">RIS</a>,
+<a href="21/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="21"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=Slimmable+Video+Codec&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=Z.+Liu&amp;rft.au=L.+Herranz&amp;rft.au=F.+Yang&amp;rft.au=S.+Zhang&amp;rft.au=S.+Wan&amp;rft.au=M.+Mrak&amp;rft.au=M.+Blanch"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	P. Philippe and 
+	
+	T. Ladune
+	<br />
+
+<b><a href="20/index.html" class="title">A VVC anchor for the CVPR 2022 CLIC video track</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/40.pdf">PDF</a>,
+
+
+<a href="20/index.html%3Fris">RIS</a>,
+<a href="20/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="20"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=A+VVC+anchor+for+the+CVPR+2022+CLIC+video+track&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=P.+Philippe&amp;rft.au=T.+Ladune"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	A. Volokitin, 
+	
+	S.Brugger, 
+	
+	A. Benlalah, 
+	
+	S. Martin, 
+	
+	B. Amberg, and 
+	
+	M. Tschannen
+	<br />
+
+<b><a href="19/index.html" class="title">Neural Face Video Compression using Multiple Views</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression (Best Student Paper Award),
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/37.pdf">PDF</a>,
+
+
+<a href="19/index.html%3Fris">RIS</a>,
+<a href="19/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="19"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=Neural+Face+Video+Compression+using+Multiple+Views&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=A.+Volokitin&amp;rft.au=S.Brugger&amp;rft.au=A.+Benlalah&amp;rft.au=S.+Martin&amp;rft.au=B.+Amberg&amp;rft.au=M.+Tschannen"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	X. Qin, 
+	
+	C. Li, 
+	
+	X. Dong, 
+	
+	Y. Zhu, 
+	
+	Z. Guo, 
+	
+	C. Leng, and 
+	
+	J. Cheng
+	<br />
+
+<b><a href="18/index.html" class="title">A Perceptual Quality Enhancement Method for Video Coding</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/36.pdf">PDF</a>,
+
+
+<a href="18/index.html%3Fris">RIS</a>,
+<a href="18/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="18"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=A+Perceptual+Quality+Enhancement+Method+for+Video+Coding&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=X.+Qin&amp;rft.au=C.+Li&amp;rft.au=X.+Dong&amp;rft.au=Y.+Zhu&amp;rft.au=Z.+Guo&amp;rft.au=C.+Leng&amp;rft.au=J.+Cheng"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	J. Liu, 
+	
+	X. Li, 
+	
+	Y. Peng, 
+	
+	T. Yu, and 
+	
+	Z. Chen
+	<br />
+
+<b><a href="17/index.html" class="title">SwinIQA: Learned Swin Distance for Compressed Image Quality Assessment</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/35.pdf">PDF</a>,
+
+
+<a href="17/index.html%3Fris">RIS</a>,
+<a href="17/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="17"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=SwinIQA%3A+Learned+Swin+Distance+for+Compressed+Image+Quality+Assessment&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=J.+Liu&amp;rft.au=X.+Li&amp;rft.au=Y.+Peng&amp;rft.au=T.+Yu&amp;rft.au=Z.+Chen"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	G. He, 
+	
+	K. Xu, 
+	
+	C. Wu, 
+	
+	Z. Ma, 
+	
+	X. Wen, and 
+	
+	M. Sun
+	<br />
+
+<b><a href="16/index.html" class="title">Hybrid video coding scheme based on VVC and spatio-temporal attention convolutional neural network</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/33.pdf">PDF</a>,
+
+
+<a href="16/index.html%3Fris">RIS</a>,
+<a href="16/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="16"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=Hybrid+video+coding+scheme+based+on+VVC+and+spatio-temporal+attention+convolutional+neural+network&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=G.+He&amp;rft.au=K.+Xu&amp;rft.au=C.+Wu&amp;rft.au=Z.+Ma&amp;rft.au=X.+Wen&amp;rft.au=M.+Sun"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	H. Wang, 
+	
+	G. Ren, 
+	
+	T. Ouyang, 
+	
+	J. Zhang, 
+	
+	W. Han, 
+	
+	Z. Liu, and 
+	
+	Z. Chen
+	<br />
+
+<b><a href="15/index.html" class="title">Perceptual in-Loop Filter for Image and Video Compression</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/32.pdf">PDF</a>,
+
+
+<a href="15/index.html%3Fris">RIS</a>,
+<a href="15/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="15"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=Perceptual+in-Loop+Filter+for+Image+and+Video+Compression&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=H.+Wang&amp;rft.au=G.+Ren&amp;rft.au=T.+Ouyang&amp;rft.au=J.+Zhang&amp;rft.au=W.+Han&amp;rft.au=Z.+Liu&amp;rft.au=Z.+Chen"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	X. Pan, 
+	
+	Y. Gao, 
+	
+	Z. Guo, 
+	
+	R. Feng, and 
+	
+	Z. Chen
+	<br />
+
+<b><a href="14/index.html" class="title">Perceptual Image Compression with Controllable Region Quality</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/Perceptual_Image_Compression_with_Controllable_Region_Quality.pdf">PDF</a>,
+
+
+	<a class="link" rel="external" href="https://storage.googleapis.com/clic2022_public/reconstructions/ICML-T2.tar.gz">Reconstructions</a>,
+
+<a href="14/index.html%3Fris">RIS</a>,
+<a href="14/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="14"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=Perceptual+Image+Compression+with+Controllable+Region+Quality&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=X.+Pan&amp;rft.au=Y.+Gao&amp;rft.au=Z.+Guo&amp;rft.au=R.+Feng&amp;rft.au=Z.+Chen"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	R. Feng, 
+	
+	Z. Guo, 
+	
+	Y. Gao, 
+	
+	X. Pan, and 
+	
+	Z. Chen
+	<br />
+
+<b><a href="13/index.html" class="title">Video Compression</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/30.pdf">PDF</a>,
+
+
+<a href="13/index.html%3Fris">RIS</a>,
+<a href="13/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="13"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=Video+Compression&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=R.+Feng&amp;rft.au=Z.+Guo&amp;rft.au=Y.+Gao&amp;rft.au=X.+Pan&amp;rft.au=Z.+Chen"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	T. Ladune, 
+	
+	G. Clare, 
+	
+	P. Philippe, and 
+	
+	F. Henry
+	<br />
+
+<b><a href="12/index.html" class="title">Artificial Intelligence based Video Codec (AIVC) for CLIC 2022</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/29.pdf">PDF</a>,
+
+
+<a href="12/index.html%3Fris">RIS</a>,
+<a href="12/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="12"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=Artificial+Intelligence+based+Video+Codec+%28AIVC%29+for+CLIC+2022&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=T.+Ladune&amp;rft.au=G.+Clare&amp;rft.au=P.+Philippe&amp;rft.au=F.+Henry"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	J. Löhdefink, 
+	
+	J. Sitzmann, 
+	
+	A. Bär, and 
+	
+	T. Fingscheidt
+	<br />
+
+<b><a href="11/index.html" class="title">Adaptive Bitrate Quantization Scheme Without Codebook for Learned Image Compression</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/28.pdf">PDF</a>,
+
+	<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/28-supp.pdf">Supplementary</a>,
+
+
+<a href="11/index.html%3Fris">RIS</a>,
+<a href="11/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="11"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=Adaptive+Bitrate+Quantization+Scheme+Without+Codebook+for+Learned+Image+Compression&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=J.+L%C3%B6hdefink&amp;rft.au=J.+Sitzmann&amp;rft.au=A.+B%C3%A4r&amp;rft.au=T.+Fingscheidt"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	C. Lin, 
+	
+	Y. Ho, 
+	
+	M. Chen, 
+	
+	W. Peng, and 
+	
+	H. Hang
+	<br />
+
+<b><a href="10/index.html" class="title">Learned Video Compression with Conditional Augmented Normalizing Flows</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/27.pdf">PDF</a>,
+
+
+<a href="10/index.html%3Fris">RIS</a>,
+<a href="10/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="10"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=Learned+Video+Compression+with+Conditional+Augmented+Normalizing+Flows&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=C.+Lin&amp;rft.au=Y.+Ho&amp;rft.au=M.+Chen&amp;rft.au=W.+Peng&amp;rft.au=H.+Hang"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	D. Danier, 
+	
+	C. Feng, 
+	
+	F. Zhang, and 
+	
+	D. Bull
+	<br />
+
+<b><a href="9/index.html" class="title">Enhancing VVC with Deep Learning based Multi-Frame Post-Processing</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/25.pdf">PDF</a>,
+
+
+<a href="9/index.html%3Fris">RIS</a>,
+<a href="9/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="9"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=Enhancing+VVC+with+Deep+Learning+based+Multi-Frame+Post-Processing&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=D.+Danier&amp;rft.au=C.+Feng&amp;rft.au=F.+Zhang&amp;rft.au=D.+Bull"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	J. Yang, 
+	
+	C. Yang, 
+	
+	F. Xiong, 
+	
+	F. Wang, and 
+	
+	R. Wang
+	<br />
+
+<b><a href="8/index.html" class="title">Learned Low Bitrate Video Compression with Space-Time Super-Resolution</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/20.pdf">PDF</a>,
+
+
+<a href="8/index.html%3Fris">RIS</a>,
+<a href="8/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="8"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=Learned+Low+Bitrate+Video+Compression+with+Space-Time+Super-Resolution&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=J.+Yang&amp;rft.au=C.+Yang&amp;rft.au=F.+Xiong&amp;rft.au=F.+Wang&amp;rft.au=R.+Wang"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	J. Li, 
+	
+	Y. Li, 
+	
+	C. Lin, 
+	
+	K. Zhang, and 
+	
+	L. Zhang
+	<br />
+
+<b><a href="7/index.html" class="title">A Neural-network Enhanced Video Coding Framework beyond VVC</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/16.pdf">PDF</a>,
+
+
+<a href="7/index.html%3Fris">RIS</a>,
+<a href="7/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="7"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=A+Neural-network+Enhanced+Video+Coding+Framework+beyond+VVC&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=J.+Li&amp;rft.au=Y.+Li&amp;rft.au=C.+Lin&amp;rft.au=K.+Zhang&amp;rft.au=L.+Zhang"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	<a href="d.+he/index.html" class="author">D. He</a>,
+	
+	<a href="z.+yang/index.html" class="author">Z. Yang</a>,
+	
+	<a href="h.+yu/index.html" class="author">H. Yu</a>,
+	
+	<a href="t.+xu/index.html" class="author">T. Xu</a>,
+	
+	<a href="j.+luo/index.html" class="author">J. Luo</a>,
+	
+	<a href="y.+chen/index.html" class="author">Y. Chen</a>,
+	
+	<a href="c.+gao/index.html" class="author">C. Gao</a>,
+	
+	<a href="x.+shi/index.html" class="author">X. Shi</a>,
+	 <i>et al.</i><br />
+
+<b><a href="6/index.html" class="title">PO-ELIC: Perception-Oriented Efficient Learned Image Coding</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/14.pdf">PDF</a>,
+
+
+	<a class="link" rel="external" href="https://storage.googleapis.com/clic2022_public/reconstructions/NewbieCodec.tar.gz">Reconstructions</a>,
+
+<a href="6/index.html%3Fris">RIS</a>,
+<a href="6/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="6"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=PO-ELIC%3A+Perception-Oriented+Efficient+Learned+Image+Coding&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=D.+He&amp;rft.au=Z.+Yang&amp;rft.au=H.+Yu&amp;rft.au=T.+Xu&amp;rft.au=J.+Luo&amp;rft.au=Y.+Chen&amp;rft.au=C.+Gao&amp;rft.au=X.+Shi&amp;rft.au=H.+Qin&amp;rft.au=Y.Wang"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	H. Cho and 
+	
+	K. Choi
+	<br />
+
+<b><a href="5/index.html" class="title">Super-Resolution based Video Coding Scheme</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/13.pdf">PDF</a>,
+
+
+<a href="5/index.html%3Fris">RIS</a>,
+<a href="5/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="5"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=Super-Resolution+based+Video+Coding+Scheme&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=H.+Cho&amp;rft.au=K.+Choi"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	F. Brand, 
+	
+	K. Fischer, 
+	
+	A. Kopte, 
+	
+	M. Windsheimer, and 
+	
+	A. Kaup
+	<br />
+
+<b><a href="4/index.html" class="title">RDONet: Rate-Distortion Optimized Learned Image Compression with Variable Depth</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/10.pdf">PDF</a>,
+
+
+<a href="4/index.html%3Fris">RIS</a>,
+<a href="4/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="4"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=RDONet%3A+Rate-Distortion+Optimized+Learned+Image+Compression+with+Variable+Depth&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=F.+Brand&amp;rft.au=K.+Fischer&amp;rft.au=A.+Kopte&amp;rft.au=M.+Windsheimer&amp;rft.au=A.+Kaup"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	S. Dutta, 
+	
+	A. Subramaniam, and 
+	
+	A. Mittal
+	<br />
+
+<b><a href="3/index.html" class="title">Non-linear Motion Estimation for Video Frame Interpolation using Space-time Convolutions</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/8.pdf">PDF</a>,
+
+	<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/8-supp.pdf">Supplementary</a>,
+
+
+<a href="3/index.html%3Fris">RIS</a>,
+<a href="3/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="3"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=Non-linear+Motion+Estimation+for+Video+Frame+Interpolation+using+Space-time+Convolutions&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=S.+Dutta&amp;rft.au=A.+Subramaniam&amp;rft.au=A.+Mittal"></span>
+
+				</p>
+			
+			<p class="card-text mb-2">
+					
+
+
+	
+	Y. Wang, 
+	
+	J. Zhang, 
+	
+	Z. Li, 
+	
+	X. Zeng, 
+	
+	Z. Zhang, 
+	
+	D. Zhang, 
+	
+	Y. Long, and 
+	
+	N. Wang
+	<br />
+
+<b><a href="2/index.html" class="title">Neural Network-based In-Loop Filter for CLIC 2022</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/7.pdf">PDF</a>,
+
+
+<a href="2/index.html%3Fris">RIS</a>,
+<a href="2/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="2"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=Neural+Network-based+In-Loop+Filter+for+CLIC+2022&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=Y.+Wang&amp;rft.au=J.+Zhang&amp;rft.au=Z.+Li&amp;rft.au=X.+Zeng&amp;rft.au=Z.+Zhang&amp;rft.au=D.+Zhang&amp;rft.au=Y.+Long&amp;rft.au=N.+Wang"></span>
+
+				</p>
+			
+			<p class="card-text">
+					
+
+
+	
+	A. Sinha, 
+	
+	S. M. Moorthi, and 
+	
+	D. Dhar
+	<br />
+
+<b><a href="1/index.html" class="title">Self-Supervised Variable Rate Image Compression using Visual Attention</a></b>
+
+<br/>
+
+	<i>5th Challenge on Learned Image Compression,
+	
+	
+	2022
+	</i><br />
+
+
+
+
+
+
+<a class="link" href="https://storage.googleapis.com/clic2022_public/publications/5.pdf">PDF</a>,
+
+
+<a href="1/index.html%3Fris">RIS</a>,
+<a href="1/index.html%3Fbibtex">BibTex</a>
+<abbr class="unapi-id" title="1"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:journal&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/&amp;rft.atitle=Self-Supervised+Variable+Rate+Image+Compression+using+Visual+Attention&amp;rft.jtitle=5th+Challenge+on+Learned+Image+Compression&amp;rft.date=2022&amp;rft.au=A.+Sinha&amp;rft.au=S.+M.+Moorthi&amp;rft.au=D.+Dhar"></span>
+
+				</p>
+			
+		
+	</div>
+</div>
+
+<div class="card">
+	<div class="card-body">
+		<h5 class="card-title">Proceedings</h5>
+		<p class="card-text">
+			<ul>
+				<li><a href="https://openaccess.thecvf.com/CVPR2021_workshops/CLIC">CLIC 2021</a></li>
+				<li>
+					<a href="https://openaccess.thecvf.com/CVPR2020_workshops/CVPR2020_w7">CLIC 2020</a>
+					(<a href="https://challenge.compression.cc/publications/">including challenge papers</a>)
+				</li>
+				<li><a href="https://openaccess.thecvf.com/CVPR2019_workshops/CVPR2019_CLIC_2019">CLIC 2019</a></li>
+				<li><a href="https://openaccess.thecvf.com/CVPR2018_workshops/CVPR2018_W50">CLIC 2018</a></li>
+			</ul>
+		</p>
+	</div>
+</div>
+
+					<hr>
+					<div class="container-fluid text-center text-muted sponsors">
+						Sponsored by<br>
+						<a href="https://google.com" target="_blank"><img src="https://storage.googleapis.com/clic2022_public/static/img/sponsors/google.png" height="40"></a>
+						<a href="https://www.vision.ee.ethz.ch" target="_blank"><img src="https://storage.googleapis.com/clic2022_public/static/img/sponsors/cvl.png" height="38"></a>
+						<a href="https://apple.com" target="_blank"><img src="https://storage.googleapis.com/clic2022_public/static/img/sponsors/apple.png" height="60"></a>
+						<a href="https://netflix.com" target="_blank"><img src="https://storage.googleapis.com/clic2022_public/static/img/sponsors/netflix.png" height="65"></a>
+						<a href="https://interdigital.com" target="_blank"><img src="https://storage.googleapis.com/clic2022_public/static/img/sponsors/interdigital.png" height="30"></a>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		
+		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script>
+			feather.replace()
+		</script>
+	</body>
+</html>

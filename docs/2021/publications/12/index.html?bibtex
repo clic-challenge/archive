@@ -1,0 +1,11 @@
+
+@inproceedings{Wu_2021_CVPR,
+  author = "Y. Wu and Z. Qi and H. Zheng and L. Tao and W. Gao",
+  title = "Deep Image Compression With Latent Optimization and Piece-Wise Quantization Approximation",
+  year = 2021,
+  booktitle = "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+  pages = "1926-1930",
+  month = "Jun"
+}
+
+

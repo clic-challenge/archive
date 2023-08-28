@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
+	<channel>
+		<title>Publications</title>
+		<link>https://compression.cc/publications//publications/</link>
+		<description></description>
+		<atom:link href="https://compression.cc/publications/?rss" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>ROI Image codec Optimized for Visual Quality, Y. Ma et al., 2022</title>
+			<link>https://compression.cc/publications/28/</link>
+			<guid>https://compression.cc/publications/28/</guid>
+			<description>With the development of compression technology, objective metrics (e.g. PSNR, MS-SSIM) cannot satisfy our need, especially in extreme low bit-rate compression, thus more attention is being paid on perceptual quality. People have different standards for objective evaluation. For this reason, we simplify the topic with the consideration that people will strict more on interested region, so a ROI(region of interest) based image compression model is proposed. For the ROI, we expect its reconstructed part to be more accurate, while the background, distortion is tolerable, and fake texture can be generated. Firstly, a weighted mask from saliency map is used. Secondly, to balance the difference of ROI and background area, different losses are applied separately. What’s more, GAN and LPIPS are utilized to generate more texture in background. At last, variable rate method is adopted to realize rate control, and it performs well with perceptual metric. Experiment shows that our method can achieve better performance both in visual and objective quality.</description>
+		</item>
+		
+		<item>
+			<title>A Soft-ranked Index Fusion Framework with Saliency Weighting for Image Quality Assessment, L. Yu et al., 2022</title>
+			<link>https://compression.cc/publications/27/</link>
+			<guid>https://compression.cc/publications/27/</guid>
+			<description>The compression technique is widely adopted for efficient data storage and transmission. Accurate image quality assessment (IQA) measures are urgently desired to evaluate the compression performance. To obtain a more robust evaluation, we propose a soft-ranked index fusion framework for the perceptual preference prediction task, with a combination of different quality measures. The derived soft-ranked indices are fully leveraged to provide the strong discriminability of ranking information. Furthermore, a saliency weighting approach is utilized to investigate the impact of visual attention on our framework. Experimental results indicate that our method achieves a promising prediction accuracy compared with the state-of-the-art quality measures.</description>
+		</item>
+		
+		<item>
+			<title>User-Guided Variable Rate Learned Image Compression, R. Gupta et al., 2022</title>
+			<link>https://compression.cc/publications/26/</link>
+			<guid>https://compression.cc/publications/26/</guid>
+			<description>We propose a learning-based image compression method that achieves any arbitrary input bitrate via user-guided bit allocation to preferred regions. We verify our hypothesis of incorporating user guidance for bitrate control by experimenting with alternatives that do not have any guidance. We conduct extensive evaluation on CelebA-HQ and CityScapes dataset using standard quantitative metrics and human studies showing that our single model for multiple bitrates achieves similar or better performance as compared to previous learned image compression methods that require re-training for each new bitrate.</description>
+		</item>
+		
+		<item>
+			<title>Image Quality Assessment with Transformers and Multi-Metric Fusion Modules, W. Jiang et al., 2022</title>
+			<link>https://compression.cc/publications/25/</link>
+			<guid>https://compression.cc/publications/25/</guid>
+			<description>Image quality assessment is crucial for low-level vision tasks such as compression, super-resolution, denoising and etc. It guides researchers how to design networks, design loss functions, and decide the optimization direction of networks. A good quality assessment metric should comform to people&#x27;s subjective feelings as much as possible. Traditional PSNR and MS-SSIM have more and more obvious shortcomings in quality evaluation With the popularity of GANs. Inspired by metrics such as LPIPS, IQT, etc., we decided to design a metric that is learned by the network itself. In this paper, we use a ConvNeXt-Tiny network to extract features and calculate nonlinear residuals between reference images and distorted images. We feed residuals into a transformer to compare the degree of distortion. In addition, we use multi-metric fusion to improve the performance of our network. Our model achieves 0.780 accuracy on CLIC validation set.</description>
+		</item>
+		
+		<item>
+			<title>Learned Compression of High Dimensional Image Datasets, E. Cole et al., 2022</title>
+			<link>https://compression.cc/publications/24/</link>
+			<guid>https://compression.cc/publications/24/</guid>
+			<description>In many applications, such as burst photography and magnetic resonance imaging (MRI), multiple images are acquired to reduce the noise of the eventual reconstructed image. However, this leads to very high dimensional datasets which have redundant information across the various acquired images. In MRI, multiple images are acquired via multiple RF coil arrays in the scanner. Afterwards, coil compression is performed to convert the original set of coil images into a smaller set of virtual coil images to enable smaller datasets and faster computation time. However, traditional iterative coil compression methods are lossy and time-consuming. In this work, we propose a novel neural network-based coil compression method in pursuit of higher reconstruction accuracy and faster coil compression. Our learned compression method achieves up to 1.5x lower NRMSE and up to 10 times runtime speed compared to traditional methods on a benchmark test dataset.</description>
+		</item>
+		
+		<item>
+			<title>Focused Feature Differentiation Network for Image Quality Assessment, G. He et al., 2022</title>
+			<link>https://compression.cc/publications/23/</link>
+			<guid>https://compression.cc/publications/23/</guid>
+			<description>Image quality assessment (IQA) intended to assess the perceptual quality of images has been an essential problem in both human and machine vision. Recently, with the help of deep neural network (DNN), IQA algorithms can extract more valuable differences between the distorted and reference images than the traditional algorithms, and thus the performance of DNN-based algorithms is more satisfactory than that of previous algorithms. However, the accuracy for different distorted images preference rating of the existing DNN-based quality assessment methods will be decreased when multiple distorted images are quite similar to each other or to the reference image. To tackle this problem, we propose a focused feature differentiation network (FFDN) to highlight the feature maps with greater distorted and reference differentiation. Furthermore, we use the multi-scale feature fusion module to fuse the focused differentiation features at different scale receptive fields. To further improve the accuracy of our method, we predict the mean opinion score and differentiation score by stages and combine them with different self-learning weights. Finally, we convert the weighted score into different image preference degrees. Experimental results on the validation dataset of CLIC2022 and test dataset of CLIC2021 show that the accuracy of our model FFDN is higher than other excellent quality assessment methods.</description>
+		</item>
+		
+		<item>
+			<title>Hierarchical B-frame with Conditional Video Coding, D. Alexandre et al., 2022</title>
+			<link>https://compression.cc/publications/22/</link>
+			<guid>https://compression.cc/publications/22/</guid>
+			<description>We proposed a learning-based hierarchical bi-directional (B-frame) video coding, which uses the information from both past and future frames. We incorporate a conditional ANF coding scheme for encoding the motion information and the image residual. Our design includes a mask-merge-net that reconstructs the motion-compensated frame. Also, our model is scalable for variable bit-rates and targeted at MS-SSIM metric. The evaluation results show that our method produces good visual quality images and achieves competitive PSNR compared to other learning-based methods.</description>
+		</item>
+		
+		<item>
+			<title>Slimmable Video Codec, Z. Liu et al., 2022</title>
+			<link>https://compression.cc/publications/21/</link>
+			<guid>https://compression.cc/publications/21/</guid>
+			<description>Neural video compression has emerged as a novel paradigm combining trainable multilayer neural networks and machine learning, achieving competitive rate-distortion (RD) performances, but still remaining impractical due to heavy neural architectures, with large memory and computational demands. In addition, models are usually optimized for a single RD tradeoff. Recent slimmable image codecs can dynamically adjust their model capacity to gracefully reduce the memory and computation requirements, without harming RD performance. In this paper we propose a slimmable video codec (SlimVC), by integrating a slimmable temporal entropy model in a slimmable autoencoder. Despite a significantly more complex architecture, we show that slimming remains a powerful mechanism to control rate, memory footprint, computational cost and latency, all being important requirements for practical video compression.</description>
+		</item>
+		
+		<item>
+			<title>A VVC anchor for the CVPR 2022 CLIC video track, P. Philippe et al., 2022</title>
+			<link>https://compression.cc/publications/20/</link>
+			<guid>https://compression.cc/publications/20/</guid>
+			<description>The CVPR Challenge for Learned Image Compression 2022 includes a video track which targets to explore technologies for the compression of HD video sequences. The proposed technologies are evaluated through a subjective test at two operating points: 100 kb/s and 1 Mb/s.
+
+This contribution proposes to generate coded videos compliant with the latest standardized video coder, Versatile Video Coding (VVC). The primary objective of this candidate is to assess the recent developments in video coding with respect to this standard to measure the progress made by learning based techniques. To this end, this paper explains how to generate video sequences fulfilling the requirements of this challenge, in a reproducible way, targeting the maximum performance for VVC.</description>
+		</item>
+		
+		<item>
+			<title>Neural Face Video Compression using Multiple Views, A. Volokitin et al., 2022</title>
+			<link>https://compression.cc/publications/19/</link>
+			<guid>https://compression.cc/publications/19/</guid>
+			<description>Recent advances in deep generative models led to the development of neural face video compression codecs that use an order of magnitude less bandwidth than engineered codecs. These neural codecs reconstruct the current frame by warping a source frame and using a generative model to compensate for imperfections in the warped source frame. Thereby, the warp is encoded and transmitted using a small number of keypoints rather than a dense flow field, which leads to massive savings compared to traditional codecs. However, by relying on a single source frame only, these methods lead to inaccurate reconstructions (e.g. one side of the head becomes unoccluded when turning the head and has to be synthesized). Here, we aim to tackle this issue by relying on multiple source frames (views of the face) and present encouraging results.</description>
+		</item>
+		
+		<item>
+			<title>A Perceptual Quality Enhancement Method for Video Coding, X. Qin et al., 2022</title>
+			<link>https://compression.cc/publications/18/</link>
+			<guid>https://compression.cc/publications/18/</guid>
+			<description>This paper describes the technical scheme of team Foo in the video compression track of Workshop and Challenge on Learned Image Compression (CLIC) 2022. Our method includes a VVC/H.266 codec and a quality enhancement network. Firstly, considering the coding efficiency and target bitrates of this challenge, we use the VVC codec and adopt adaptable configuration parameters for each video. Then, we propose a quality enhancement network supervised by multiple objective and perceptual losses to postprocess the decoded frames for high quality video restoration. Compared to the VVC codec configured with default parameters, the proposed method improves both PSNR and SSIM.</description>
+		</item>
+		
+		<item>
+			<title>SwinIQA: Learned Swin Distance for Compressed Image Quality Assessment, J. Liu et al., 2022</title>
+			<link>https://compression.cc/publications/17/</link>
+			<guid>https://compression.cc/publications/17/</guid>
+			<description>Image compression has raised widespread concern recently due to its significant importance for multimedia storage and transmission. Meanwhile, a reliable image quality assessment (IQA) for compressed images can not only help to verify the performance of various compression algorithms but also help to guide the compression optimization in turn. In this paper, we design a full-reference image quality assessment metric SwinIQA to measure the perceptual quality of compressed images in a learned Swin distance space.
+It is known that the compression artifacts are usually non-uniformly distributed with diverse distortion types and degrees. To warp the compressed images into the shared representation space while maintaining the complex distortion information, we extract the hierarchical feature representations from each of the stage of the Swin Transformer.
+Besides, we utilize cross attention operation to map the extracted feature representations into a learned Swin distance space. Experimental results show that the proposed metric achieves higher consistency with human&#x27;s perceptual judgment comapred with both traditional methods and learning-based methods on CLIC dataset.</description>
+		</item>
+		
+		<item>
+			<title>Hybrid video coding scheme based on VVC and spatio-temporal attention convolutional neural network, G. He et al., 2022</title>
+			<link>https://compression.cc/publications/16/</link>
+			<guid>https://compression.cc/publications/16/</guid>
+			<description>In this paper, we propose a hybrid video coding framework. The framework is built on the basis of VVC (Versatile Video Coding) video coding standard and constructs an implicitly aligned multi-frame fusion model to accomplish subjective video quality enhancement. The proposed framework mainly optimizes video compression efficiency from two perspectives. First is the sequence-level dynamic rate control algorithm, which assigns the appropriate bitrate to each video to obtain the highest overall video quality. Second is the MAQE, a multi frame implicit alignment video quality enhancement model, which performs motion alignment through multiple convolutional kernels of different sizes, uses a residual aggregation layer to fuse features of different frames, and then uses an enhanced attention module to adaptively deflate features based on spatio-temporal contextual features, so as to more effectively fuse feature of multiple frames and obtain higher quality reconstructed frames. The proposed method is validated on two tracks of 0.1M code rate and 1M code rate on CLIC-2022 video compression task, Experimental results show that the proposed method achieves PSNR of 30.301 and 37.251 and obtains MS-SSIM of 0.9368 and 0.9875. This paper is a comprehensive presentation of the scheme used by the Night-Watch team of the CLIC-2022 video track.</description>
+		</item>
+		
+		<item>
+			<title>Perceptual in-Loop Filter for Image and Video Compression, H. Wang et al., 2022</title>
+			<link>https://compression.cc/publications/15/</link>
+			<guid>https://compression.cc/publications/15/</guid>
+			<description>In this paper, we introduce our hybrid image and video compression scheme enhanced by CNN-optimized in-loop filter. Specifically, a Structure Preserving in-Loop Filter (SPiLF) is incorporated in the hybrid video codec Enhanced Compression Model (ECM), where two branches, i.e., gradient branch and pixel branch, are developed based on the dense residual unit (DRU). To provide pleasant visual quality, the Generative adversarial networks (GAN) loss and LPIPS loss are further considered. Therefore, the proposal is mainly focusing on perceptual-friendly image compression for human vision, whilst video compression could be further investigated. The experiments show that the proposed method achieves advanced visual quality when compared to the traditional methods.</description>
+		</item>
+		
+		<item>
+			<title>Perceptual Image Compression with Controllable Region Quality, X. Pan et al., 2022</title>
+			<link>https://compression.cc/publications/14/</link>
+			<guid>https://compression.cc/publications/14/</guid>
+			<description></description>
+		</item>
+		
+		<item>
+			<title>Video Compression, R. Feng et al., 2022</title>
+			<link>https://compression.cc/publications/13/</link>
+			<guid>https://compression.cc/publications/13/</guid>
+			<description>Video compression.</description>
+		</item>
+		
+		<item>
+			<title>Artificial Intelligence based Video Codec (AIVC) for CLIC 2022, T. Ladune et al., 2022</title>
+			<link>https://compression.cc/publications/12/</link>
+			<guid>https://compression.cc/publications/12/</guid>
+			<description>This paper presents the AIVC submission to the CLIC 2022 video track. AIVC is a fully-learned video codec based on conditional autoencoders. The flexibility of the AIVC models is leveraged to implement rate allocation and frame structure competition to select the optimal coding configuration per-sequence. This competition yields compelling compression performance, offering a rate reduction of -26% compared with the absence of competition.</description>
+		</item>
+		
+		<item>
+			<title>Adaptive Bitrate Quantization Scheme Without Codebook for Learned Image Compression, J. Löhdefink et al., 2022</title>
+			<link>https://compression.cc/publications/11/</link>
+			<guid>https://compression.cc/publications/11/</guid>
+			<description>We propose a generic approach to quantization without codebook in learned image compression called one-hot max (OHM) quantization. It reorganizes the feature space resulting in an additional dimension, along which vector quantization yields one-hot vectors by comparing activations. Furthermore, we show how to integrate OHM quantization into a compression system with bitrate adaptation, i.e., full control over bitrate during inference. We perform experiments on both MNIST and Kodak and report on rate-distortion trade-offs comparing with the integer rounding reference. For low bitrates (&lt; 0.4 bpp), our proposed quantizer yields better performance while exhibiting also other advantageous training and inference properties. Code is available at https://github.com/ifnspaml/OHMQ.</description>
+		</item>
+		
+		<item>
+			<title>Learned Video Compression with Conditional Augmented Normalizing Flows, C. Lin et al., 2022</title>
+			<link>https://compression.cc/publications/10/</link>
+			<guid>https://compression.cc/publications/10/</guid>
+			<description>In response to 2022 CLIC Learned Video Compression Challenge, we submit a learned video compression scheme based on conditional augmented normalizing flows (CANF). Motivated by augmented normalizing flow-based image compression (ANFIC), this proposal introduces conditional augmented normalizing flows to encode every p-frame conditionally based on its motion-compensated reference frame. CANF is a conditional coding scheme, which is utilized in place of the conventional residual coding. A separate CANF is deployed for motion coding, where a flow map extrapolation network is adopted to extrapolate a flow map that serves as a condition for motion coding. To address low-rate compression, our CANF-based coding framework includes image downscaling and upscaling as pre- and post-processing steps.</description>
+		</item>
+		
+		<item>
+			<title>Enhancing VVC with Deep Learning based Multi-Frame Post-Processing, D. Danier et al., 2022</title>
+			<link>https://compression.cc/publications/9/</link>
+			<guid>https://compression.cc/publications/9/</guid>
+			<description>This paper describes a CNN-based multi-frame post-processing approach based on a perceptually-inspired Generative Adversarial Network architecture, CVEGAN. This method has been integrated with the Versatile Video Coding Test Model (VTM) 15.2 to enhance the visual quality of the final reconstructed content. The evaluation results on the CLIC 2022 validation sequences show consistent coding gains over the original VVC VTM at the same bitrates when assessed by PSNR. The integrated codec has been submitted to the Challenge on Learned Image Compression (CLIC) 2022 (video track), and the team name associated with this submission is BVI_VC.</description>
+		</item>
+		
+		<item>
+			<title>Learned Low Bitrate Video Compression with Space-Time Super-Resolution, J. Yang et al., 2022</title>
+			<link>https://compression.cc/publications/8/</link>
+			<guid>https://compression.cc/publications/8/</guid>
+			<description>This paper presents a learned low bitrate video compression framework that consists of pre-processing, compression and post-processing.
+In pre-processing stage, the source videos are optionally reduced to low-resolution or low-frame-rate ones to better meet with the limited bandwidth.
+In compression stage, inter-frame prediction is performed by deformable convolution (DCN). The predicted frame is then used as temporal conditions to compress the current frame.
+In post-processing stage, the decoded videos are fed into a Space-Time Super-Resolution module, in which the videos are restored to original spatial and temporal resolutions.
+Experimental results on CLIC22 video test conditions demonstrate that the proposed method shows better performance on both objective and subjective quality at low bitrate. Our team name is PKUSZ-LVC.</description>
+		</item>
+		
+		<item>
+			<title>A Neural-network Enhanced Video Coding Framework beyond VVC, J. Li et al., 2022</title>
+			<link>https://compression.cc/publications/7/</link>
+			<guid>https://compression.cc/publications/7/</guid>
+			<description>This paper presents a hybrid video compression framework, aiming at providing a demonstration of applying deep learning-based approaches beyond conventional coding framework. The proposed hybrid framework is established over the Enhanced Compression Model (ECM) of which the core is the Versatile Video Coding (VVC) standard. We propose to integrate a series of enhanced coding tools, such as block partitioning, intra prediction, and inter prediction to further remove the spatial and temporal redundancy. Moreover, deep learning-based technologies including loop filter and super resolution are involved to restore the compression distortion. Compared with the VVC software VTM-11.0, experimental results demonstrate the effectiveness of the proposed learning-based framework, leading to 25.81%, 35.08%, and 37.54% bit-rate savings for Y, Cb and Cr components, respectively under random access configuration. In addition, the proposed framework achieves 39.313 and 32.050 PSNRs in the test set under 1 Mbps and 0.1 Mbps video compression tracks of CLIC-2022. 33.522, 30.758, and 28.300 in terms of PSNR are obtained in 0.3 bpp, 0.15 bpp, and 0.075 bpp image compression tracks.</description>
+		</item>
+		
+		<item>
+			<title>PO-ELIC: Perception-Oriented Efficient Learned Image Coding, D. He et al., 2022</title>
+			<link>https://compression.cc/publications/6/</link>
+			<guid>https://compression.cc/publications/6/</guid>
+			<description>In the past years, learned image compression (LIC) has achieved remarkable performance. The recent LIC methods outperform VVC in both PSNR and MS-SSIM. However, the low bit-rate reconstructions of LIC suffer from artifacts such as blurring, color drifting and texture missing. Moreover, those varied artifacts make image quality metrics correlate badly with human perceptual quality. In this paper, we propose PO-ELIC, i.e., Perception-Oriented Efficient Learned Image Coding. To be specific, we adapt ELIC, one of the state-of-the-art LIC models, with adversarial training techniques. We apply a mixture of losses including hinge-form adversarial loss, Charbonnier loss, and style loss, to finetune the model towards better perceptual quality. Experimental results demonstrate that our method achieves comparable perceptual quality with HiFiC with much lower bitrate.</description>
+		</item>
+		
+		<item>
+			<title>Super-Resolution based Video Coding Scheme, H. Cho et al., 2022</title>
+			<link>https://compression.cc/publications/5/</link>
+			<guid>https://compression.cc/publications/5/</guid>
+			<description>In this paper, we present a super-resolution based video coding scheme that compresses video data by combining traditional hybrid video coding and convolutional neural network-based video coding. During video encoding, downsampling reduces the resolution of an original video in both horizontal and vertical directions to reduce original video data, and convolutional neural network-based super-resolution is employed after the decoding process to recover the resolution of the reconstructed video during upsampling. For core encoding and decoding processes, the latest video coding standard (i.e., VVC/H.266) is conducted. The experimental results show that the proposed method can provide efficient coding performance while maintaining good visual quality.</description>
+		</item>
+		
+		<item>
+			<title>RDONet: Rate-Distortion Optimized Learned Image Compression with Variable Depth, F. Brand et al., 2022</title>
+			<link>https://compression.cc/publications/4/</link>
+			<guid>https://compression.cc/publications/4/</guid>
+			<description>Rate-distortion optimization (RDO) is responsible for large gains in image and video compression. While RDO is a standard tool in traditional image and video coding, it is not yet widely used in novel end-to-end trained neural methods. The major reason is that the decoding function is trained once and does not have free parameters. In this paper, we present RDONet, a network containing state-of-the-art components, which is perceptually optimized and capable of rate-distortion optimization. With this network, we are able to outperform VVC Intra on MS-SSIM and two different perceptual LPIPS metrics. This paper is part of the CLIC challenge, where we participate under the team name RDONet_FAU.</description>
+		</item>
+		
+		<item>
+			<title>Non-linear Motion Estimation for Video Frame Interpolation using Space-time Convolutions, S. Dutta et al., 2022</title>
+			<link>https://compression.cc/publications/3/</link>
+			<guid>https://compression.cc/publications/3/</guid>
+			<description>Video frame interpolation aims to synthesize one or multiple frames between two consecutive frames in a video. It has a wide range of applications including slow-motion video generation, video compression and developing video codecs.
+Some older works tackled this problem by assuming per-pixel linear motion between video frames. However, objects often follow a non-linear motion pattern in the real domain and some recent methods attempt to model per-pixel motion by non-linear models (e.g., quadratic). A quadratic model can also be inaccurate, especially in the case of motion discontinuities over time (i.e. sudden jerks) and occlusions, where some of the flow information may be invalid or inaccurate.
+In our paper, we propose to approximate the per-pixel motion using a space-time convolution network that is able to adaptively select the motion model to be used. Specifically, we are able to softly switch between a linear and a quadratic model.
+Towards this end, we use an end-to-end 3D CNN encoder-decoder architecture over bidirectional optical flows and occlusion maps to estimate the non-linear motion model of each pixel. Further, a motion refinement module is employed to refine the non-linear motion and the interpolated frames are estimated by a simple warping of the neighboring frames with the estimated per-pixel motion. We show that our method outperforms state-of-the-art algorithms on four datasets.</description>
+		</item>
+		
+		<item>
+			<title>Neural Network-based In-Loop Filter for CLIC 2022, Y. Wang et al., 2022</title>
+			<link>https://compression.cc/publications/2/</link>
+			<guid>https://compression.cc/publications/2/</guid>
+			<description>A hybrid video codec comprised of an optimized VVC codec and a convolutional neural network-based loop filter (CNNLF), was submitted in the video compression track in Challenge on Learned Image Compression (CLIC) 2022[1].
+This paper presents the traditional methods and deep learning scheme in video coding optimization, which were adopted in the hybrid codec based on VTM-15.0. Traditional methods include QP adaptive adjustment of I frame and rate-distortion optimization based on SSIM. Meanwhile, the deep learning scheme proposes an adaptive CNNLF, which is turned on / off based on the rate-distortion optimization at CTU and frame level. The network architecture mainly consists of the attention residual module and the convolution feature maps module, which help extract image features and improve image quality. To balance performance and complexity, the proposed scheme sets different training parameters for 0.1 Mbps and 1 Mbps, respectively. The experimental results show that compared with VTM-15.0, the proposed traditional methods and adding CNNLF improve the PSNR by 0.4dB and 0.8dB at 0.1Mbps, respectively; 0.2dB and 0.5dB at 1Mbps, respectively, which proves the superiority of our method.</description>
+		</item>
+		
+		<item>
+			<title>Self-Supervised Variable Rate Image Compression using Visual Attention, A. Sinha et al., 2022</title>
+			<link>https://compression.cc/publications/1/</link>
+			<guid>https://compression.cc/publications/1/</guid>
+			<description>The recent success of self-supervised learning relies on its ability to learn the representations from self-defined pseudo-labels that are applied to several downstream tasks. Motivated by this ability, we present a deep image compression technique, which learns the lossy reconstruction of raw images from the self-supervised learned representation of SimCLR ResNet-50 architecture. Our framework uses a feature pyramid to achieve the variable rate compression of the image using a self-attention map for the optimal allocation of bits. The paper provides an overview to observe the effects of contrastive self-supervised representations and the self-attention map on the distortion and perceptual quality of the reconstructed image. The experiments are performed on a different class of images to show that the proposed method outperforms the other variable rate deep compression models without compromising the perceptual quality of the images.</description>
+		</item>
+		
+	</channel>
+</rss>

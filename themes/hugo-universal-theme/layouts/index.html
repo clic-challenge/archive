@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "top.html" . }}
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+            {{ partial "breadcrumbs.html" . }}
+            <div class="container">
+                 <div class="row">
+                        <div class="col-md-12">
+                                <h2>News</h2>
+                        {{ .Site.Data.index.news | markdownify}}
+                        </div>
+
+                        <div class="col-md-12">
+                                <h2>Introduction</h2>
+                        {{ .Site.Data.index.description | markdownify}}
+                        </div>
+                        <div class="col-md-12">
+                                <h2>Workshop location</h2>
+                        {{ .Site.Data.index.location | markdownify}}
+                        </div>
+
+                        <div class="col-md-12">
+                                <h2>Important Dates</h2>
+					<a href="http://challenge.compression.cc/schedule/1/">See the challenge site for all important dates.</a>
+                            </div>
+                            <!-- /.table-responsive -->
+
+                        </div>
+
+                        <div class="col-md-12">
+                                <h2>Speakers</h2>
+                        {{ range .Site.Data.index.speakers }}
+                            {{ partial "speakers.html" . }}
+                        {{ end }}
+                        </div>
+                                <h2>Workshop Schedule</h2>
+                        <div class="col-md-12">
+
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Time</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                        {{ range .Site.Data.index.schedule }}
+                            {{ partial "schedule.html" . }}
+                        {{ end }}
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+
+                        </div>
+
+                 </div>
+                 <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        {{ partial "carousel.html" . }}
+
+        {{ partial "features.html" . }}
+
+        {{ partial "testimonials.html" . }}
+
+        {{ partial "see_more.html" . }}
+
+        {{ partial "recent_posts.html" . }}
+
+        {{ partial "sponsors.html" . }}
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

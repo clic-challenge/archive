@@ -1,0 +1,112 @@
+news: >
+    <p> <b>June 12th:</b> Our CVPR workshop is live today! Two of our talks, by Dr. Lu Yu <a href="/talks/lu-yu-talk">(talk page here)</a> and team IMCL_MSSSIM <a href="/talks/imcl-msssim-talk">(talk page here)</a> will be hosted here on compression.cc. </p>
+    <p> <b>Nov 20th:</b> The website of the 2020 edition of the workshop/challenge is online! </p>
+
+    <p><b>Nov 1:</b> We have been approved for the Third Workshop and Challenge on Learned Image Compression at CVPR 2020. More information on the updated challenge and schedule will be available in the coming weeks.</p>
+
+description: >
+        Our workshop aims to gather publications which will advance the field of image and video compression using state of the art machine learning and computer vision techniques. Even with the long history of signal-processing oriented compression, taking new approaches to image processing have great potential, due to the proliferation of high-resolution cell-phone images and special hardware (e.g., GPUs and mobile AI accelerators). The potential in this area has already been demonstrated using recurrent neural networks, convolutional neural networks, and adversarial learning, many of these matching the best image-compression standards when measured on perceptual metrics. As such, we are interested in the various techniques associated with this class of methods. Broadly speaking, we would like to encourage the development of novel encoder/decoder architectures, novel ways to control information flow between the encoder and the decoder, novel optimization objectives for improved perceptual quality and learn how to quantize (or learn to quantize) better.
+
+location: >
+        The workshop is held on June 14th, in conjunction with CVPR 2020 which is virtual this year.  More information about CVPR2020 can be found at http://cvpr2020.thecvf.com/
+
+speakers_width: 3
+speakers:
+    - name: Lu Yu
+      affiliation: "Zhejiang University" 
+      bio: "Director of the Institute of Information and Communication Networks Engineering. 
+
+Prof. Yu has been ISO/IEC JTC 1 / SC 29 / WG11 (MPEG) Video Chair since Jan. 2018. And she is Membership Chair of Visual Signal Processing and Communication TC and Elected Chair of Circuits and Systems Education and Outreach TC of IEEE Circuits and Systems Society, Steering Committee member of Picture Coding Symposim. She acted as Video Chair of the Audio and Video Coding Standardization Working Group of China (AVS) for 13 years, general chair of the 15th Workshop on Packet Video in 2016.  
+
+Her research area is visual perception, visual perceptual quality assessment, visual signal representation and coding, multimedia intelligent processing, and related ASIC and SoC design, in which she is a principal investigator of a number of national R&D projects such as Natural Science Foundation of China, 863 Hi-tech Program and inventor of 80+ granted patents. She published more than 100 technical papers and contributed hundreds proposals to international and national standards in the past years."
+      image: luyu.jpeg
+      width: 3
+    - name: Nils Thuerey
+      affiliation: "Technical University of Munich" 
+      bio: "Nils Thuerey is an Associate-Professor at the Technical University of Munich (TUM). He focuses on deep-learning methods for physical data, with a special emphasis on fluids. Beyond latent-space simulation algorithms and learning with differentiable solvers, generative models have been a central theme of his work. Motivated by time-dependent problems from the physics area, Nils especially focuses on spatio-temporal data such as videos. Here, self-supervision in space as well as time has shown lots of promise, e.g., in form of the TecoGAN model, which can handle video super-resolution as well as unpaired video translation."
+      image: nils.jpg
+      width: 3
+    - name: Tom Bird
+      affiliation: "UCL" 
+      bio: "Tom is a machine learning researcher at UCL, London. Currently working towards his PhD, he has worked on probabilistic generative modelling and variational methods. He has made a novel contribution to lossless compression by being a part of the research team that developed BB-ANS, a way to convert latent variable ML models such as VAEs into practical lossless compression systems. Before beginning his PhD, he worked in quantitative finance and Fintech, after getting his BA & Master's in Maths from the University of Cambridge."
+      image: tom.jpeg
+      width: 3
+    - name: Yochai Blau
+      affiliation: "Technion" 
+      bio: "Yochai recently completed his PhD thesis at the Technion, Israel, where he focused on fundamental tradeoffs in image compression and restoration. His contributions include theoretical research on the role of perceptual quality within modern image restoration and compression algorithms, as well as novel methodologies for properly evaluating their performance. As part of this research, he co-organized the PIRM workshop and challenges at ECCV 2018, which promoted perceptual-quality-aware algorithms and evaluation schemes.  Yochai is now working at Google on automated medicine through intelligent imaging."
+      image: yochai.jpg
+      width: 3
+
+schedule:
+    - title: Poster Setup
+      time: 8 AM - 8.30 AM
+    - title: Welcome and Schedule Overview
+      time: 8.30 AM - 8.45 AM
+    - title: Invited Speaker Talk Lu Yu
+      time: 8.45 AM - 9.15 AM
+    - title: Invited Speaker Talk Nils Thuerey
+      time: 9.15 AM - 9.45 AM
+    - title: Short Break
+      time: 9.45 AM - 10 AM
+    - title: Invited Speaker Tom Bird
+      time: 10 AM - 10.30 AM
+    - title: Invited Speaker Yochai Blau
+      time: 10.30 AM - 11 AM
+    - title: Break
+      time: 11 AM - 12 PM
+    - title: Dataset, Challenge, Rating Task
+      time: 12 PM - 12.30 PM
+    - title: 3rd Lossy Image Compression Track
+      time: 12.30 PM - 12.40 PM
+    - title: 2nd Lossy Image Compression Track
+      time: 12.40 PM - 12.50 PM
+    - title: 1st Lossy Image Compression Track
+      time: 12.50 PM - 1 PM
+    - title: Break
+      time: 1 PM - 1.15 PM
+    - title: 3rd P-frame Compression Track
+      time: 1.15 PM - 1.25 PM
+    - title: 2nd P-frame Compression Track
+      time: 1.25 PM - 1.35 PM
+    - title: 1st P-frame Compression Track
+      time: 1.35 PM - 1.45 PM
+    - title: Award Ceremony
+      time: 1.45 PM - 2.00 PM
+    - title: Break
+      time: 2.00 PM - 2.30 PM
+    - title: Poster Session
+      time: 2.30 PM - 3.30 PM
+    - title: Break
+      time: 3.30 PM - 5.00 PM
+    - title: Panel Discussion
+      time: 5.00 PM - 5.45 PM
+
+
+dates:
+    - date: November 22th 2019
+      title: Development phase & announcement. The training part of the dataset released.
+
+    - date: January 7th, 2020
+      title: The validation part of the dataset released, online validation server is made available.
+
+    - date: March 13th, 2020
+      title:  Final decoders for the challenge are expected to be submitted.
+
+    - date: March 16th, 2020
+      title:  Test set is released for conestants to compress.
+
+    - date: March 20th, 2020
+      title: Encoded test set submission deadline. The competition is closed at this point.
+
+    - date: March 23th, 2020
+      title: Paper and Factsheet submission deadline.per and Factsheet submission deadline.
+
+    - date: April 6th, 2020
+      title:  Paper decision notification.
+
+    - date: Mid April, 2020
+      title: Camera ready deadline for CVPR
+
+    - date: Mid May, 2020
+      title: End of human evaluation on both challenges. Results will be released online before the workshop.
+

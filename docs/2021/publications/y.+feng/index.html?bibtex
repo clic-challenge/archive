@@ -1,0 +1,19 @@
+
+@inproceedings{Chen2021a,
+  author = "Y. Chen and Q. Yuan and X. wu and Z. Zhang and Y. Feng",
+  title = "MCM: Multi-channel Context Model for Entropy in Generative Image Compression",
+  year = 2021,
+  booktitle = "4th Challenge on Learned Image Compression",
+  month = "Jun"
+}
+
+
+@inproceedings{Gao2021c,
+  author = "S. Gao and Y. Shi and T. Guo and Z. Qiu and Y. Ge and Z. Cui and Y. Feng and J. Wang and B. Bai",
+  title = "Perceptual Learned Image Compression With Continuous Rate Adaptation",
+  year = 2021,
+  booktitle = "4th Challenge on Learned Image Compression",
+  month = "Jun"
+}
+
+

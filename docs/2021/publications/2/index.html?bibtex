@@ -1,0 +1,11 @@
+
+@inproceedings{Brand_2021_CVPR,
+  author = "F. Brand and K. Fischer and A. Kaup",
+  title = "Rate-Distortion Optimized Learning-Based Image Compression Using an Adaptive Hierachical Autoencoder With Conditional Hyperprior",
+  year = 2021,
+  booktitle = "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+  pages = "1885-1889",
+  month = "Jun"
+}
+
+

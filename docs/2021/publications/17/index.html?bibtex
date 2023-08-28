@@ -1,0 +1,11 @@
+
+@inproceedings{Zhao_2021_CVPR,
+  author = "J. Zhao and B. Li and J. Li and R. Xiong and Y. Lu",
+  title = "A Universal Encoder Rate Distortion Optimization Framework for Learned Compression",
+  year = 2021,
+  booktitle = "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+  pages = "1880-1884",
+  month = "Jun"
+}
+
+
