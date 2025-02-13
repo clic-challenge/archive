@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 
-  {{ partial "head.html" . }}
+  <head>
+    {{ partial "headers.html" . }}
+    {{ partial "custom_headers.html" . }}
+  </head>
 
   <body>
 
     <div id="all">
+        {{ partial "top.html" . }}
 
-        <header>
-
-          {{ partial "top.html" . }}
-
-          {{ partial "nav.html" . }}
-
-        </header>
+        {{ partial "nav.html" . }}
 
         {{ partial "breadcrumbs.html" . }}
 
@@ -39,18 +37,6 @@
                 </div>
                 <!-- /.row -->
 
-            {{ if isset .Params "leaderboard" }}
-                {{ partial "leaderboard.html" . }}
-            {{ end }}
-            {{ if isset .Params "transparent-leaderboard" }}
-                {{ partial "leaderboard.html" . }}
-            {{ end }}
-            {{ if isset .Params "testresults" }}
-                {{ partial "test_results.html" . }}
-            {{ end }}
-            {{ if isset .Params "transparent-testresults" }}
-                {{ partial "test_results.html" . }}
-            {{ end }}
             </div>
             <!-- /.container -->
 

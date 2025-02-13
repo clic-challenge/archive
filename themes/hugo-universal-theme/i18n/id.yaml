@@ -1,74 +1,74 @@
 - id: home
-  translation: "Home"
+  translation: "Beranda"
 
 - id: templateBy
-  translation: "Template by"
+  translation: "Templat dibuat oleh"
 
 - id: portedBy
-  translation: "Ported to Hugo by"
+  translation: "Diadapatasi ke Hugo oleh"
 
 - id: contactGoTo
-  translation: "Go to contact page"
+  translation: "Ke laman kontak"
 
 - id: contactAddrTitle
-  translation: "Address"
+  translation: "Alamat"
 
 - id: contactTitle
-  translation: "Contact"
+  translation: "Kontak"
 
 - id: contactForm
-  translation: "Contact form"
+  translation: "Formulir pertanyaan"
 
 - id: contactName
-  translation: "Your Name"
+  translation: "Nama Anda"
 
 - id: contactMail
-  translation: "Your Email"
+  translation: "Surel Anda"
 
 - id: contactMessage
-  translation: "Your Message"
+  translation: "Pesan Anda"
 
 - id: contactSend
-  translation: "Send Message"
+  translation: "Kirim pesan"
 
 - id: navHome
-  translation: "go to homepage"
+  translation: "ke laman utama"
 
 - id: navToggle
-  translation: "Toggle Navigation"
+  translation: "Buka navigasi"
 
 - id: categoriesTitle
-  translation: "Categories"
+  translation: "Kategori"
 
 - id: searchTitle
-  translation: "Search"
+  translation: "Cari"
 
 - id: tagsTitle
   translation: "Tags"
 
 - id: continueReading
-  translation: "Continue reading"
+  translation: "Lanjutkan membaca"
 
 - id: readMore
-  translation: "Read more"
+  translation: "Baca selengkapnya"
 
 - id: authorBy
-  translation: "By"
+  translation: "Oleh"
 
 - id: recentPosts
-  translation: "Recent posts"
+  translation: "Kiriman terkini"
 
 - id: aboutUs
-  translation: "About us"
+  translation: "Tentang kami"
 
 - id: newer
-  translation: "Newer"
+  translation: "Terbaru"
 
 - id: older
-  translation: "Older"
+  translation: "Lebih lama"
 
 - id: publishedOn
-  translation: "on"
+  translation: "pada"
 
 - id: 404Error
   translation: "Error 404: Page not found"
@@ -77,7 +77,7 @@
   translation: "We are sorry – this page is not here anymore"
 
 - id: 404NavHome
-  translation: "Go to homepage"
+  translation: "Ke laman utama"
 
 - id: January
   translation: January

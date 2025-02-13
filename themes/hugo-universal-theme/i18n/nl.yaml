@@ -2,82 +2,82 @@
   translation: "Home"
 
 - id: templateBy
-  translation: "Template by"
+  translation: "Template door"
 
 - id: portedBy
-  translation: "Ported to Hugo by"
+  translation: "Omgezet naar Hugo door"
 
 - id: contactGoTo
-  translation: "Go to contact page"
+  translation: "Ga naar de contactpagina"
 
 - id: contactAddrTitle
-  translation: "Address"
+  translation: "Adres"
 
 - id: contactTitle
   translation: "Contact"
 
 - id: contactForm
-  translation: "Contact form"
+  translation: "Contactformulier"
 
 - id: contactName
-  translation: "Your Name"
+  translation: "Je naam"
 
 - id: contactMail
-  translation: "Your Email"
+  translation: "Je e-mailadres"
 
 - id: contactMessage
-  translation: "Your Message"
+  translation: "Je bericht"
 
 - id: contactSend
-  translation: "Send Message"
+  translation: "Verstuur bericht"
 
 - id: navHome
-  translation: "go to homepage"
+  translation: "ga naar de homepage"
 
 - id: navToggle
-  translation: "Toggle Navigation"
+  translation: "Navigation Aan/Uit"
 
 - id: categoriesTitle
-  translation: "Categories"
+  translation: "Categorieën"
 
 - id: searchTitle
-  translation: "Search"
+  translation: "Zoeken"
 
 - id: tagsTitle
   translation: "Tags"
 
 - id: continueReading
-  translation: "Continue reading"
+  translation: "Ga door met lezen"
 
 - id: readMore
-  translation: "Read more"
+  translation: "Lees meer"
 
 - id: authorBy
-  translation: "By"
+  translation: "Door"
 
 - id: recentPosts
-  translation: "Recent posts"
+  translation: "Recente berichten"
 
 - id: aboutUs
-  translation: "About us"
+  translation: "Over ons"
 
 - id: newer
-  translation: "Newer"
+  translation: "Nieuwer"
 
 - id: older
-  translation: "Older"
+  translation: "Ouder"
 
 - id: publishedOn
-  translation: "on"
+  translation: "op"
 
 - id: 404Error
-  translation: "Error 404: Page not found"
+  translation: "Fout 404: Pagina niet gevonden"
 
 - id: 404Message
-  translation: "We are sorry – this page is not here anymore"
+  translation: "Het spijt ons – deze pagina is er niet meer"
 
 - id: 404NavHome
-  translation: "Go to homepage"
+  translation: "Ga naar de homepage"
 
 - id: January
   translation: January

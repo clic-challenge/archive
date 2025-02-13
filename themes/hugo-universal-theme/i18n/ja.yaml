@@ -1,74 +1,74 @@
 - id: home
-  translation: "Home"
+  translation: "ホーム"
 
 - id: templateBy
-  translation: "Template by"
+  translation: "テンプレート作成"
 
 - id: portedBy
-  translation: "Ported to Hugo by"
+  translation: "Hugo への移植"
 
 - id: contactGoTo
-  translation: "Go to contact page"
+  translation: "お問い合わせはこちら"
 
 - id: contactAddrTitle
-  translation: "Address"
+  translation: "住所"
 
 - id: contactTitle
-  translation: "Contact"
+  translation: "お問い合わせ先"
 
 - id: contactForm
-  translation: "Contact form"
+  translation: "お問い合わせフォーム"
 
 - id: contactName
-  translation: "Your Name"
+  translation: "お名前"
 
 - id: contactMail
-  translation: "Your Email"
+  translation: "メールアドレス"
 
 - id: contactMessage
-  translation: "Your Message"
+  translation: "お問い合わせ内容"
 
 - id: contactSend
-  translation: "Send Message"
+  translation: "送信"
 
 - id: navHome
-  translation: "go to homepage"
+  translation: "ホームへ戻る"
 
 - id: navToggle
-  translation: "Toggle Navigation"
+  translation: "ナビゲーションの切り替え"
 
 - id: categoriesTitle
-  translation: "Categories"
+  translation: "カテゴリー"
 
 - id: searchTitle
-  translation: "Search"
+  translation: "検索"
 
 - id: tagsTitle
-  translation: "Tags"
+  translation: "タグ"
 
 - id: continueReading
-  translation: "Continue reading"
+  translation: "続きを読む"
 
 - id: readMore
-  translation: "Read more"
+  translation: "記事を読む"
 
 - id: authorBy
-  translation: "By"
+  translation: "投稿者"
 
 - id: recentPosts
-  translation: "Recent posts"
+  translation: "最新の投稿"
 
 - id: aboutUs
-  translation: "About us"
+  translation: "このサイトについて"
 
 - id: newer
-  translation: "Newer"
+  translation: "次へ"
 
 - id: older
-  translation: "Older"
+  translation: "前へ"
 
 - id: publishedOn
-  translation: "on"
+  translation: "日付"
 
 - id: 404Error
   translation: "Error 404: Page not found"
@@ -77,7 +77,7 @@
   translation: "We are sorry – this page is not here anymore"
 
 - id: 404NavHome
-  translation: "Go to homepage"
+  translation: "ホームへ戻る"
 
 - id: January
   translation: January

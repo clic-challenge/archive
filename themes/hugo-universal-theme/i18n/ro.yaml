@@ -1,83 +1,83 @@
 - id: home
-  translation: "Home"
+  translation: "Acasă"
 
 - id: templateBy
-  translation: "Template by"
+  translation: "Șablon de"
 
 - id: portedBy
-  translation: "Ported to Hugo by"
+  translation: "Portat în Hugo de"
 
 - id: contactGoTo
-  translation: "Go to contact page"
+  translation: "Du-te la pagina de contact"
 
 - id: contactAddrTitle
-  translation: "Address"
+  translation: "Adresă"
 
 - id: contactTitle
   translation: "Contact"
 
 - id: contactForm
-  translation: "Contact form"
+  translation: "Formă de contact"
 
 - id: contactName
-  translation: "Your Name"
+  translation: "Numele tău"
 
 - id: contactMail
-  translation: "Your Email"
+  translation: "Email-ul tău"
 
 - id: contactMessage
-  translation: "Your Message"
+  translation: "Mesajul tău"
 
 - id: contactSend
-  translation: "Send Message"
+  translation: "Trimite mesaj"
 
 - id: navHome
-  translation: "go to homepage"
+  translation: "Mergi acasă"
 
 - id: navToggle
-  translation: "Toggle Navigation"
+  translation: "Comută Navigarea"
 
 - id: categoriesTitle
-  translation: "Categories"
+  translation: "Categorii"
 
 - id: searchTitle
-  translation: "Search"
+  translation: "Caută"
 
 - id: tagsTitle
-  translation: "Tags"
+  translation: "Etichete"
 
 - id: continueReading
-  translation: "Continue reading"
+  translation: "Citește în continuare"
 
 - id: readMore
-  translation: "Read more"
+  translation: "Citește mai mult"
 
 - id: authorBy
-  translation: "By"
+  translation: "De"
 
 - id: recentPosts
-  translation: "Recent posts"
+  translation: "Articole recente"
 
 - id: aboutUs
-  translation: "About us"
+  translation: "Despre Noi"
 
 - id: newer
-  translation: "Newer"
+  translation: "Mai noi"
 
 - id: older
-  translation: "Older"
+  translation: "Mai vechi"
 
 - id: publishedOn
-  translation: "on"
+  translation: "pe"
 
 - id: 404Error
-  translation: "Error 404: Page not found"
+  translation: "Eroare 404: Pagina nu a fost găsită"
 
 - id: 404Message
-  translation: "We are sorry – this page is not here anymore"
+  translation: "Ne pare rău – această pagină nu mai este aici"
 
 - id: 404NavHome
-  translation: "Go to homepage"
+  translation: "Mergi acasă"
 
 - id: January
   translation: January

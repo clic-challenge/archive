@@ -1,74 +1,74 @@
 - id: home
-  translation: "Home"
+  translation: "Domovská stránka"
 
 - id: templateBy
-  translation: "Template by"
+  translation: "Šablona od"
 
 - id: portedBy
-  translation: "Ported to Hugo by"
+  translation: "Na Hugo přidal"
 
 - id: contactGoTo
-  translation: "Go to contact page"
+  translation: "Přejít na stránku s kontakty"
 
 - id: contactAddrTitle
-  translation: "Address"
+  translation: "Adresa"
 
 - id: contactTitle
-  translation: "Contact"
+  translation: "Kontakt"
 
 - id: contactForm
-  translation: "Contact form"
+  translation: "Kontaktní formulář"
 
 - id: contactName
-  translation: "Your Name"
+  translation: "Vaše jméno"
 
 - id: contactMail
-  translation: "Your Email"
+  translation: "Váš e-mail"
 
 - id: contactMessage
-  translation: "Your Message"
+  translation: "Vaše zpráva"
 
 - id: contactSend
-  translation: "Send Message"
+  translation: "Odeslat zprávu"
 
 - id: navHome
-  translation: "go to homepage"
+  translation: "Přejít na domovskou stránku"
 
 - id: navToggle
-  translation: "Toggle Navigation"
+  translation: "Přepnout prohlížení"
 
 - id: categoriesTitle
-  translation: "Categories"
+  translation: "Kategorie"
 
 - id: searchTitle
-  translation: "Search"
+  translation: "Hledat"
 
 - id: tagsTitle
   translation: "Tags"
 
 - id: continueReading
-  translation: "Continue reading"
+  translation: "Pokračovat ve čtení"
 
 - id: readMore
-  translation: "Read more"
+  translation: "Více"
 
 - id: authorBy
-  translation: "By"
+  translation: "Autor:"
 
 - id: recentPosts
-  translation: "Recent posts"
+  translation: "Poslední články"
 
 - id: aboutUs
-  translation: "About us"
+  translation: "O nás"
 
 - id: newer
-  translation: "Newer"
+  translation: "Nové"
 
 - id: older
-  translation: "Older"
+  translation: "Starší"
 
 - id: publishedOn
-  translation: "on"
+  translation: "dne"
 
 - id: 404Error
   translation: "Error 404: Page not found"

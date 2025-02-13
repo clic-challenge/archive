@@ -1,74 +1,74 @@
 - id: home
-  translation: "Home"
+  translation: "Hjem"
 
 - id: templateBy
-  translation: "Template by"
+  translation: "Designet af"
 
 - id: portedBy
-  translation: "Ported to Hugo by"
+  translation: "Porteret til Hugo af"
 
 - id: contactGoTo
-  translation: "Go to contact page"
+  translation: "Gå til kontaktside"
 
 - id: contactAddrTitle
-  translation: "Address"
+  translation: "Adresse"
 
 - id: contactTitle
-  translation: "Contact"
+  translation: "Kontakt"
 
 - id: contactForm
-  translation: "Contact form"
+  translation: "Kontaktformular"
 
 - id: contactName
-  translation: "Your Name"
+  translation: "Dit navn"
 
 - id: contactMail
-  translation: "Your Email"
+  translation: "Din e-mail adresse"
 
 - id: contactMessage
-  translation: "Your Message"
+  translation: "Din besked"
 
 - id: contactSend
-  translation: "Send Message"
+  translation: "Send besked"
 
 - id: navHome
-  translation: "go to homepage"
+  translation: "gå til startside"
 
 - id: navToggle
-  translation: "Toggle Navigation"
+  translation: "Slå navigation til/fra"
 
 - id: categoriesTitle
-  translation: "Categories"
+  translation: "Kategorier"
 
 - id: searchTitle
-  translation: "Search"
+  translation: "Søg"
 
 - id: tagsTitle
   translation: "Tags"
 
 - id: continueReading
-  translation: "Continue reading"
+  translation: "Læs videre"
 
 - id: readMore
-  translation: "Read more"
+  translation: "Læs mere"
 
 - id: authorBy
-  translation: "By"
+  translation: "Af"
 
 - id: recentPosts
-  translation: "Recent posts"
+  translation: "Nye indlæg"
 
 - id: aboutUs
-  translation: "About us"
+  translation: "Om os"
 
 - id: newer
-  translation: "Newer"
+  translation: "Nyere"
 
 - id: older
-  translation: "Older"
+  translation: "Ældre"
 
 - id: publishedOn
-  translation: "on"
+  translation: "den"
 
 - id: 404Error
   translation: "Error 404: Page not found"

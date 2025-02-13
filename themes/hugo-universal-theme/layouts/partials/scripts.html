@@ -6,114 +6,16 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
-{{ if .Site.Params.googleMapsApiKey }}
+{{ if and .Site.Params.enableGoogleMaps .Site.Params.googleMapsApiKey }}
 <script src="//maps.googleapis.com/maps/api/js?key={{.Site.Params.googleMapsApiKey}}&v=3.exp"></script>
-{{ else }}
-<script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script src="{{ "js/hpneo.gmaps.js" | relURL }}"></script>
+<script src="{{ "js/gmaps.init.js" | relURL }}"></script>
 {{ end }}
-<script src="{{ .Site.BaseURL }}js/hpneo.gmaps.js"></script>
-<script src="{{ .Site.BaseURL }}js/gmaps.init.js"></script>
-<script src="{{ .Site.BaseURL }}js/front.js"></script>
+{{ if and .Site.Params.enableRecaptchaInContactForm .Site.Params.googleRecaptchaKey }}
+<script src="//www.google.com/recaptcha/api.js" async defer></script>
+{{ end }}
+<script src="{{ "js/front.js" | relURL }}"></script>
 
 <!-- owl carousel -->
-<script src="{{ .Site.BaseURL }}js/owl.carousel.min.js"></script>
-<!-- <script src="http://vision.ee.ethz.ch/aeirikur/leaderboard.json"></script> -->
+<script src="{{ "js/owl.carousel.min.js" | relURL }}"></script>
 
-
-<script> var show_board = false; </script>
-{{ if isset .Params "leaderboard" }}
-<script src="{{.Site.Params.validation_leaderboard}}"></script>
-<script> show_board = true; var has_mos = false; </script>
-{{ end }}
-
-{{ if isset .Params "transparent-leaderboard" }}
-<script src="{{.Site.Params.transparent_validation_leaderboard}}"></script>
-<script> show_board = true; var has_mos = false; </script>
-{{ end }}
-
-{{ if isset .Params "testresults" }}
-<script src="{{.Site.Params.test_leaderboard}}"></script>
-<script>show_board = true; var has_mos = true; </script>
-{{ end }}
-
-{{ if isset .Params "transparent-testresults" }}
-<script src="{{.Site.Params.transparent_test_leaderboard}}"></script>
-<script>show_board = true; var has_mos = true; </script>
-{{ end }}
-
-<script>
-if (show_board){
-var test_results = (test_results||leaderboard);
-function GetURLParameter(sParam)
-{
-    var sPageURL = window.location.search.substring(1);
-    var sURLVariables = sPageURL.split('&');
-    for (var i = 0; i < sURLVariables.length; i++) 
-    {
-        var sParameterName = sURLVariables[i].split('=');
-        if (sParameterName[0] == sParam) 
-        {
-            return sParameterName[1];
-        }
-    }
-}
-sort_key = GetURLParameter('sort')
-if (sort_key === undefined || sort_key === 'mos'){
-    sort_key = 'mos_key';
-}
-if (['name','datetime'].indexOf(sort_key)>=0){
-    sort_fn = (function (a,b){
-        if (a[sort_key] < b[sort_key]){
-            return -1;
-        } else {
-            return 1;
-        }
-    } );
-} else if (['psnr','mos_key','msssim'].indexOf(sort_key)>=0){
-    sort_fn = (function (a,b) { return b[sort_key]-a[sort_key] });
-} else {
-    sort_fn = (function (a,b) { return -b[sort_key]+a[sort_key] });
-}
-
-console.log(test_results)
-entries = []; 
-for (var entry in test_results) {
-        console.log(entry);
-        test_results[entry]['name'] = entry;
-        if( test_results[entry].hasOwnProperty('mos')){
-                test_results[entry]['mos_str']=test_results[entry]['mos'];
-                test_results[entry]['mos_key']=test_results[entry]['mos'];
-        } else {
-                test_results[entry]['mos_str']='';
-                test_results[entry]['mos_key']=0;
-        }
-        entries.push(test_results[entry]);
-}
-entries = entries.sort(sort_fn);
-function getRow(e){
-        var row =  ( "<tr>" + 
-                        "<td>"+e.name+"</td>" +
-                        "<td>"+( e.psnr && e.psnr.toFixed(2) || "TBA" )+"</td>")
-        if (has_mos) {
-            row = row + "<td>"+( e.mos_str )+"</td>";
-        }
-        row = (row +
-                        "<td>"+ ( e.msssim && e.msssim.toFixed(3) || "TBA" )+"</td>" +
-                        "<td>"+( e.images_size || "TBA" )+"</td>" +
-                        "<td>"+( e.decoding_time || "TBA" )+"</td>" +
-                        "<td>"+( e.decoder_size || "TBA" )+"</td>" +
-                        "<td>"+( e.datetime || "TBA" )+"</td>" +
-                  	"</tr>");
-        return row
-}
-leaderboard_dom = $("#leaderboard");
-if (leaderboard_dom.length){
-    //leaderboard_dom = $("#leaderboard")[0];
-    for (var i = 0; i<entries.length; i++){
-            console.log(entries[i]);
-            console.log(getRow(entries[i]));
-            leaderboard_dom.append(getRow(entries[i]));
-    }
-}
-}
-</script>

@@ -1,83 +1,83 @@
 - id: home
-  translation: "Home"
+  translation: "首頁"
 
 - id: templateBy
-  translation: "Template by"
+  translation: "模板源自"
 
 - id: portedBy
-  translation: "Ported to Hugo by"
+  translation: "移植至 Hugo 源自"
 
 - id: contactGoTo
-  translation: "Go to contact page"
+  translation: "前往聯絡資訊"
 
 - id: contactAddrTitle
-  translation: "Address"
+  translation: "地址"
 
 - id: contactTitle
-  translation: "Contact"
+  translation: "聯絡資訊"
 
 - id: contactForm
-  translation: "Contact form"
+  translation: "聯絡表單"
 
 - id: contactName
-  translation: "Your Name"
+  translation: "你的名字"
 
 - id: contactMail
-  translation: "Your Email"
+  translation: "你的 Email"
 
 - id: contactMessage
-  translation: "Your Message"
+  translation: "你的訊息"
 
 - id: contactSend
-  translation: "Send Message"
+  translation: "發送訊息"
 
 - id: navHome
-  translation: "go to homepage"
+  translation: "返回首頁"
 
 - id: navToggle
-  translation: "Toggle Navigation"
+  translation: "切換導覽列"
 
 - id: categoriesTitle
-  translation: "Categories"
+  translation: "分類"
 
 - id: searchTitle
-  translation: "Search"
+  translation: "搜尋"
 
 - id: tagsTitle
-  translation: "Tags"
+  translation: "標籤"
 
 - id: continueReading
-  translation: "Continue reading"
+  translation: "繼續閱讀"
 
 - id: readMore
-  translation: "Read more"
+  translation: "閱讀更多"
 
 - id: authorBy
-  translation: "By"
+  translation: "由"
 
 - id: recentPosts
-  translation: "Recent posts"
+  translation: "最新文章"
 
 - id: aboutUs
-  translation: "About us"
+  translation: "關於我們"
 
 - id: newer
-  translation: "Newer"
+  translation: "更新"
 
 - id: older
-  translation: "Older"
+  translation: "更舊"
 
 - id: publishedOn
-  translation: "on"
+  translation: "在"
 
 - id: 404Error
-  translation: "Error 404: Page not found"
+  translation: "Error 404: 找不到該頁面"
 
 - id: 404Message
-  translation: "We are sorry – this page is not here anymore"
+  translation: "抱歉 – 你所搜尋的頁面不在這裡"
 
 - id: 404NavHome
-  translation: "Go to homepage"
+  translation: "返回首頁"
 
 - id: January
   translation: January
