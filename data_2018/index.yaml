@@ -1,5 +1,5 @@
 news: >
-    <b>2019:</b>The latest version of our workshop/challenge is available <a href="http://www.compression.cc">here!</a>.<br>
+    <b>2019:</b>The latest version of our workshop/challenge is available <a href="https://archive.compression.cc">here!</a>.<br>
     <b>Jun 19:</b> Workshop and challenge papers can be found <a href="http://openaccess.thecvf.com/CVPR2018_workshops/CVPR2018_W50.py">here</a><br>
     <b>May 31:</b> The <a href="/leaderboard">winners</a> of the challenge have been announced!
     We have the following winners: <ul><li>TucodecTNGcnn4p (<a href="results/?sort=mos">MOS</a> and <a href="results/?sort=msssim">MS-SSIMM</a>)</li> <li>iipTiramisu (<a href="results/?sort=psnr">PSNR</a>)</li> <li>xvc (fastest <a href="results/?sort=mos">top entry</a>)</li> </ul>

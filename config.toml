@@ -34,12 +34,12 @@ googleAnalytics = ""
 #  [[menu.main]]
 #      parent = "leaderboard"
 #      name = "Low-rate Track"
-#      url  = "http://www.compression.cc/results/"
+#      url  = "https://archive.compression.cc/results/"
 #      weight = 2.6
 #  [[menu.main]]
 #      parent = "leaderboard"
 #      name = "Transparent Track"
-#      url  = "http://www.compression.cc/transparent_results/"
+#      url  = "https://archive.compression.cc/transparent_results/"
 #      weight = 2.7
 
 [[menu.main]]
