@@ -1,4 +1,4 @@
-baseurl = "http://www.compression.cc/"
+baseurl = "https://archive.compression.cc/"
 title = "Challenge on Learned Image Compression"
 theme = "hugo-universal-theme"
 themesDir = "themes/"
@@ -11,11 +11,6 @@ defaultContentLanguage = "en"
 #disqusShortname = "devcows"
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
-
-# Define the number of posts per page
-paginate = 10
-
-
 
 [menu]
 
