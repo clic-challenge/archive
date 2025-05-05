@@ -111,8 +111,7 @@ googleAnalytics = ""
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<h3 style="color:white">This is the archive of the 2019 version of the workshop/challenge. For the latest edition, follow <a href="/">this link.</a></h3>
-      """
+    text = """<h3 style="color:white">This is the archive of the 2019 version of the workshop/challenge. For the latest edition, follow <a href="https://compression.cc/">this link.</a></h3>"""
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
