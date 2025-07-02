@@ -1,0 +1,253 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CLIC &#183; Challenge on Learned Image Compression</title>
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2023_public/static/css/4.3.1/bootstrap.min.css">
+		<link rel="shortcut icon" type="image/png" href="https://storage.googleapis.com/clic2023_public/static/favicon.ico">
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2023_public/static/css/style.css">
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2023_public/static/css/dashboard.css?v=1.1">
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://storage.googleapis.com/clic2023_public/static/js/4.3.1/bootstrap.min.js"></script>
+
+		
+	
+		
+	<link rel="unapi-server" type="application/xml" title="unAPI" href="/publications/unapi/"/>
+
+	
+		<meta name="citation_date" content="2023" />
+		<meta name="citation_title" content="Enhanced Diagnostic Fidelity in Pathology Whole Slide Image Compression via Deep Learning" />
+		<meta name="citation_author" content="M. Fischer" />
+		<meta name="citation_author" content="P. Neher" />
+		<meta name="citation_author" content="P. Schüffler" />
+		<meta name="citation_author" content="S. Xiao" />
+		<meta name="citation_author" content="S. D. Almeida" />
+		<meta name="citation_author" content="C. Ulrich" />
+		<meta name="citation_author" content="A. Muckenhuber" />
+		<meta name="citation_author" content="R. Braren" />
+		<meta name="citation_author" content="M. Götz" />
+		<meta name="citation_author" content="J. Kleesiek" />
+		<meta name="citation_author" content="M. Nolden" />
+		<meta name="citation_author" content="K. Maier-Hein" />
+		<meta name="citation_doi" content="10.1007/978-3-031-45676-3_43"/>
+	
+
+	</head>
+	<body class="bg-light">
+		<div class="container-fluid" id="container-top">
+			<nav class="row navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0">
+				<a class="navbar-brand col-sm-12 col-md-2 mr-0" href="#">CLIC 2024</a>
+				<span class="navbar-text d-none d-md-block">6th Challenge on Learned Image Compression</span>
+				<span class="navbar-text d-block d-md-none">
+					<a data-toggle="collapse" href="#collapseSidebar" class="px-3" onclick="document.getElementById('container-top').scrollIntoView();"><i data-feather="menu"></i></a>
+				</span>
+				<ul class="navbar-nav px-3">
+					<li class="nav-item text-nowrap">
+						
+						<a class="nav-link" href="/submit/">Login/Signup</a>
+						
+					</li>
+				</ul>
+			</nav>
+
+			<div class="row">
+				<nav id="collapseSidebar" class="collapse col-md-2 bg-light sidebar text-truncate" style="font-size: .875rem">
+					
+						<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+	<span>Conference</span>
+</h6>
+<ul class="nav flex-column">
+	<li class="nav-item">
+		<a class="nav-link" href="/">
+			<i data-feather="home"></i> Home
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/schedule/2/">
+			<i data-feather="calendar"></i> Dates
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/publications/">
+			<i data-feather="book-open"></i> Papers
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/organizers/">
+			<i data-feather="user"></i> Organizers
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/awards/">
+			<i data-feather="award"></i> Awards
+		</a>
+	</li>
+</ul>
+
+<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+	<span>Challenge</span>
+</h6>
+<ul class="nav flex-column mb-2">
+	<li class="nav-item">
+		<a class="nav-link" href="/tasks/">
+			<i data-feather="check-square"></i> Tasks
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/leaderboard/image_0_075/test/">
+			<i data-feather="align-justify"></i> Leaderboards
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="https://groups.google.com/g/clic-list">
+			<i data-feather="message-circle"></i> Forum
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/faq/">
+			<i data-feather="help-circle"></i> FAQ
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/submit/">
+			<i data-feather="upload"></i> Submit
+		</a>
+	</li>
+	
+</ul>
+
+<div class="d-none d-md-block">
+	<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+		<span>Past events</span>
+	</h6>
+	<ul class="nav flex-column mb-2">
+	        <li class="nav-item">
+                        <a class="nav-link" href="http://clic.compression.cc/2022">
+		                <i data-feather="link"></i>
+			        CLIC 2022
+		        </a>
+		</li>
+                <li class="nav-item">
+                        <a class="nav-link" href="http://clic.compression.cc/2021">
+                                <i data-feather="link"></i>
+                                CLIC 2021
+                        </a>
+                </li>
+		<li class="nav-item">
+			<a class="nav-link" href="http://clic.compression.cc/">
+				<i data-feather="link"></i>
+				CLIC 2020
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="http://clic.compression.cc/2019/">
+				<i data-feather="link"></i>
+				CLIC 2019
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="http://clic.compression.cc/2018/">
+				<i data-feather="link"></i>
+				CLIC 2018
+			</a>
+		</li>
+	</ul>
+</div>
+
+					
+				</nav>
+
+				<main role="main" class="col-md-10 ml-sm-auto px-md-4 pt-3">
+					
+	
+	<div class="card mb-3">
+		<div class="card-body">
+			
+
+
+	
+	<a href="/publications/m.+fischer/" class="author">M. Fischer</a>,
+	
+	<a href="/publications/p.+neher/" class="author">P. Neher</a>,
+	
+	<a href="/publications/p.+sch%C3%BCffler/" class="author">P. Schüffler</a>,
+	
+	<a href="/publications/s.+xiao/" class="author">S. Xiao</a>,
+	
+	<a href="/publications/s.+d.+almeida/" class="author">S. D. Almeida</a>,
+	
+	<a href="/publications/c.+ulrich/" class="author">C. Ulrich</a>,
+	
+	<a href="/publications/a.+muckenhuber/" class="author">A. Muckenhuber</a>,
+	
+	<a href="/publications/r.+braren/" class="author">R. Braren</a>,
+	 <i>et al.</i><br />
+
+<b><a href="/publications/20/" class="title">Enhanced Diagnostic Fidelity in Pathology Whole Slide Image Compression via Deep Learning</a></b>
+
+<br/>
+
+	<i>Machine Learning in Medical Imaging,
+	
+	
+	2023</i><br />
+
+
+
+
+<a class="link" rel="external" href="http://dx.doi.org/10.1007/978-3-031-45676-3_43">DOI</a>,
+
+
+
+
+<a href="/publications/20/?ris">RIS</a>,
+<a href="/publications/20/?bibtex">BibTex</a>
+<abbr class="unapi-id" title="20"></abbr>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rfr_id=info:sid/compression.cc:compression&amp;rft_id=info:doi/10.1007%2F978-3-031-45676-3_43&amp;rft.btitle=Enhanced+Diagnostic+Fidelity+in+Pathology+Whole+Slide+Image+Compression+via+Deep+Learning&amp;rft.date=2023&amp;rft.au=M.+Fischer&amp;rft.au=P.+Neher&amp;rft.au=P.+Sch%C3%BCffler&amp;rft.au=S.+Xiao&amp;rft.au=S.+D.+Almeida&amp;rft.au=C.+Ulrich&amp;rft.au=A.+Muckenhuber&amp;rft.au=R.+Braren&amp;rft.au=M.+G%C3%B6tz&amp;rft.au=J.+Kleesiek&amp;rft.au=M.+Nolden&amp;rft.au=K.+Maier-Hein"></span>
+<br/>
+		</div>
+	</div>
+	<div class="card mb-3">
+		<div class="card-body">
+			<h5 class="card-title">Reference</h5>
+			<pre lang="bibtex">@inproceedings{clic2024-maxfischer,
+  author = "M. Fischer and P. Neher and P. Schüffler and S. Xiao and S. D. Almeida and C. Ulrich and A. Muckenhuber and R. Braren and M. Götz and J. Kleesiek and M. Nolden and K. Maier-Hein",
+  title = "Enhanced Diagnostic Fidelity in Pathology Whole Slide Image Compression via Deep Learning",
+  year = 2023,
+  booktitle = "Machine Learning in Medical Imaging",
+  doi = "10.1007/978-3-031-45676-3_43"
+}
+</pre>
+		</div>
+	</div>
+	
+
+					<hr>
+					
+					<div class="container-fluid text-center text-muted sponsors">
+					  Sponsored by<br>
+					        <a href="https://www.alibaba.com" target="_blank"><img src="https://storage.googleapis.com/clic2023_public/static/img/sponsors/alibaba.png" height="75"></a>
+					        <a href="https://www.elemental.com" target="_blank"><img src="https://storage.googleapis.com/clic2023_public/static/img/sponsors/aws_elemental.png" height="40"></a>
+						<a href="https://google.com" target="_blank"><img src="https://storage.googleapis.com/clic2023_public/static/img/sponsors/google.png" height="40"></a>
+	                                        <a href="https://www.interdigital.com" target="_blank"><img src="https://storage.googleapis.com/clic2023_public/static/img/sponsors/interdigital.png" height="30"></a>
+						<a href="https://microsoft.com" target="_blank"><img src="https://storage.googleapis.com/clic2023_public/static/img/sponsors/microsoft.png" height="100"></a>
+						<a href="https://www.youtube.com" target="_blank"><img src="https://storage.googleapis.com/clic2023_public/static/img/sponsors/youtube.png" height="40"></a>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		
+		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script>
+			feather.replace()
+		</script>
+	</body>
+</html>

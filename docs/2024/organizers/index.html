@@ -1,0 +1,407 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CLIC &#183; Challenge on Learned Image Compression</title>
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2023_public/static/css/4.3.1/bootstrap.min.css">
+		<link rel="shortcut icon" type="image/png" href="https://storage.googleapis.com/clic2023_public/static/favicon.ico">
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2023_public/static/css/style.css">
+		<link rel="stylesheet" href="https://storage.googleapis.com/clic2023_public/static/css/dashboard.css?v=1.1">
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://storage.googleapis.com/clic2023_public/static/js/4.3.1/bootstrap.min.js"></script>
+
+		
+		
+	</head>
+	<body class="bg-light">
+		<div class="container-fluid" id="container-top">
+			<nav class="row navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0">
+				<a class="navbar-brand col-sm-12 col-md-2 mr-0" href="#">CLIC 2024</a>
+				<span class="navbar-text d-none d-md-block">6th Challenge on Learned Image Compression</span>
+				<span class="navbar-text d-block d-md-none">
+					<a data-toggle="collapse" href="#collapseSidebar" class="px-3" onclick="document.getElementById('container-top').scrollIntoView();"><i data-feather="menu"></i></a>
+				</span>
+				<ul class="navbar-nav px-3">
+					<li class="nav-item text-nowrap">
+						
+						<a class="nav-link" href="/submit/">Login/Signup</a>
+						
+					</li>
+				</ul>
+			</nav>
+
+			<div class="row">
+				<nav id="collapseSidebar" class="collapse col-md-2 bg-light sidebar text-truncate" style="font-size: .875rem">
+					
+						<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+	<span>Conference</span>
+</h6>
+<ul class="nav flex-column">
+	<li class="nav-item">
+		<a class="nav-link" href="/">
+			<i data-feather="home"></i> Home
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/schedule/2/">
+			<i data-feather="calendar"></i> Dates
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/publications/">
+			<i data-feather="book-open"></i> Papers
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link active" href="/organizers/">
+			<i data-feather="user"></i> Organizers
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/awards/">
+			<i data-feather="award"></i> Awards
+		</a>
+	</li>
+</ul>
+
+<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+	<span>Challenge</span>
+</h6>
+<ul class="nav flex-column mb-2">
+	<li class="nav-item">
+		<a class="nav-link" href="/tasks/">
+			<i data-feather="check-square"></i> Tasks
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/leaderboard/image_0_075/test/">
+			<i data-feather="align-justify"></i> Leaderboards
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="https://groups.google.com/g/clic-list">
+			<i data-feather="message-circle"></i> Forum
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/faq/">
+			<i data-feather="help-circle"></i> FAQ
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="/submit/">
+			<i data-feather="upload"></i> Submit
+		</a>
+	</li>
+	
+</ul>
+
+<div class="d-none d-md-block">
+	<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+		<span>Past events</span>
+	</h6>
+	<ul class="nav flex-column mb-2">
+	        <li class="nav-item">
+                        <a class="nav-link" href="http://clic.compression.cc/2022">
+		                <i data-feather="link"></i>
+			        CLIC 2022
+		        </a>
+		</li>
+                <li class="nav-item">
+                        <a class="nav-link" href="http://clic.compression.cc/2021">
+                                <i data-feather="link"></i>
+                                CLIC 2021
+                        </a>
+                </li>
+		<li class="nav-item">
+			<a class="nav-link" href="http://clic.compression.cc/">
+				<i data-feather="link"></i>
+				CLIC 2020
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="http://clic.compression.cc/2019/">
+				<i data-feather="link"></i>
+				CLIC 2019
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="http://clic.compression.cc/2018/">
+				<i data-feather="link"></i>
+				CLIC 2018
+			</a>
+		</li>
+	</ul>
+</div>
+
+					
+				</nav>
+
+				<main role="main" class="col-md-10 ml-sm-auto px-md-4 pt-3">
+					
+	
+		<div class="row mb-3">
+
+    <div class="col-md-2">
+    <div class="card">
+    <img src="https://storage.googleapis.com/clic2023_public/static/img/organizers/johannes.jpg" class="card-img-top" alt="Johannes Ballé">
+    <div class="card-body">
+    <h6 class="card-title">Johannes Ballé</h5>
+    <h7 class="card-subtitle text-muted mb-2">Google</h6>
+    <p class="card-text small">
+    Johannes Ballé is a Staff Research Scientist at Google. They defended their master's and doctoral theses on signal processing and image compression under the supervision of Jens-Rainer Ohm at RWTH Aachen University in 2007 and 2012, respectively. This was followed by <span id="moreTextJohannes" class="collapse">a brief collaboration with Javier Portilla at CSIC in Madrid, Spain, and a postdoctoral fellowship at New York University’s Center for Neural Science with Eero P. Simoncelli, studying the relationship between perception and image statistics. While there, Johannes pioneered the use of variational Bayesian models and deep learning techniques for end-to-end optimized image compression. They joined Google in early 2017 to continue working in this line of research. Johannes has served as a reviewer for publications in both machine learning and image processing, such as NeurIPS, ICLR, ICML, Picture Coding Symposium, and several IEEE Transactions journals. They have been active as a co-organizer of the annual Workshop and Challenge on Learned Image Compression (CLIC) since 2018, and on the program committee of the Data Compression Conference since 2022.</span> <a data-toggle="collapse" href="#moreTextJohannes">(read more)</a>
+    </p>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-2">
+    <div class="card">
+    <img src="https://storage.googleapis.com/clic2023_public/static/img/organizers/george.jpg" class="card-img-top" alt="George Toderici">
+    <div class="card-body">
+    <h6 class="card-title">George Toderici</h5>
+    <h7 class="card-subtitle text-muted mb-2">Google</h6>
+    <p class="card-text small">
+    George Toderici received his Ph.D. in Computer Science from the University of Houston in 2008 where his research focused on 2D-to-3D face recognition, and joined Google in 2008. His current work at Google Research is focused on lossy multimedia compression using neural networks. His past projects at Google include <span id="moreTextGeorge" class="collapse">the design of neural-network architectures and classical approaches for video classification, action recognition, YouTube channel recommendations, and video enhancement. He has helped organize the THUMOS-2014 and YouTube-8M (CVPR 2017, ECCV 2018, ICCV 2019) video classification challenges, and contributed to the design of the Sports-1M dataset. George is one of the original CLIC organizers and has helped organize this workshop at CVPR 2018-2021. He has also served as Area Chair for the ACM Multimedia Conference in 2014, and is a regular reviewer for CVPR, ICCV, and NeurIPS.</span> <a data-toggle="collapse" href="#moreTextGeorge">(read more)</a>
+    </p>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-2">
+    <div class="card">
+    <img src="https://storage.googleapis.com/clic2023_public/static/img/organizers/luca.jpg" class="card-img-top" alt="Luca Versari">
+    <div class="card-body">
+    <h6 class="card-title">Luca Versari</h5>
+    <h7 class="card-subtitle text-muted mb-2">Google</h6>
+    <p class="card-text small">
+    Luca Versari obtained a Ph.D. degree with the University of Pisa, Italy. He is a Core Member of the JPEG XL Development Team. He studied algorithms for pattern matching, graphs, hashing, and data compression with the University of Pisa. He is currently a Senior Software Engineer with Google Research. 
+    <span id="moreTextLuca" class="collapse">He is responsible for the algorithms and technical architecture of the image quality related aspects of JPEG XL, including integral transforms, color spaces, intra/inter-frame copying, progressive decoding, animation, context modeling, tiling, entropy coding, codec optimization, and integration of psychovisual modeling.</span> <a data-toggle="collapse" href="#moreTextLuca">(read more)</a>
+    </p>
+    </div>
+    </div>
+    </div>
+
+<div class="col-md-2">
+    <div class="card">
+    <img src="https://storage.googleapis.com/clic2023_public/static/img/organizers/nick.jpg" class="card-img-top" alt="Nick Johnston">
+    <div class="card-body">
+    <h6 class="card-title">Nick Johnston</h5>
+    <h7 class="card-subtitle text-muted mb-2">Google</h6>
+    <p class="card-text small">
+    Nick Johnston works as a Software Engineer within the Machine Intelligence group at Google. He has previously published image compression work at CVPR. His research interests are in leveraging the power of deep learning and computer vision for improved rate-distortion performance in image compression. 
+    <span id="moreTextNick" class="collapse">Additionally, he is interested in neural network optimization for mobile devices and embedded systems. Nick received his BSc in Computer Engineering from Iowa State University.</span> <a data-toggle="collapse" href="#moreTextNick">(read more)</a>
+    </p>
+    </div>
+    </div>
+    </div>
+
+</div> <!-- new row --> <div class="row mb-3">    
+<div class="col-md-2">
+    <div class="card">
+    <img src="https://storage.googleapis.com/clic2023_public/static/img/organizers/lucas.jpg" class="card-img-top" alt="Lucas Theis">
+    <div class="card-body">
+    <h6 class="card-title">Lucas Theis</h5>
+    <h7 class="card-subtitle text-muted mb-2">Google</h6>
+    <p class="card-text small">
+Lucas Theis is a machine learning researcher at Google. He studied Cognitive Science in Osnabrück before starting a PhD at the Max Planck Research School in Tübingen, Germany, in 2009. Here, he worked on generative modeling of natural images with Matthias Bethge, in particular using deep learning. After finishing
+    
+    <span id="moreTextLucas" class="collapse">his PhD, he started to work on image compression and super-resolution for Magic Pony Technologies in London – a startup which got acquired by Twitter in 2016. Lucas started working for Google in 2020 where he continues to work on neural compression. Other work includes papers on variational inference, saliency prediction, and computational neuroscience. Lucas has served as a reviewer for some of the top machine learning journals and conferences (JMLR, CVPR, ICML, NIPS, ICLR).</span> <a data-toggle="collapse" href="#moreTextLucas">(read more)</a>
+    </p>
+    </div>
+    </div>
+    </div>
+
+    <div class="col-md-2">
+    <div class="card">
+    <img src="https://storage.googleapis.com/clic2023_public/static/img/organizers/andrey.jpg" class="card-img-top" alt="Andrey Norkin">
+    <div class="card-body">
+    <h6 class="card-title">Andrey Norkin</h5>
+    <h7 class="card-subtitle text-muted mb-2">Netflix</h6>
+    <p class="card-text small">
+Andrey Norkin is a research scientist at Netflix, working on video compression algorithms, encoding techniques for OTT video streaming, and High Dynamic Range (HDR) video. Andrey has been actively contributing to the Alliance for Open Media (AOM) where he is a co-chair of the Video Codec Working Group developing new video codec technologies.  <span id="moreTextAndrey" class="collapse">He previously contributed to development of other video codec standards, such as AV1 and HEVC. He also worked on video encoders for broadcasting during his previous job at Ericsson. Andrey holds a Doctor of Science degree from Tampere University of Technology, Finland. 
+</span> <a data-toggle="collapse" href="#moreTextAndrey">(read more)</a>
+    </p>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-2">
+    <div class="card">
+    <img src="https://storage.googleapis.com/clic2023_public/static/img/organizers/krishna.jpg" class="card-img-top" alt="Krishna Rapaka">
+    <div class="card-body">
+    <h6 class="card-title">Krishna Rapaka</h5>
+    <h7 class="card-subtitle text-muted mb-2">Twitch</h6>
+    <p class="card-text small">
+    Krishna Rapaka currently works as a Video and Data Scientist at Twitch.  In the last two decades, his research interests focussed in the areas of multimedia compression/processing using hybrid and neural network architectures, design of embedded codecs for mobile and streaming applications. He was involved in the 
+     <span id="moreTextKrishna" class="collapse">standardization of scalable and screen content extensions of HEVC codec and architected hardware codecs in Qualcomm and Texas Instruments. He is a reviewer for TCSVT, ICIP, CVPR, SPIE and co-chaired for activities in JCT-VC/MPEG and AOM. Krishna received his MaSc in electrical engineering from the University of Waterloo, Canada.</span> <a data-toggle="collapse" href="#moreTextKrishna">(read more)</a>
+    </p>
+    </div>
+    </div>
+    </div>
+   
+    <div class="col-md-2">
+    <div class="card">
+    <img src="https://storage.googleapis.com/clic2023_public/static/img/organizers/erfan.jpg" class="card-img-top" alt="Erfan Noury">
+    <div class="card-body">
+    <h6 class="card-title">Erfan Noury</h5>
+    <h7 class="card-subtitle text-muted mb-2">Apple</h6>
+    <p class="card-text small">
+Erfan Noury is a ML Research Engineer in the Camera team at Apple. His research interests include self-supervised representation learning in computer vision, and neural compression.
+    </p>
+    </div>
+    </div>
+    </div>
+    
+    </div> <!-- new row --> <div class="row mb-3">    
+    <div class="col-md-2">
+    <div class="card">
+    <img src="https://storage.googleapis.com/clic2023_public/static/img/organizers/ross.jpg" class="card-img-top" alt="Ross Cutler">
+    <div class="card-body">
+    <h6 class="card-title">Ross Cutler</h5>
+    <h7 class="card-subtitle text-muted mb-2">Microsoft</h6>
+    <p class="card-text small">
+    Ross Cutler is a Partner Applied Scientist Manager at Microsoft in the IC3 group where he manages the IC3-AI team of  applied scientists and software engineers with the focus of improving Teams/Skype audio/video quality and reliability and enabling new functionality with AI. 
+    <span id="moreTextRoss" class="collapse">He has been with Microsoft since 2001, starting as a researcher in Microsoft Research. He has published 50+ conference papers, journal papers, and book chapters, and has 95+ granted patents in the areas of computer vision, audio processing, machine learning, optics, and acoustics. Ross received his Ph.D. in Computer Science (2000) in the area of computer vision from the University of Maryland, College Park. He is a reviewer in CVPR, ICCV, ICML, ICASSP, and INTERSPEECH.</span> <a data-toggle="collapse" href="#moreTextKrishna">(read more)</a>
+    </p>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-2">
+    <div class="card">
+    <img src="https://storage.googleapis.com/clic2023_public/static/img/organizers/radu.jpg" class="card-img-top" alt="Radu Timofte">
+    <div class="card-body">
+    <h6 class="card-title">Radu Timofte</h5>
+    <h7 class="card-subtitle text-muted mb-2">University of Würzburg</h6>
+    <p class="card-text small">
+Radu Timofte is a Full Professor for AI and Computer Vision at University of Würzburg, Germany, and the recipient of a 2022 Alexander von Humboldt Professorship Award for Artificial Intelligence. He was also a lecturer in the Computer Vision Laboratory at ETH Zurich, Switzerland, where he founded and led the Augmented Perception Group from 2016 until 2022. <span id="moreTextRadu" class="collapse">Before that, he was a postdoctoral researcher in the same lab. He obtained his PhD degree in Electrical Engineering from KU Leuven, Belgium, in 2013, his MSc from the University of Eastern Finland in 2007, and his Dipl. Eng. at the Technical University of Iasi, Romania in 2006. He is an associate editor for top journals: Elsevier CVIU, IEEE Trans. PAMI, Elsevier Neurocomputing and SIAM Journal on Imaging Sciences. He served as area chair/SPC for ICCV'19, ECCV'20-'22, ACCV'18-'22, CVPR'21-'23, IJCAI'19-'21, NeurIPS'23. His team's work received multiple awards, including a 2021 Romanian Academy Award, the best paper award at AIM workshop (ICCV 2021), and the best student paper award at BMVC 2019. His team won several challenges, including spectral recovery (CVPR 2022), real world super-resolution (ICCV 2019), and apparent age estimation (ICCV 2015) . He is a co-founder of Merantix, a co-organizer of NTIRE, CLIC, AIM, MAI and PIRM events, and a member of IEEE, CVF, and ELLIS. His current research interests include deep learning, mobile AI, image/video restoration, manipulation, enhancement and compression.
+    </span> <a data-toggle="collapse" href="#moreTextRadu">(read more)</a>
+    </p>
+    </div>
+    </div>
+    </div>
+
+    <div class="col-md-2">
+    <div class="card">
+    <img src="https://avatars.githubusercontent.com/u/67165941" class="card-img-top" alt="Fabien Racapé">
+    <div class="card-body">
+    <h6 class="card-title">Fabien Racapé</h5>
+    <h7 class="card-subtitle text-muted mb-2">Interdigital</h6>
+    <p class="card-text small">
+Fabien Racapé is a senior scientist at InterDigital in Los Altos, CA, focussing on video compression using hybrid and neural-network-based methods, as video coding for machines. He has been involved in H.266/VVC and MPEG Neural Network Compression (NNC) standardization activities. <span id="moreTextFabien" class="collapse"> He received his M.Sc. in signal processing and telecommunications from the Grenoble Institute of Technology, France, in 2008, and his PhD degree from the National Institute of Applied Science (INSA), Rennes, France, in 2011.
+    </span> <a data-toggle="collapse" href="#moreTextFabien">(read more)</a>
+    </p>
+    </div>
+    </div>
+    </div>
+   
+    <div class="col-md-2">
+    <div class="card">
+    <img src="https://storage.googleapis.com/clic2023_public/static/img/organizers/yan.jpg" class="card-img-top" alt="Yan Ye">
+    <div class="card-body">
+    <h6 class="card-title">Yan Ye</h5>
+    <h7 class="card-subtitle text-muted mb-2">Alibaba</h6>
+    <p class="card-text small">
+    Yan Ye received her Ph.D. from the University of California, San Diego and her B.S. and M.S. from the University of Science and Technology of China. She is currently a Senior Director and the Head of Video Technology Lab of Alibaba’s Damo Academy in Sunnyvale California. <span id="moreTextYan" class="collapse">Yan has been actively involved in developing international video coding and streaming standards in ITU-T Video Coding Experts Group (VCEG) and ISO/IEC Moving Picture Experts Group (MPEG). She is currently an Associate Rapporteur of the ITU-T SG16 Q.6 VCEG, the Group Chair of INCITS/MPEG task group, and a focus group chair of the ISO/IEC MPEG Visual Quality Assessment. She is a technical program committee co-chair of the IEEE Data Compression Conference, and the conference sub-committee co-chair of the IEEE Visual Signal Processing and Communication Technical Committee.  Her research interests include advanced video coding algorithms, real-time and immersive video communications, and deep learning-based video coding, processing, and quality assessment algorithms. </span> <a data-toggle="collapse" href="#moreTextYan">(read more)</a>
+    </p>
+    </div>
+    </div>
+    </div> 
+
+</div> <!-- new row --> <div class="row mb-3">    
+ <div class="col-md-2">
+    <div class="card">
+    <img src="https://storage.googleapis.com/clic2023_public/static/img/organizers/ali.jpg" class="card-img-top" alt="Ali Bilgin">
+    <div class="card-body">
+    <h6 class="card-title">Ali Bilgin</h5>
+    <h7 class="card-subtitle text-muted mb-2">University of Arizona</h6>
+    <p class="card-text small">
+Ali Bilgin received his Ph.D. from University of Arizona in Electrical and Computer Engineering in 2002. He is currently an Associate Professor of Biomedical Engineering, Electrical and Computer Engineering, and Medical Imaging, and serves as the Associate Department Head of the Department of Biomedical Engineering at the University of Arizona. <span id="moreTextAli" class="collapse">He has served as Associate Editor for IEEE Transactions on Image Processing, IEEE Signal Processing Letters, and IEEE Transactions on Computational Imaging, and as Area Chair for the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) and IEEE International Conference on Image Processing (ICIP). Between 2013 and 2023, he was the Technical Program Co-Chair of the IEEE Data Compression Conference (DCC). He is currently serving as the General Co-chair of DCC.</span> <a data-toggle="collapse" href="#moreTextAli">(read more)</a>
+    </p>
+    </div>
+    </div>
+    </div>
+
+ <div class="col-md-2">
+    <div class="card">
+    <img src="https://storage.googleapis.com/clic2023_public/static/img/organizers/andrew.jpg" class="card-img-top" alt="Andrew Segall">
+    <div class="card-body">
+    <h6 class="card-title">Andrew Segall</h5>
+    <h7 class="card-subtitle text-muted mb-2">Amazon</h6>
+    <p class="card-text small">
+Andrew Segall received the B.S. and M.S. degrees in electrical engineering from Oklahoma State University, and the Ph.D. degree in electrical engineering from Northwestern University.  He is currently the Head of Video Coding Standards at Amazon Prime Video.  Previously, he was a Director at Sharp Labs of America, where he led the Department of Systems, Algorithms and Services while <span id="moreTextAndrew" class="collapse">simultaneously holding the position of Distinguished Scientist at Sharp Corporation.  He is an active participant in the international standardization community and has developed and contributed technology to the Versatile Video Coding (VVC), High Efficiency Video Coding (HEVC), Advanced Video Coding (H.264/AVC), and ATSC 3.0 projects.  He currently serves as co-chair of the Neural Network Video Coding activity in the Joint Video Experts Team (JVET) of ITU-T SG16 Question 6 and ISO/IEC JTC1/SC29/WG5, HDR Chair for the MPEG Visual Quality Assessment Advisory Group (ISO/IEC JTC1/SC29/AG5), and as a representative on the AOMedia Steering Committee.
+    </span> <a data-toggle="collapse" href="#moreTextAndrew">(read more)</a>
+    </p>
+    </div>
+    </div>
+    </div>
+
+<div class="col-md-2">
+    <div class="card">
+    <img src="https://storage.googleapis.com/clic2023_public/static/img/organizers/balu.jpg" class="card-img-top" alt="Balu Adsumilli">
+    <div class="card-body">
+    <h6 class="card-title">Balu Adsumilli</h5>
+    <h7 class="card-subtitle text-muted mb-2">Google</h6>
+    <p class="card-text small">
+Dr. Balu Adsumilli is currently the Head of Media Algorithms group at YouTube/Google. Prior to YouTube, he led the Advanced Technology group at GoPro, and before that, he was Sr. Staff Research Scientist at Citrix Online. He received his masters at the University of Wisconsin Madison, and his PhD at the University of California Santa Barbara. <span id="moreTextBalu" class="collapse">He has co-authored more than 120 papers and 100 granted patents with many more pending. He serves on the board of the Television Academy, on the board of NATAS Technical committee, on the board of Visual Effects Society, on the IEEE MMSP Technical Committee, and on ACM MHV Steering Committee. He is on TPCs and organizing committees for various conferences and workshops, and currently serves as Associate Editor for IEEE Transactions on Multimedia (T-MM).  He is a senior member of IEEE, and an active member of ACM, SMPTE, VES, and SPIE. His fields of research include image/video processing, audio and video quality, video compression and transcoding, spherical capture/AR/VR, visual effects, and related areas.
+    </span> <a data-toggle="collapse" href="#moreTextBalu">(read more)</a>
+    </p>
+    </div>
+    </div>
+    </div>
+
+
+<div class="col-md-2">
+    <div class="card">
+    <img src="https://storage.googleapis.com/clic2023_public/static/img/organizers/ramzi.jpg" class="card-img-top" alt="Ramzi Khsib">
+    <div class="card-body">
+    <h6 class="card-title">Ramzi Khsib</h5>
+    <h7 class="card-subtitle text-muted mb-2">Amazon</h6>
+    <p class="card-text small">
+Ramzi Khsib is a Principal Software Development Engineer with AWS Elemental's Research & Development team, with a career spanning over two decades in the fields of video processing and compression. Ramzi is a five-time recipient of the Technology & Engineering Emmy Awards.
+ <span id="moreTextRamzi" class="collapse">
+His expertise encompasses a vast array of subjects, including pixel processing, video filtering, perceptual quality enhancement, and machine learning.
+
+As the lead architect in video compression, Ramzi has played a pivotal role in transforming AWS Elemental into a global frontrunner in video quality.
+
+Ramzi's research interests lie at the crossroads of video compression, computer vision, and machine learning and avid advocate of the compression efficiency at lower compute costs.
+
+    </span> <a data-toggle="collapse" href="#moreTextRamzi">(read more)</a>
+    </p>
+    </div>
+    </div>
+    </div>
+
+
+</div>
+	
+
+					<hr>
+					
+					<div class="container-fluid text-center text-muted sponsors">
+					  Sponsored by<br>
+					        <a href="https://www.alibaba.com" target="_blank"><img src="https://storage.googleapis.com/clic2023_public/static/img/sponsors/alibaba.png" height="75"></a>
+					        <a href="https://www.elemental.com" target="_blank"><img src="https://storage.googleapis.com/clic2023_public/static/img/sponsors/aws_elemental.png" height="40"></a>
+						<a href="https://google.com" target="_blank"><img src="https://storage.googleapis.com/clic2023_public/static/img/sponsors/google.png" height="40"></a>
+	                                        <a href="https://www.interdigital.com" target="_blank"><img src="https://storage.googleapis.com/clic2023_public/static/img/sponsors/interdigital.png" height="30"></a>
+						<a href="https://microsoft.com" target="_blank"><img src="https://storage.googleapis.com/clic2023_public/static/img/sponsors/microsoft.png" height="100"></a>
+						<a href="https://www.youtube.com" target="_blank"><img src="https://storage.googleapis.com/clic2023_public/static/img/sponsors/youtube.png" height="40"></a>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		
+		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script>
+			feather.replace()
+		</script>
+	</body>
+</html>
