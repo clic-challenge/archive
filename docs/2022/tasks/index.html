@@ -254,10 +254,10 @@ Validation set statistics:
 <li>The FPS varies from 15fps to 60fps, with the bulk of the videos in the 25-30 fps range.</li>
 <li><a href="https://storage.googleapis.com/clic2022_public/validation_sets/videos.zip">Download the full validation set here</a> (2.4 GB).</li>
 <li>During the validation phase, we evaluate on
-    the <a href="https://raw.githubusercontent.com/fab-jul/clic2021-devkit/main/clic2022/validation_ids.txt">30 video IDs published here</a>.
+    the <a href="https://raw.githubusercontent.com/clic-challenge/devkit-2021/main/clic2022/validation_ids.txt">30 video IDs published here</a>.
 </li>
 <li><strong><a href="https://storage.googleapis.com/clic2022_public/validation_sets/video_30/video_valid_30.zip">Download the 30 video subset needed for the validation phase here</a> (367MB)</strong>.</li>
-<li>Use <a href="https://github.com/fab-jul/clic2021-devkit/tree/main/clic2022">the devkit for converting to PNG</a> if needed.</li>
+<li>Use <a href="https://github.com/clic-challenge/devkit-2021/tree/main/clic2022">the devkit for converting to PNG</a> if needed.</li>
 </ul>
 
 Test set:
@@ -275,12 +275,12 @@ Please contact the organiziers if you have objections to any of the released vid
 <li>The decoder size should not exceed <strong>1GB</strong>.</li>
 <li><strong>IMPORTANT</strong>: Submissions only need to compress 30 videos of the validation set, see above.</li>
 <li>We provide the videos as mp4, but we will expect submissions to <strong>output three PNGs per frame</strong>:
-    one for Y, U, and V channels.  Please use <a href="https://github.com/fab-jul/clic2021-devkit/tree/main/clic2022">the devkit for converting to PNGs</a>, if you want to train on PNGs.</li>
+    one for Y, U, and V channels.  Please use <a href="https://github.com/clic-challenge/devkit-2021/tree/main/clic2022">the devkit for converting to PNGs</a>, if you want to train on PNGs.</li>
     Or look at the Example Submission below.
 </ul>
 
 <h6 class="text-muted">Example Submission</h6>
-The devkit contains <a href="https://github.com/fab-jul/clic2021-devkit/tree/main/clic2022/example_video_submission">
+The devkit contains <a href="https://github.com/clic-challenge/devkit-2021/tree/main/clic2022/example_video_submission">
     an example submission based on H264.
 </a> It showcases the format expected by the server.
 </div>
@@ -308,7 +308,7 @@ based on who predicted the correct preference the largest number of times.
 <h6 class="text-muted">Development Kit</h6>
 <p>
 The <a
-href="https://github.com/fab-jul/clic2021-devkit/blob/main/README.md#perceptual-challenge">development
+href="https://github.com/clic-challenge/devkit-2021/blob/main/README.md#perceptual-challenge">development
 kit</a> is provided as an example of what is expected from participants. It is in no way
 intended to contain data representative of the final challenge simply because that is not
 possible. The final test set will be created from the files uploaded by the participants in the
@@ -317,7 +317,7 @@ match that distribution in the validation set.
 <p>
 <p>To get the devkit, use:</p>
 <p class="card-text">
-<code>git clone https://github.com/fab-jul/clic2021-devkit.git</code>
+<code>git clone https://github.com/clic-challenge/devkit-2021.git</code>
 </p>
 
 <h6 class="text-muted">Data</h6>
@@ -330,15 +330,15 @@ href="https://storage.googleapis.com/clic2021_public/perceptual/test/clic_2021_p
 image URLs (clic_2021_perceptual_test.txt, 1KB)</a></li>
 <li><a href="https://storage.googleapis.com/clic2021_public/perceptual/test/clic_2021_test.zip">CSV
 file (clic_2021_test.zip, 1.6MB)</a></li>
-<li><strong>(New, April 8, 2022)</strong> <a href="https://github.com/fab-jul/clic2021-devkit#2022-test-data-released-april-8th-2022">2022 Test Data Release</a></li>
+<li><strong>(New, April 8, 2022)</strong> <a href="https://github.com/clic-challenge/devkit-2021#2022-test-data-released-april-8th-2022">2022 Test Data Release</a></li>
 </ul>
 <p class="card-text">
 The full details of the tasks are contained in the <a
-href="https://github.com/fab-jul/clic2021-devkit/blob/main/README.md#perceptual-challenge">README</a>
+href="https://github.com/clic-challenge/devkit-2021/blob/main/README.md#perceptual-challenge">README</a>
 file of the repository.
 </p>
 <p class="card-text">
-The 2021 <a href="https://github.com/fab-jul/clic2021-devkit/blob/main/README.md#test-data-updated-on-january-20th-2022-with-the-release-of-the-oracle">test data</a> may be used to train new models for this year's competition. Please note that the link above contains pointers to the raw data (unfiltered) which we collected from raters. Therefore, it is possible that certain pairs of images might have been rated both ways (i.e., one rater might have disagreed with the other). It is up to the participants to do any data cleanup that might be necessary.
+The 2021 <a href="https://github.com/clic-challenge/devkit-2021/blob/main/README.md#test-data-updated-on-january-20th-2022-with-the-release-of-the-oracle">test data</a> may be used to train new models for this year's competition. Please note that the link above contains pointers to the raw data (unfiltered) which we collected from raters. Therefore, it is possible that certain pairs of images might have been rated both ways (i.e., one rater might have disagreed with the other). It is up to the participants to do any data cleanup that might be necessary.
 </p>
 </div>
 </div>
