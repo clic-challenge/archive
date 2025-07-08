@@ -3,35 +3,35 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://archive.compression.cc/2018/about/</loc>
+    <loc>/2018/about/</loc>
   </url>
   
   <url>
-    <loc>https://archive.compression.cc/2018/callforpapers/</loc>
+    <loc>/2018/callforpapers/</loc>
   </url>
   
   <url>
-    <loc>https://archive.compression.cc/2018/categories/</loc>
+    <loc>/2018/categories/</loc>
   </url>
   
   <url>
-    <loc>https://archive.compression.cc/2018/challenge/</loc>
+    <loc>/2018/challenge/</loc>
   </url>
   
   <url>
-    <loc>https://archive.compression.cc/2018/results/</loc>
+    <loc>/2018/results/</loc>
   </url>
   
   <url>
-    <loc>https://archive.compression.cc/2018/tags/</loc>
+    <loc>/2018/tags/</loc>
   </url>
   
   <url>
-    <loc>https://archive.compression.cc/2018/leaderboard/</loc>
+    <loc>/2018/leaderboard/</loc>
   </url>
   
   <url>
-    <loc>https://archive.compression.cc/2018/</loc>
+    <loc>/2018/</loc>
   </url>
   
 </urlset>

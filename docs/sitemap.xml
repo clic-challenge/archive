@@ -3,31 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://archive.compression.cc/about/</loc>
+    <loc>/about/</loc>
   </url>
   
   <url>
-    <loc>https://archive.compression.cc/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>https://archive.compression.cc/talks/imcl-msssim-talk/</loc>
+    <loc>/talks/imcl-msssim-talk/</loc>
   </url>
   
   <url>
-    <loc>https://archive.compression.cc/talks/lu-yu-talk/</loc>
+    <loc>/talks/lu-yu-talk/</loc>
   </url>
   
   <url>
-    <loc>https://archive.compression.cc/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
   <url>
-    <loc>https://archive.compression.cc/callforpapers/</loc>
+    <loc>/callforpapers/</loc>
   </url>
   
   <url>
-    <loc>https://archive.compression.cc/</loc>
+    <loc>/</loc>
   </url>
   
 </urlset>
