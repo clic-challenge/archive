@@ -1,0 +1,247 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CLIC &#183; Challenge on Learned Image Compression</title>
+        <link rel="stylesheet" href="../static/css/4.3.1/bootstrap.min.css">
+        <link rel="shortcut icon" type="image/png" href="../static/favicon.png">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="stylesheet" href="../static/css/dashboard.css">
+
+        <script src="../static/vendor/jquery/jquery-3.3.1.slim.min.js"></script>
+        <script src="../static/vendor/popper/popper-1.14.7.umd.min.js"></script>
+        <script src="../static/js/4.3.1/bootstrap.min.js"></script>
+
+        
+        
+    </head>
+    <body class="bg-light">
+        <div class="container-fluid" id="container-top">
+            <nav class="row navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0">
+                <a class="navbar-brand col-sm-12 col-md-2 mr-0" href="#">CLIC 2025</a>
+                <span class="navbar-text d-none d-md-block">7th Challenge on Learned Image Compression</span>
+                <span class="navbar-text d-block d-md-none">
+                    <a data-toggle="collapse" href="#collapseSidebar" class="px-3" onclick="document.getElementById('container-top').scrollIntoView();"><i data-feather="menu"></i></a>
+                </span>
+                <ul class="navbar-nav px-3">
+                    <li class="nav-item text-nowrap">
+                        
+                        <a class="nav-link" href="/submit/">Login/Signup</a>
+                        
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="row">
+                <nav id="collapseSidebar" class="collapse col-md-2 bg-light sidebar text-truncate" style="font-size: .875rem">
+                    
+                        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+    <span>Information</span>
+</h6>
+<ul class="nav flex-column">
+    <li class="nav-item">
+        <a class="nav-link" href="/">
+            <i data-feather="home"></i> Home
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/schedule/2/">
+            <i data-feather="calendar"></i> Dates
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/publications/">
+            <i data-feather="book-open"></i> Papers
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/organizers/">
+            <i data-feather="user"></i> Organizers
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="/awards/">
+            <i data-feather="award"></i> Awards
+        </a>
+    </li>
+</ul>
+
+<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+    <span>Participation</span>
+</h6>
+<ul class="nav flex-column mb-2">
+    <li class="nav-item">
+        <a class="nav-link" href="/tasks/">
+            <i data-feather="check-square"></i> Tasks
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/leaderboard/image_0_075/test/">
+            <i data-feather="align-justify"></i> Leaderboards
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="https://groups.google.com/g/clic-list">
+            <i data-feather="message-circle"></i> Forum
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/faq/">
+            <i data-feather="help-circle"></i> FAQ
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/submit/">
+            <i data-feather="upload"></i> Submit
+        </a>
+    </li>
+    
+</ul>
+
+<div class="d-none d-md-block">
+    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        <span>Past events</span>
+    </h6>
+    <ul class="nav flex-column mb-2">
+        <li class="nav-item">
+            <a class="nav-link" href="https://archive.compression.cc/2024/">
+                <i data-feather="link"></i>
+                CLIC 2024
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://archive.compression.cc/2022/">
+                <i data-feather="link"></i>
+                CLIC 2022
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://archive.compression.cc/2021/">
+                <i data-feather="link"></i>
+                CLIC 2021
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://archive.compression.cc/">
+                <i data-feather="link"></i>
+                CLIC 2020
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://archive.compression.cc/2019/">
+                <i data-feather="link"></i>
+                CLIC 2019
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://archive.compression.cc/2018/">
+                <i data-feather="link"></i>
+                CLIC 2018
+            </a>
+        </li>
+    </ul>
+</div>
+
+                    
+                </nav>
+
+                <main role="main" class="col-md-10 ml-sm-auto px-md-4 pt-3">
+                    
+    
+        <div class="card mb-3">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Awards</h5>
+            <p class="card-text">
+                This year's awards went to the following teams:
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-3">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h6 class="card-title">Image Compression (GPU)</h6>
+                <hr>
+                <p class="card-text">1. &#129351; Team Vcoder</p>
+                <p><img src="../static/img/awards/PCS2025_CLIC_ImageCompressionGPU_1st.jpg" style="max-width:100%; height:auto;"></p>
+                <p class="card-text">2. &#129352; Team Evolve</p>
+                <p><img src="../static/img/awards/PCS2025_CLIC_ImageCompressionGPU_2nd.jpg" style="max-width:100%; height:auto;"></p>
+                <p class="card-text">3. &#129353; Team Thanos</p>
+                <p><img src="../static/img/awards/PCS2025_CLIC_ImageCompressionGPU_3rd.jpg" style="max-width:100%; height:auto;"></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h6 class="card-title">Image Compression (CPU)</h6>
+                <hr>
+                <p class="card-text">1. &#129351; Team IronMan</p>
+                <p><img src="../static/img/awards/PCS2025_CLIC_ImageCompressionCPU_1st.jpg" style="max-width:100%; height:auto;"></p>
+                <p class="card-text">2. &#129352; Team RunRun</p>
+                <p><img src="../static/img/awards/PCS2025_CLIC_ImageCompressionCPU_2nd.jpg" style="max-width:100%; height:auto;"></p>
+                <p class="card-text">3. &#129353; Team CoolChic</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h6 class="card-title">Video Compression (CPU)</h6>
+                <hr>
+                <p class="card-text">1. &#129351; Team TCM</p>
+                <p><img src="../static/img/awards/PCS2025_CLIC_VideoCompressionCPU_1st.jpg" style="max-width:100%; height:auto;"></p>
+                <p class="card-text" style="color:gray">2. &#129352; (withdrawn)</p>
+                <p class="card-text" style="color:gray">3. &#129353; &mdash;</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card mb-3">
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text">
+                For further information and an analysis of the results, refer to the <a
+                href="https://drive.google.com/file/d/1paUh79j5UFTfhoI8_74VYhRfa7FSnPCL/view?usp=sharing">slide
+                deck</a> from the CLIC event, or <a
+                href="https://www.mabyduck.com/blog/challenge-on-learned-image-compression-2025/">this
+                blog post</a> by Mabyduck.
+            </p>
+            <p class="card-text">
+                Note that there were not enough submissions for the Video Compression
+                (GPU) track this year. As a result, no prizes were awarded for this track.
+            </p>
+        </div>
+    </div>
+</div>
+    
+
+                    <hr>
+                    
+                    <div class="container-fluid text-center text-muted sponsors">
+                      Sponsored by<br>
+                        <a href="https://www.elemental.com" target="_blank"><img src="../static/img/sponsors/aws_elemental.png" height="40"></a>
+                        <a href="https://www.amazon.com/gp/video/storefront" target="_blank"><img src="../static/img/sponsors/primevideo.png" height="40"></a>
+                        <a href="https://www.interdigital.com" target="_blank"><img src="../static/img/sponsors/interdigital.png" height="30"></a>
+                        <a href="https://microsoft.com" target="_blank"><img src="../static/img/sponsors/microsoft.png" height="100"></a>
+                        <a href="https://www.mabyduck.com" target="_blank"><img src="../static/img/sponsors/mabyduck.png" height="50"></a>
+                        <a href="https://www.orange.com" target="_blank"><img src="../static/img/sponsors/orange.png" height="50"></a>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        
+        <script src="../static/vendor/feather-icons/feather-4.29.2.min.js"></script>
+        <script>
+            feather.replace()
+        </script>
+    </body>
+</html>

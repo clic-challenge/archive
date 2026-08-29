@@ -1,0 +1,487 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CLIC &#183; Challenge on Learned Image Compression</title>
+        <link rel="stylesheet" href="../static/css/4.3.1/bootstrap.min.css">
+        <link rel="shortcut icon" type="image/png" href="../static/favicon.png">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="stylesheet" href="../static/css/dashboard.css">
+
+        <script src="../static/vendor/jquery/jquery-3.3.1.slim.min.js"></script>
+        <script src="../static/vendor/popper/popper-1.14.7.umd.min.js"></script>
+        <script src="../static/js/4.3.1/bootstrap.min.js"></script>
+
+
+
+    </head>
+    <body class="bg-light">
+        <div class="container-fluid" id="container-top">
+            <nav class="row navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0">
+                <a class="navbar-brand col-sm-12 col-md-2 mr-0" href="#">CLIC 2025</a>
+                <span class="navbar-text d-none d-md-block">7th Challenge on Learned Image Compression</span>
+                <span class="navbar-text d-block d-md-none">
+                    <a data-toggle="collapse" href="#collapseSidebar" class="px-3" onclick="document.getElementById('container-top').scrollIntoView();"><i data-feather="menu"></i></a>
+                </span>
+                <ul class="navbar-nav px-3">
+                    <li class="nav-item text-nowrap">
+
+                        <a class="nav-link" href="/submit/">Login/Signup</a>
+
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="row">
+                <nav id="collapseSidebar" class="collapse col-md-2 bg-light sidebar text-truncate" style="font-size: .875rem">
+
+                        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+    <span>Information</span>
+</h6>
+<ul class="nav flex-column">
+    <li class="nav-item">
+        <a class="nav-link" href="/">
+            <i data-feather="home"></i> Home
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/schedule/2/">
+            <i data-feather="calendar"></i> Dates
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/publications/">
+            <i data-feather="book-open"></i> Papers
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/organizers/">
+            <i data-feather="user"></i> Organizers
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/awards/">
+            <i data-feather="award"></i> Awards
+        </a>
+    </li>
+</ul>
+
+<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+    <span>Participation</span>
+</h6>
+<ul class="nav flex-column mb-2">
+    <li class="nav-item">
+        <a class="nav-link active" href="/tasks/">
+            <i data-feather="check-square"></i> Tasks
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/leaderboard/image_0_075/test/">
+            <i data-feather="align-justify"></i> Leaderboards
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="https://groups.google.com/g/clic-list">
+            <i data-feather="message-circle"></i> Forum
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/faq/">
+            <i data-feather="help-circle"></i> FAQ
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/submit/">
+            <i data-feather="upload"></i> Submit
+        </a>
+    </li>
+
+</ul>
+
+<div class="d-none d-md-block">
+    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        <span>Past events</span>
+    </h6>
+    <ul class="nav flex-column mb-2">
+        <li class="nav-item">
+            <a class="nav-link" href="https://archive.compression.cc/2024/">
+                <i data-feather="link"></i>
+                CLIC 2024
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://archive.compression.cc/2022/">
+                <i data-feather="link"></i>
+                CLIC 2022
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://archive.compression.cc/2021/">
+                <i data-feather="link"></i>
+                CLIC 2021
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://archive.compression.cc/">
+                <i data-feather="link"></i>
+                CLIC 2020
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://archive.compression.cc/2019/">
+                <i data-feather="link"></i>
+                CLIC 2019
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://archive.compression.cc/2018/">
+                <i data-feather="link"></i>
+                CLIC 2018
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+                </nav>
+
+                <main role="main" class="col-md-10 ml-sm-auto px-md-4 pt-3">
+
+
+        <script src="../static/js/gcloud_regions.js"></script>
+
+<div class="card mb-3" id="overall">
+    <div class="card-body">
+        <h5 class="card-title">Overview</h5>
+        <p class="card-text">
+            You can compete in one or more tracks. There are four challenge tracks in
+            total:
+        </p>
+        <ul class="card-text">
+            <li><a href="#image">Image compression</a>, subdivided into a CPU and a GPU
+            track</li>
+            <li><a href="#video">Video compression</a>, subdivided into a CPU and a GPU
+            track</li>
+        </ul>
+        <p class="card-text">
+            Each track has a validation phase and a test phase. Submissions will be ranked
+            on the leaderboard during the validation phase. The winners will be determined
+            during the test phase. To qualify, you must:
+        </p>
+        <ul class="card-text">
+            <li>submit at least one decoder during the validation phase,</li>
+            <li>submit compressed files during the test phase, matching a previously
+            submitted decoder, and</li>
+            <li>submit an accompanying whitepaper through <a
+            href="https://openreview.net/group?id=compression.cc/CLIC/2025/Challenge">OpenReview</a>.</li>
+        </ul>
+        <p class="card-text">
+            Deadlines for these steps are given on the <a href="/schedule/2/">dates
+            page</a>.
+        </p>
+        <hr>
+        <h6>Validation phase</h6>
+        <p class="card-text">
+            To submit to our competition, please use the <a href="/submit/">submit
+            page</a>. Generally, we discourage creating duplicate accounts, as it
+            complicates matching method and paper submissions. If we identify them during
+            the test phase, small variations of the same method by the same or overlapping
+            teams will be removed if they are submitted in parallel (that is, such that
+            they compete with each other). Typically, there should be a maximum of one
+            account per organization, and one submission per organization and track.
+            However, during the validation phase, we may allow up to 3 similar submissions
+            for pre-evaluation, if the resources are available.
+        </p>
+        <p class="card-text">
+            The submissions run in a Docker container you select by either running your
+            executable or by first unzipping your zip file and running
+            <code>./decode</code>. At this point, your decoder should be able to decode
+            the images or videos, including unzipping them, into a local subfolder (we
+            recommend <code>images/</code> or <code>videos/</code> for easier debugging).
+            <strong>Note: It is important that you submit a working decoder in this phase
+            or you will not be eligible in the test phase.</strong>
+        </p>
+        <hr>
+        <h6>Test phase</h6>
+        <p class="card-text">
+            Once the test phase begins, the test data will be released. You must encode
+            this test data, and submit a previous decoder and compressed data that
+            represents the entirety of the compressed dataset. You must upload a decoder
+            binary or zip file, as you did in the validation phase, but if they are not
+            hashed to the same value, your decoder will be rejected.
+        </p>
+        <p class="card-text">
+            By submitting to the test phase, you give consent for us to publish the
+            reconstructions from your method under the respective licensing terms of the
+            original source image or video.
+        </p>
+        <p class="card-text">
+            <strong>Note:</strong> To encourage development of learned codecs with low
+            computational complexity, the 25&percnt; of test phase submissions with the
+            highest decoding time in each track will not be considered eligible for a
+            prize.
+        </p>
+        <hr>
+        <h6>Paper submission</h6>
+        <p class="card-text">
+            Technical novelty is not a requirement for the whitepapers. However, they will
+            undergo a lightweight review process. They must include a self-contained
+            description of the method, detailed enough to reproduce the results. Accepted
+            papers will be linked on the <a href="/publications">papers page</a>.
+        </p>
+        <p class="card-text">
+            Independently of the mandatory whitepaper, challenge participants are
+            specifically encouraged to submit papers about their method to the PCS
+            submission site (CMT). Note that the PCS submission deadline is distinct from
+            the whitepaper deadline. These papers will undergo the regular PCS submission
+            process, and are otherwise also treated exactly the same as a regular
+            conference paper. Accepted conference papers will be published on IEEE Xplore.
+        </p>
+    </div>
+</div>
+
+<div class="row mb-3">
+    <div class="col-md-6">
+        <div class="card" id="image">
+            <div class="card-body">
+                <h5 class="card-title">Image compression</h5>
+                <hr>
+                <h6>Task</h6>
+                <p class="card-text">
+                    The goal is to compress a corpus of images to three bitrates:
+                </p>
+                <ul class="card-text">
+                    <li>0.3 bpp</li>
+                    <li>0.15 bpp</li>
+                    <li>0.075 bpp</li>
+                </ul>
+                <p class="card-text">
+                    The winners will be chosen based on a human rating task. The raters
+                    compare pairs of submitted image reconstructions to each other, using
+                    the uncompressed image as a reference, and chose which of the two is
+                    preferable.
+                </p>
+                <hr>
+                <h6>Validation set</h6>
+                <p class="card-text">
+                    The validation set is the same as the test set from CLIC 2024 and
+                    consists of 29 images collected from <a
+                    href="https://unsplash.com/">Unsplash</a>, two images with game
+                    content, and one image with screen content; all provided in PNG
+                    format. The test set for this year will be similar in terms of
+                    resolutions, content, and number of images.
+                </p>
+                <ul class="card-text">
+                    <li>
+                        <strong><a
+                        href="https://downloads.compression.cc/data/clic2025_image_validation.zip">Download
+                        here</a></strong> (102 MB)
+                    </li>
+                    <li>
+                        <a
+                        href="https://docs.google.com/spreadsheets/d/1jkdnvBXJhC07l-swuNN7fjgERT2jSJ72rUGFRbra8eo/view">Target
+                        file sizes</a>
+                    </li>
+                </ul>
+                <p class="card-text">
+                    The images are released using the <a
+                    href="https://unsplash.com/license">Unsplash license</a>. Please
+                    contact the organizers if you have objections to any of the released
+                    pictures.
+                </p>
+                <hr>
+                <h6>Test set</h6>
+                <ul class="card-text">
+                    <li>
+                        <strong><a
+                        href="https://downloads.compression.cc/clic2025_image_test.zip">Download
+                        here</a></strong> (116 MB)
+                    </li>
+                    <li>
+                        <a
+                        href="https://docs.google.com/spreadsheets/d/1xCXKc-HnDL4-gRMbZ8C18NqecDY_vVartaYFy7BGpGM/view">Target
+                        file sizes</a>
+                    </li>
+                </ul>
+                <hr>
+                <h6>Submission guidelines</h6>
+                <ul class="card-text">
+                    <li>
+                        The submitted decoder size should not exceed 4GB. If you require
+                        significant changes to the environment provided in the Docker
+                        images, please refer to the <a
+                        href="https://github.com/clic-challenge/devkit">devkit</a> for
+                        instructions.
+                    </li>
+                    <li>
+                        To be eligible for a prize in a given track, you must submit to
+                        all the bit rates of that track. You are not limited to using the
+                        same decoder for all the rate points (but each decoder must have
+                        already been submitted in the validation phase).
+                    </li>
+                    <li>
+                        Each submission is provided 2 CPUs and 12 GB RAM. In the GPU
+                        track, submissions can additionally use a L4 GPU with 24 GB
+                        memory.
+                    </li>
+                    <li>
+                        There is a time limit of 5 hours for each submission. Note that to
+                        encourage development of low-complexity methods, the 25% slowest
+                        submissions will not be considered for a prize. This is
+                        independent of the time limit.
+                    </li>
+                </ul>
+                <hr>
+                <h6>Example submission</h6>
+                <p class="card-text">
+                    The <a href="https://github.com/clic-challenge/devkit">devkit</a>
+                    provides an example submission based on VVC. It showcases the format
+                    expected by the server.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card" id="video">
+            <div class="card-body">
+                <h5 class="card-title">Video compression</h5>
+                <hr>
+                <h6>Task</h6>
+                <p class="card-text">
+                    The goal is to compress a corpus of videos to the target bitrate for
+                    each sequence. Target bitrates are provided in a table along with the
+                    resolution and frame rate of each sequence.
+                </p>
+                <p class="card-text">
+                    The winners will be chosen based on a human rating task. The
+                    evaluation methodology is described in <a
+                    href="https://arxiv.org/abs/2204.06784">this paper</a>.
+                </p>
+                <hr>
+                <h6>Validation set</h6>
+                <p class="card-text">
+                    The validation set consists of 30 video sequences in the YUV 4:2:0 8
+                    bit (<code>yuv420p</code>) format. The <code>.yuv</code>
+                    files are binary files containing 8-bit videos, without any header.
+                    The file name indicates resolution and frame rate of each sequence.
+                    (In Python, the <a href="https://github.com/labradon/yuvio">yuvio</a>
+                    library can be used to read and write raw video files.)
+                </p>
+                <p class="card-text">
+                    A part of the dataset is provided in <code>mp4</code> format and must
+                    be decoded before using it for the challenge. To do this, run the
+                    <code>make_yuv.sh</code> shell script. It requires <code>ffmpeg</code>
+                    to be available. After this, the 30 sequences can be found in the
+                    <code>yuv/</code> subdirectory.
+                </p>
+                <p class="card-text">
+                    <strong>Note: The number of frames to be encoded per sequence is given
+                    in the table and the file names. Some <code>.yuv</code> files may have
+                    additional frames at the end. These should be ignored.</strong>
+                </p>
+                <p class="card-text">
+                    To play the raw video sequences, you can use the following command:
+                    <code>ffplay -f rawvideo -pixel_format yuv420p -video_size {width}x{height} -framerate {fps} {filename}</code>
+                </p>
+                <ul class="card-text">
+                    <li>
+                        <strong><a
+                        href="https://downloads.compression.cc/data/clic2025_video_validation.zip">Download
+                        here</a></strong> (2.8 GB)
+                    </li>
+                    <li>
+                        <a
+                        href="https://docs.google.com/spreadsheets/d/1mgEHh7rpFsQqYucIy_x5vaHcq9fTCsGImne-zFuY-5E/view">Target
+                        file sizes</a>
+                    </li>
+                </ul>
+                </p>
+                <p class="card-text">
+                    Please contact the organizers if you have objections to any of the
+                    released videos.
+                </p>
+                <hr>
+                <h6>Test set</h6>
+                <ul class="card-text">
+                    <li>
+                        <strong><a
+                        href="https://downloads.compression.cc/clic2025_video_test.zip">Download
+                        here</a></strong> (4.6 GB)
+                    </li>
+                    <li>
+                        <a
+                        href="https://docs.google.com/spreadsheets/d/11HS-BVsMITx_CbJ3jAR3Qmw-Glu_gi9lgwh-Q2qSRLo/view">Target
+                        file sizes</a>
+                    </li>
+                </ul>
+                <hr>
+                <h6>Submission guidelines</h6>
+                <ul class="card-text">
+                    <li>
+                        The submitted decoder size should not exceed 4GB. If you require
+                        significant changes to the environment provided in the Docker
+                        images, please refer to the <a
+                        href="https://github.com/clic-challenge/devkit">devkit</a> for
+                        instructions.
+                    </li>
+                    <li>
+                        The decoder must give the reconstructed videos the same file names
+                        as the provided sequences, that is:
+                        <code>{name}_{width}x{height}_{fps}fps_yuv420p_{nf}frames.yuv</code>.
+                    </li>
+                    <li>
+                        Each submission is provided 2 CPUs and 12 GB RAM. In the GPU
+                        track, submissions can additionally use a L4 GPU with 24 GB
+                        memory.
+                    </li>
+                    <li>
+                        There is a time limit of 10 hours for each submission. Note that
+                        to encourage development of low-complexity methods, the 25%
+                        slowest submissions will not be considered for a prize. This is
+                        independent of the time limit.
+                    </li>
+                    <li>
+                        The decoder must be able to decode any subset of the compressed
+                        videos. Not all provided sequences may be considered for the final
+                        evaluation. The submission process will check for this.
+                    </li>
+                </ul>
+                <hr>
+                <h6>Example submission</h6>
+                <p class="card-text">
+                    The <a href="https://github.com/clic-challenge/devkit">devkit</a>
+                    provides an example submission based on VVC. It showcases the format
+                    expected by the server.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                    <hr>
+
+                    <div class="container-fluid text-center text-muted sponsors">
+                      Sponsored by<br>
+                        <a href="https://www.elemental.com" target="_blank"><img src="../static/img/sponsors/aws_elemental.png" height="40"></a>
+                        <a href="https://www.amazon.com/gp/video/storefront" target="_blank"><img src="../static/img/sponsors/primevideo.png" height="40"></a>
+                        <a href="https://www.interdigital.com" target="_blank"><img src="../static/img/sponsors/interdigital.png" height="30"></a>
+                        <a href="https://microsoft.com" target="_blank"><img src="../static/img/sponsors/microsoft.png" height="100"></a>
+                        <a href="https://www.mabyduck.com" target="_blank"><img src="../static/img/sponsors/mabyduck.png" height="50"></a>
+                        <a href="https://www.orange.com" target="_blank"><img src="../static/img/sponsors/orange.png" height="50"></a>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+
+        <script src="../static/vendor/feather-icons/feather-4.29.2.min.js"></script>
+        <script>
+            feather.replace()
+        </script>
+    </body>
+</html>

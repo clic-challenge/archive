@@ -1,0 +1,609 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CLIC &#183; Challenge on Learned Image Compression</title>
+        <link rel="stylesheet" href="../static/css/4.3.1/bootstrap.min.css">
+        <link rel="shortcut icon" type="image/png" href="../static/favicon.png">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="stylesheet" href="../static/css/dashboard.css">
+
+        <script src="../static/vendor/jquery/jquery-3.3.1.slim.min.js"></script>
+        <script src="../static/vendor/popper/popper-1.14.7.umd.min.js"></script>
+        <script src="../static/js/4.3.1/bootstrap.min.js"></script>
+
+        
+        
+    </head>
+    <body class="bg-light">
+        <div class="container-fluid" id="container-top">
+            <nav class="row navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0">
+                <a class="navbar-brand col-sm-12 col-md-2 mr-0" href="#">CLIC 2025</a>
+                <span class="navbar-text d-none d-md-block">7th Challenge on Learned Image Compression</span>
+                <span class="navbar-text d-block d-md-none">
+                    <a data-toggle="collapse" href="#collapseSidebar" class="px-3" onclick="document.getElementById('container-top').scrollIntoView();"><i data-feather="menu"></i></a>
+                </span>
+                <ul class="navbar-nav px-3">
+                    <li class="nav-item text-nowrap">
+                        
+                        <a class="nav-link" href="/submit/">Login/Signup</a>
+                        
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="row">
+                <nav id="collapseSidebar" class="collapse col-md-2 bg-light sidebar text-truncate" style="font-size: .875rem">
+                    
+                        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+    <span>Information</span>
+</h6>
+<ul class="nav flex-column">
+    <li class="nav-item">
+        <a class="nav-link" href="/">
+            <i data-feather="home"></i> Home
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/schedule/2/">
+            <i data-feather="calendar"></i> Dates
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/publications/">
+            <i data-feather="book-open"></i> Papers
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="/organizers/">
+            <i data-feather="user"></i> Organizers
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/awards/">
+            <i data-feather="award"></i> Awards
+        </a>
+    </li>
+</ul>
+
+<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+    <span>Participation</span>
+</h6>
+<ul class="nav flex-column mb-2">
+    <li class="nav-item">
+        <a class="nav-link" href="/tasks/">
+            <i data-feather="check-square"></i> Tasks
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/leaderboard/image_0_075/test/">
+            <i data-feather="align-justify"></i> Leaderboards
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="https://groups.google.com/g/clic-list">
+            <i data-feather="message-circle"></i> Forum
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/faq/">
+            <i data-feather="help-circle"></i> FAQ
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/submit/">
+            <i data-feather="upload"></i> Submit
+        </a>
+    </li>
+    
+</ul>
+
+<div class="d-none d-md-block">
+    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        <span>Past events</span>
+    </h6>
+    <ul class="nav flex-column mb-2">
+        <li class="nav-item">
+            <a class="nav-link" href="https://archive.compression.cc/2024/">
+                <i data-feather="link"></i>
+                CLIC 2024
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://archive.compression.cc/2022/">
+                <i data-feather="link"></i>
+                CLIC 2022
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://archive.compression.cc/2021/">
+                <i data-feather="link"></i>
+                CLIC 2021
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://archive.compression.cc/">
+                <i data-feather="link"></i>
+                CLIC 2020
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://archive.compression.cc/2019/">
+                <i data-feather="link"></i>
+                CLIC 2019
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://archive.compression.cc/2018/">
+                <i data-feather="link"></i>
+                CLIC 2018
+            </a>
+        </li>
+    </ul>
+</div>
+
+                    
+                </nav>
+
+                <main role="main" class="col-md-10 ml-sm-auto px-md-4 pt-3">
+                    
+    
+        <div class="row mb-3">
+
+    <div class="col-md-3">
+        <div class="card">
+            <img
+            src="../static/img/organizers/jona.jpg"
+            class="card-img-top" alt="Jona Ballé">
+            <div class="card-body">
+                <h6 class="card-title">Jona Ballé (New York University)</h6>
+                <h7 class="card-subtitle">General coordination, Finances</h7>
+                <hr>
+                <p class="card-text small">
+                    Jona Ballé is an Associate Professor at New York University, studying
+                    data compression, information theory, and models of visual perception.
+                    They defended their master's and doctoral theses on signal processing
+                    and image compression under the supervision of Jens-Rainer Ohm at RWTH
+                    Aachen University in 2007 and 2012, respectively. <span
+                    id="moreTextJona" class="collapse">This was followed by a brief
+                    collaboration with Javier Portilla at CSIC in Madrid, Spain, and a
+                    postdoctoral fellowship at New York University’s Center for Neural
+                    Science with Eero P. Simoncelli, where Jona studied the relationship
+                    between perception and image statistics. While there, they pioneered
+                    using machine learning for end-to-end optimized image compression –
+                    this work ultimately led to the JPEG AI standard, finalized in 2025.
+                    From 2017 to 2024, Jona deepened their ties to industry as a Research
+                    Scientist at Google, before returning to NYU. Jona has served as a
+                    reviewer for top-tier publications in both machine learning and image
+                    processing, such as NeurIPS, ICLR, ICML, Picture Coding Symposium, and
+                    several IEEE Transactions journals. They have been active as a
+                    co-organizer of the annual Challenge on Learned Image Compression
+                    (CLIC) since 2018, and on the program committee of the Data
+                    Compression Conference (DCC) since 2022.</span>
+                    <a data-toggle="collapse" href="#moreTextJona">(read more)</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card">
+            <img
+            src="../static/img/organizers/lucas.jpg"
+            class="card-img-top" alt="Lucas Theis">
+            <div class="card-body">
+                <h6 class="card-title">Lucas Theis (Mabyduck)</h6>
+                <h7 class="card-subtitle">Subjective evaluation, Infrastructure</h7>
+                <hr>
+                <p class="card-text small">
+                    Lucas Theis is the founder of Mabyduck, a startup focusing on
+                    perceptual quality evaluation. Lucas previously worked at Google
+                    DeepMind on neural compression and information theory. He did his PhD
+                    at the Max Planck Research School in Tübingen, working with Matthias
+                    Bethge on deep generative models of natural images. <span
+                    id="moreTextLucas" class="collapse">After finishing his PhD, he
+                    started to work for a neural video compression startup called Magic
+                    Pony Technology, which got acquired by Twitter in 2016. Lucas has
+                    served as a reviewer for some of the top machine learning journals and
+                    conferences (JMLR, CVPR, ICML, NIPS, ICLR) and is co-chair of the VQEG
+                    interest group on Subjective and objective assessment of GenAI content
+                    (SOGAI).</span>
+                    <a data-toggle="collapse" href="#moreTextLucas">(read more)</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card">
+            <img
+            src="../static/img/organizers/ross.jpg"
+            class="card-img-top" alt="Ross Cutler">
+            <div class="card-body">
+                <h6 class="card-title">Ross Cutler (Microsoft)</h6>
+                <h7 class="card-subtitle">Subjective evaluation</h7>
+                <hr>
+                <p class="card-text small">
+                    Ross Cutler is a Partner Applied Scientist Manager at Microsoft in the
+                    IC3 group where he manages the IC3-AI team of applied scientists and
+                    software engineers with the focus of improving Teams/Skype audio/video
+                    quality and reliability and enabling new functionality with AI.
+                    <span id="moreTextRoss" class="collapse">He has been with Microsoft
+                    since 2001, starting as a researcher in Microsoft Research. He has
+                    published 50+ conference papers, journal papers, and book chapters,
+                    and has 95+ granted patents in the areas of computer vision, audio
+                    processing, machine learning, optics, and acoustics. Ross received his
+                    Ph.D. in Computer Science (2000) in the area of computer vision from
+                    the University of Maryland, College Park. He is a reviewer in CVPR,
+                    ICCV, ICML, ICASSP, and INTERSPEECH.</span>
+                    <a data-toggle="collapse" href="#moreTextRoss">(read more)</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="col-md-3">
+        <div class="card">
+            <img
+            src="../static/img/organizers/luca.jpg"
+            class="card-img-top" alt="Luca Versari">
+            <div class="card-body">
+                <h6 class="card-title">Luca Versari (Google)</h6>
+                <h7 class="card-subtitle">Subjective evaluation</h7>
+                <hr>
+                <p class="card-text small">
+                    Luca Versari obtained a Ph.D. degree with the University of Pisa,
+                    Italy. He is a Core Member of the JPEG XL Development Team. He studied
+                    algorithms for pattern matching, graphs, hashing, and data compression
+                    with the University of Pisa. He is currently a Senior Software
+                    Engineer with Google Research.
+                    <span id="moreTextLuca" class="collapse">He is responsible for the
+                    algorithms and technical architecture of the image quality related
+                    aspects of JPEG XL, including integral transforms, color spaces,
+                    intra/inter-frame copying, progressive decoding, animation, context
+                    modeling, tiling, entropy coding, codec optimization, and integration
+                    of psychovisual modeling.</span>
+                    <a data-toggle="collapse" href="#moreTextLuca">(read more)</a>
+                </p>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="col-md-3">
+        <div class="card">
+            <img
+            src="../static/img/organizers/balu.jpg"
+            class="card-img-top" alt="Balu Adsumilli">
+            <div class="card-body">
+                <h6 class="card-title">Balu Adsumilli (Google)</h6>
+                <h7 class="card-subtitle">Subjective evaluation</h7>
+                <hr>
+                <p class="card-text small">
+                    Dr. Balu Adsumilli is currently the Head of Media Algorithms group at
+                    YouTube/Google. Prior to YouTube, he led the Advanced Technology group
+                    at GoPro, and before that, he was Sr. Staff Research Scientist at
+                    Citrix Online. He received his masters at the University of Wisconsin
+                    Madison, and his PhD at the University of California Santa Barbara.
+                    <span id="moreTextBalu" class="collapse">He has co-authored more than
+                    120 papers and 100 granted patents with many more pending. He serves
+                    on the board of the Television Academy, on the board of NATAS
+                    Technical committee, on the board of Visual Effects Society, on the
+                    IEEE MMSP Technical Committee, and on ACM MHV Steering Committee. He
+                    is on TPCs and organizing committees for various conferences and
+                    workshops, and currently serves as Associate Editor for IEEE
+                    Transactions on Multimedia (T-MM). He is a senior member of IEEE, and
+                    an active member of ACM, SMPTE, VES, and SPIE. His fields of research
+                    include image/video processing, audio and video quality, video
+                    compression and transcoding, spherical capture/AR/VR, visual effects,
+                    and related areas.</span>
+                    <a data-toggle="collapse" href="#moreTextBalu">(read more)</a>
+                </p>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="col-md-3">
+        <div class="card">
+            <img
+            src="../static/img/organizers/till.jpg"
+            class="card-img-top" alt="Till Aczel">
+            <div class="card-body">
+                <h6 class="card-title">Till Aczel (ETH Zürich)</h6>
+                <h7 class="card-subtitle">Subjective evaluation</h7>
+                <hr>
+                <p class="card-text small">
+                    Till Aczel is a PhD student at ETH Zurich, working under the
+                    supervision of Prof. Roger Wattenhofer. His research focuses on
+                    learned image compression and image quality assessment, with a
+                    particular emphasis on aligning image compression techniques with
+                    perceptual distortion. <span id="moreTextTill" class="collapse">Till
+                    holds an MSc in Mathematical Modelling and Computation from the
+                    Technical University of Denmark (DTU), where he completed his thesis
+                    in 2023.</span>
+                    <a data-toggle="collapse" href="#moreTextTill">(read more)</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row mb-3">
+
+    <div class="col-md-3">
+        <div class="card">
+            <img
+            src="../static/img/organizers/fabien.jpg"
+            class="card-img-top" alt="Fabien Racapé">
+            <div class="card-body">
+                <h6 class="card-title">Fabien Racapé (Interdigital)</h6>
+                <h7 class="card-subtitle">Datasets</h7>
+                <hr>
+                <p class="card-text small">
+                    Fabien Racapé is a senior scientist at InterDigital in Los Altos, CA,
+                    focussing on video compression using hybrid and neural-network-based
+                    methods, as video coding for machines. He has been involved in
+                    H.266/VVC and MPEG Neural Network Compression (NNC) standardization
+                    activities. <span id="moreTextFabien" class="collapse">He received his
+                    M.Sc. in signal processing and telecommunications from the Grenoble
+                    Institute of Technology, France, in 2008, and his PhD degree from the
+                    National Institute of Applied Science (INSA), Rennes, France, in
+                    2011.</span>
+                    <a data-toggle="collapse" href="#moreTextFabien">(read more)</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card">
+            <img
+            src="../static/img/organizers/george.jpg"
+            class="card-img-top" alt="George Toderici">
+            <div class="card-body">
+                <h6 class="card-title">George Toderici (Google)</h6>
+                <h7 class="card-subtitle">Datasets</h7>
+                <hr>
+                <p class="card-text small">
+                    George Toderici joined Google in 2008, initially working on projects
+                    involving neural network architectures and classical approaches for
+                    video classification, action recognition, YouTube recommendations, and
+                    video enhancement. Later, his focus shifted to lossy multimedia
+                    compression using neural networks within Google Research. <span
+                    id="moreTextGeorge" class="collapse">In 2024, George transitioned to
+                    DeepMind, where he is currently a researcher working on LLM memory.
+                    Throughout his career, George has contributed significantly to the
+                    community. He helped organize major video classification challenges
+                    like THUMOS-2014 and YouTube-8M (CVPR 2017, ECCV 2018, ICCV 2019),
+                    contributed to the Sports-1M dataset, and was an original organizer of
+                    the CLIC workshop (CVPR 2018-2025). He also served as an Area Chair
+                    for ACM Multimedia 2014 and is a frequent reviewer for premier
+                    conferences like CVPR, ICCV, and NeurIPS.</span>
+                    <a data-toggle="collapse" href="#moreTextGeorge">(read more)</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card">
+            <img
+            src="../static/img/organizers/andrew.jpg"
+            class="card-img-top" alt="Andrew Segall">
+            <div class="card-body">
+                <h6 class="card-title">Andrew Segall (Amazon)</h6>
+                <h7 class="card-subtitle">Infrastructure</h7>
+                <hr>
+                <p class="card-text small">
+                    Andrew Segall received the B.S. and M.S. degrees in electrical
+                    engineering from Oklahoma State University, and the Ph.D. degree in
+                    electrical engineering from Northwestern University. He is currently
+                    the Head of Video Coding Standards at Amazon Prime Video. <span
+                    id="moreTextAndrew" class="collapse">Previously, he was a Director at
+                    Sharp Labs of America, where he led the Department of Systems,
+                    Algorithms and Services while simultaneously holding the position of
+                    Distinguished Scientist at Sharp Corporation. He is an active
+                    participant in the international standardization community and has
+                    developed and contributed technology to the Versatile Video Coding
+                    (VVC), High Efficiency Video Coding (HEVC), Advanced Video Coding
+                    (H.264/AVC), and ATSC 3.0 projects. He currently serves as co-chair of
+                    the Neural Network Video Coding activity in the Joint Video Experts
+                    Team (JVET) of ITU-T SG16 Question 6 and ISO/IEC JTC1/SC29/WG5, HDR
+                    Chair for the MPEG Visual Quality Assessment Advisory Group (ISO/IEC
+                    JTC1/SC29/AG5), and as a representative on the AOMedia Steering
+                    Committee.</span>
+                    <a data-toggle="collapse" href="#moreTextAndrew">(read more)</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card">
+            <img
+            src="../static/img/organizers/ramzi.jpg"
+            class="card-img-top" alt="Ramzi Khsib">
+            <div class="card-body">
+                <h6 class="card-title">Ramzi Khsib (Amazon)</h6>
+                <h7 class="card-subtitle">Infrastructure</h7>
+                <hr>
+                <p class="card-text small">
+                    Ramzi Khsib, is a Principal Software Development Engineer with AWS
+                    Elemental's Research &amp; Development team, with a career spanning
+                    over two decades in the fields of video processing and compression.
+                    Ramzi is a five-time recipient of the Technology &amp; Engineering
+                    Emmy Awards.
+                    <span id="moreTextRamzi" class="collapse">His expertise encompasses a
+                    vast array of subjects, including pixel processing, video filtering,
+                    perceptual quality enhancement, and machine learning. As the lead
+                    architect in video compression, Ramzi has played a pivotal role in
+                    transforming AWS Elemental into a global frontrunner in video quality.
+                    Ramzi's research interests lie at the crossroads of video compression,
+                    computer vision, and machine learning and avid advocate of the
+                    compression efficiency at lower compute costs.</span>
+                    <a data-toggle="collapse" href="#moreTextRamzi">(read more)</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row mb-3">
+
+    <div class="col-md-3">
+        <div class="card">
+            <img
+            src="../static/img/organizers/yixuchen.jpg"
+            class="card-img-top" alt="Yixu Chen">
+            <div class="card-body">
+                <h6 class="card-title">Yixu Chen (Amazon)</h6>
+                <h7 class="card-subtitle">Infrastructure</h7>
+                <hr>
+                <p class="card-text small">
+                    Yixu Chen is an Applied Scientist on the Prime Video
+                    Compression Efficiency team. He received his M.S. in Computer
+                    Engineering from Texas A&M University in 2021. His work focuses on
+                    live video streaming optimization, including applications such as
+                    video quality metrics and super-resolution.
+                    <span id="moreTextYixu" class="collapse">His research interests
+                    include super-resolution and frame-generation, video quality
+                    assessment, video saliency and video coding.</span>
+                    <a data-toggle="collapse" href="#moreTextYixu">(read more)</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card">
+            <img
+            src="../static/img/organizers/pierrick.jpg"
+            class="card-img-top" alt="Pierrick Philippe">
+            <div class="card-body">
+                <h6 class="card-title">Pierrick Philippe (Orange)</h6>
+                <h7 class="card-subtitle">Baselines</h7>
+                <hr>
+                <p class="card-text small">
+                    Pierrick Philippe works as a video coding specialist with Orange,
+                    France. He received his PhD on audio coding at Paris University in
+                    1995. Until 2010, he contributed to the standardisation of several
+                    audio coding algorithms at MPEG, ITU-T and 3GPP. <span
+                    id="moreTextPierrick" class="collapse">Since then, he has been active
+                    in the development of image and video coding algorithms using machine
+                    learning and neural networks. In this area, he contributed to
+                    Versatile Video Coding especially on the transform aspects.</span>
+                    <a data-toggle="collapse" href="#moreTextPierrick">(read more)</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card">
+            <img
+            src="../static/img/organizers/theo.jpg"
+            class="card-img-top" alt="Théo Ladune">
+            <div class="card-body">
+                <h6 class="card-title">Théo Ladune (Orange)</h6>
+                <h7 class="card-subtitle">Baselines</h7>
+                <hr>
+                <p class="card-text small">
+                    Théo Ladune is a research engineer at Orange Innovation (France). He
+                    obtained his Ph.D. in deep learning for video coding from the
+                    University of Rennes in 2021. Since joining Orange Innovation that
+                    same year, he has been investigating various applications of deep
+                    learning in video coding, including autoencoders and implicit
+                    representations. <span id="moreTextTheo" class="collapse">His current
+                    research mainly focuses on creating innovative video coding techniques
+                    that rely on very lightweight neural networks.</span>
+                    <a data-toggle="collapse" href="#moreTextTheo">(read more)</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card">
+            <img src="../static/img/organizers/olena.jpg"
+            class="card-img-top" alt="Olena Chubach">
+            <div class="card-body">
+                <h6 class="card-title">Olena Chubach (MediaTek)</h6>
+                <h7 class="card-subtitle">Sponsoring</h7>
+                <hr>
+                <p class="card-text small">
+                    Olena Chubach obtained her B.Sc. and M.Sc. degrees in Applied
+                    Mathematics from Odesa National I.I. Mechnikov University. She later
+                    earned her Ph.D. in Electrical Engineering from RWTH Aachen University
+                    in Germany. In June 2018, she joined MediaTek Inc. in San Jose, USA,
+                    where she currently holds the position of Senior Staff Engineer in the
+                    Multimedia Technology Development Division. <span id="moreTextOlena"
+                    class="collapse">She actively participates in the international
+                    standardization community and has actively contributed to the
+                    Versatile Video Coding (VVC) project. Her research interests are
+                    primarily focused on video coding algorithms and application of neural
+                    network-based algorithms for image and video coding.</span>
+                    <a data-toggle="collapse" href="#moreTextOlena">(read more)</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row mb-3">
+
+    <div class="col-md-3">
+        <div class="card">
+            <img src="../static/img/organizers/ali.jpg"
+            class="card-img-top" alt="Ali Bilgin">
+            <div class="card-body">
+                <h6 class="card-title">Ali Bilgin (University of Arizona)</h6>
+                <h7 class="card-subtitle">Finances</h7>
+                <hr>
+                <p class="card-text small">
+                    Ali Bilgin received his Ph.D. from University of Arizona in Electrical
+                    and Computer Engineering in 2002. He is currently an Associate
+                    Professor of Biomedical Engineering, Electrical and Computer
+                    Engineering, and Medical Imaging, and serves as the Associate
+                    Department Head of the Department of Biomedical Engineering at the
+                    University of Arizona. <span id="moreTextAli" class="collapse">He has
+                    served as Associate Editor for IEEE Transactions on Image Processing,
+                    IEEE Signal Processing Letters, and IEEE Transactions on Computational
+                    Imaging, and as Area Chair for the IEEE International Conference on
+                    Acoustics, Speech, and Signal Processing (ICASSP) and IEEE
+                    International Conference on Image Processing (ICIP). Between 2013 and
+                    2023, he was the Technical Program Co-Chair of the IEEE Data
+                    Compression Conference (DCC). He is currently serving as the General
+                    Co-chair of DCC.</span>
+                    <a data-toggle="collapse" href="#moreTextAli">(read more)</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+    
+
+                    <hr>
+                    
+                    <div class="container-fluid text-center text-muted sponsors">
+                      Sponsored by<br>
+                        <a href="https://www.elemental.com" target="_blank"><img src="../static/img/sponsors/aws_elemental.png" height="40"></a>
+                        <a href="https://www.amazon.com/gp/video/storefront" target="_blank"><img src="../static/img/sponsors/primevideo.png" height="40"></a>
+                        <a href="https://www.interdigital.com" target="_blank"><img src="../static/img/sponsors/interdigital.png" height="30"></a>
+                        <a href="https://microsoft.com" target="_blank"><img src="../static/img/sponsors/microsoft.png" height="100"></a>
+                        <a href="https://www.mabyduck.com" target="_blank"><img src="../static/img/sponsors/mabyduck.png" height="50"></a>
+                        <a href="https://www.orange.com" target="_blank"><img src="../static/img/sponsors/orange.png" height="50"></a>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        
+        <script src="../static/vendor/feather-icons/feather-4.29.2.min.js"></script>
+        <script>
+            feather.replace()
+        </script>
+    </body>
+</html>
