@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CLIC · Challenge on Learned Image Compression</title>
+        <link rel="stylesheet" href="static/bootstrap.min.css">
+        <link rel="shortcut icon" type="image/png" href="https://dhldkwazkze5h.cloudfront.net/static/favicon.png">
+        <link rel="stylesheet" href="static/style.css">
+        <link rel="stylesheet" href="static/dashboard.css">
+
+        <script src="static/jquery-3.3.1.slim.min.js"></script>
+        <script src="static/popper-1.14.7.umd.min.js"></script>
+        <script src="static/bootstrap.min.js"></script>
+
+    </head>
+    <body class="bg-light">
+        <div class="container-fluid" id="container-top">
+            <nav class="row navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0">
+                <a class="navbar-brand col-sm-12 col-md-2 mr-0" href="https://compression.cc/">CLIC</a>
+                <span class="navbar-text d-none d-md-block">Challenge on Learned Image Compression Datasets</span>
+                <span class="navbar-text d-block d-md-none">
+                    <a data-toggle="collapse" href="/#collapseSidebar" class="px-3" onclick="document.getElementById(&#39;container-top&#39;).scrollIntoView();"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></a>
+                </span>
+                <ul class="navbar-nav px-3">
+                    <li class="nav-item text-nowrap">
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="row">
+                <nav id="collapseSidebar" class="collapse col-md-2 bg-light sidebar text-truncate" style="font-size: .875rem">
+<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+    <span>Links</span>
+</h6>
+<ul class="nav flex-column mb-2">
+    <li class="nav-item">
+        <a class="nav-link" href="https://compression.cc/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+            CLIC website
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="https://groups.google.com/g/clic-list">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg> Forum
+        </a>
+    </li>
+
+</ul>
+
+<div class="d-none d-md-block">
+    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        <span>Past events</span>
+    </h6>
+    <ul class="nav flex-column mb-2">
+        <li class="nav-item">
+            <a class="nav-link" href="/2025/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                CLIC 2025
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/2024/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                CLIC 2024
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/2022/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                CLIC 2022
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/2021/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                CLIC 2021
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                CLIC 2020
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/2019/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                CLIC 2019
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/2018/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                CLIC 2018
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+                </nav>
+
+                <main role="main" class="col-md-10 ml-sm-auto px-md-4 pt-3">
+
+
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title">CLIC 2018 datasets</h5>
+        <p class="card-text">
+            The first ever Challenge on Learned Image Compression introduced two image
+            datasets: one for mobile and one for professional photography. The training
+            and validation sets were reused in 2019 and 2020, and have often been referred
+            to as part of the CLIC 2020 datasets. The test sets for this year have
+            unfortunately not been preserved.
+        </p>
+        <ul class="card-text">
+            <li><a href="https://downloads.compression.cc/clic2020_mobile_train.zip">Mobile
+            training set</a> (3.8 GiB, same as CLIC 2020)</li>
+            <li><a href="https://downloads.compression.cc/clic2020_mobile_valid.zip">Mobile
+            validation set</a> (226 MiB, same as CLIC 2020)</li>
+            <li>Mobile test set (unavailable)</li>
+            <li><a href="https://downloads.compression.cc/clic2020_professional_train.zip">Professional
+            training set</a>
+            (1.9 GiB, same as CLIC 2020)</li>
+            <li><a href="https://downloads.compression.cc/clic2020_professional_valid.zip">Professional
+            validation set</a>
+            (129 MiB, same as CLIC 2020)</li>
+            <li>Professional test set (unavailable)</li>
+        </ul>
+<!-- This needs to be verified
+        <p class="card-text">
+            <strong>Licensing:</strong> The professional datasets may be used under the
+            terms of the
+            <a href="https://unsplash.com/license/">Unsplash license</a>. The mobile
+            datasets may be used under the terms of the
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+            Attribution-ShareAlike license</a>. For purposes of attribution, please refer
+            to the original source of the image or video content (e.g., Unsplash) as well
+            as the Challenge on Learned Image Compression.
+        </p>
+-->
+    </div>
+</div>
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title">CLIC 2019 datasets</h5>
+        <p class="card-text">
+            In the second Challenge, new test sets were introduced, but the other datasets
+            were re-used from 2018.
+        </p>
+        <ul class="card-text">
+            <li><a href="https://downloads.compression.cc/clic2020_mobile_train.zip">Mobile
+            training set</a> (3.8 GiB, same as CLIC 2020)</li>
+            <li><a href="https://downloads.compression.cc/clic2020_mobile_valid.zip">Mobile
+            validation set</a> (226 MiB, same as CLIC 2020)</li>
+            <li><a href="https://downloads.compression.cc/clic2019_mobile_test.zip">Mobile
+            test set</a> (355 MiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2020_professional_train.zip">Professional
+            training set</a>
+            (1.9 GiB, same as CLIC 2020)</li>
+            <li><a href="https://downloads.compression.cc/clic2020_professional_valid.zip">Professional
+            validation set</a>
+            (129 MiB, same as CLIC 2020)</li>
+            <li><a href="https://downloads.compression.cc/clic2019_professional_test.zip">Professional
+            test set</a> (833 MiB)</li>
+        </ul>
+<!-- This needs to be verified
+        <p class="card-text">
+            <strong>Licensing:</strong> The professional datasets may be used under the
+            terms of the
+            <a href="https://unsplash.com/license/">Unsplash license</a>. The mobile
+            datasets may be used under the terms of the
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+            Attribution-ShareAlike license</a>. For purposes of attribution, please refer
+            to the original source of the image or video content (e.g., Unsplash) as well
+            as the Challenge on Learned Image Compression.
+        </p>
+-->
+    </div>
+</div>
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title">CLIC 2020 datasets</h5>
+        <p class="card-text">
+            The third Challenge again introduced new test sets, with the other datasets
+            re-used from the previous year. In addition, the challenge featured a P-frame
+            compression challenge, whose datasets have unfortunately not been preserved.
+        </p>
+        <ul class="card-text">
+            <li><a href="https://downloads.compression.cc/clic2020_mobile_train.zip">Mobile
+            training set</a> (3.8 GiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2020_mobile_valid.zip">Mobile
+            validation set</a> (226 MiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2020_mobile_test.zip">Mobile
+            test set</a> (689 MiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2020_professional_train.zip">Professional
+            training set</a> (1.9 GiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2020_professional_valid.zip">Professional
+            validation set</a> (129 MiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2020_professional_test.zip">Professional
+            test set</a> (851 MiB)</li>
+        </ul>
+<!-- This needs to be verified
+        <p class="card-text">
+            <strong>Licensing:</strong> The professional datasets may be used under the
+            terms of the
+            <a href="https://unsplash.com/license/">Unsplash license</a>. The mobile
+            datasets may be used under the terms of the
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+            Attribution-ShareAlike license</a>. For purposes of attribution, please refer
+            to the original source of the image or video content (e.g., Unsplash) as well
+            as the Challenge on Learned Image Compression.
+        </p>
+-->
+    </div>
+</div>
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title">CLIC 2021 datasets</h5>
+        <p class="card-text">
+            The fourth Challenge introduced a video track based on the UGC dataset, and a
+            perceptual track based on similarity of image crops. The image track focused
+            only on professional photography this year.
+        </p>
+        <ul class="card-text">
+            <li><a href="https://downloads.compression.cc/clic2020_professional_train.zip">Image
+            training set</a> (1.9 GiB, same as CLIC 2020 professional)</li>
+            <li><a href="https://downloads.compression.cc/clic2020_professional_valid.zip">Image
+            validation set</a> (129 MiB, same as CLIC 2020 professional)</li>
+            <li><a href="https://downloads.compression.cc/clic2021_image_test.zip">Image
+            test set</a> (204 MiB)</li>
+            <li>Video dataset: refer to the <a href="/2021/tasks/index.html#video">tasks</a>
+            page of the CLIC 2021 website.</li>
+            <li><a href="https://downloads.compression.cc/clic2021_perceptual_valid_crops.zip">Perceptual
+            validation set, image crops</a> (2.2 GiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2021_perceptual_valid_ratings.zip">Perceptual
+            validation set, ratings</a> (244 KiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2021_perceptual_test_crops.zip">Perceptual
+            test set, image crops</a> (47 GiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2021_perceptual_test_ratings.zip">Perceptual
+            test set, ratings</a> (3.2 MiB)</li>
+        </ul>
+<!-- This needs to be verified
+        <p class="card-text">
+            <strong>Licensing:</strong> The image datasets may be used under the terms of
+            the
+            <a href="https://unsplash.com/license/">Unsplash license</a>. The video
+            dataset may be used under the terms of the
+            <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons
+            Attribution license</a> (for further details refer to the UGC website). The
+            perceptual dataset is derived from Unsplash images and may be used under the
+            terms of the
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+            Attribution-ShareAlike license</a>. For purposes of attribution, please refer
+            to the original source of the image or video content (e.g., Unsplash) as well
+            as the Challenge on Learned Image Compression.
+        </p>
+-->
+    </div>
+</div>
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title">CLIC 2022 datasets</h5>
+        <p class="card-text">
+            The fifth Challenge continued image, video, and perceptual tracks. It also
+            introduced its own video dataset, with a full validation set consisting of
+            nearly 300 videos, and a subset of 30 videos used during the validation phase.
+            The image track again focused only on professional photography this year.
+        </p>
+        <ul class="card-text">
+            <li><a href="https://downloads.compression.cc/clic2022_image_valid.zip">Image
+            validation set</a> (121 MiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2022_image_test.zip">Image
+            test set</a> (130 MiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2022_video_valid_full.zip">Video
+            full validation set</a> (2.2 GiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2022_video_valid.zip">Video
+            validation set</a> (367 MiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2022_video_test.zip">Video
+            test set</a> (180 MiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2021_perceptual_valid_crops.zip">Perceptual
+            validation set, image crops</a> (2.2 GiB, same as CLIC 2021)</li>
+            <li><a href="https://downloads.compression.cc/clic2021_perceptual_valid_ratings.zip">Perceptual
+            validation set, ratings</a> (244 KiB, same as CLIC 2021)</li>
+            <li><a href="https://downloads.compression.cc/clic2022_perceptual_test_crops.zip">Perceptual
+            test set, image crops</a> (135 GiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2022_perceptual_test_ratings.zip">Perceptual
+            test set, ratings</a> (13 MiB)</li>
+        </ul>
+<!-- This needs to be verified
+        <p class="card-text">
+            <strong>Licensing:</strong> The image datasets may be used under the terms of
+            the
+            <a href="https://unsplash.com/license/">Unsplash license</a>. The video
+            datasets may be used under the terms of the
+            <a href="https://www.pexels.com/license/">Pexels license</a>. The perceptual
+            dataset is derived from Unsplash images and may be used under the terms of the
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+            Attribution-ShareAlike license</a>. For purposes of attribution, please refer
+            to the original source of the image or video content (e.g., Unsplash) as well
+            as the Challenge on Learned Image Compression.
+        </p>
+-->
+    </div>
+</div>
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title">CLIC 2024 datasets</h5>
+        <p class="card-text">
+            The sixth Challenge introduced new test sets for both compression tracks, and
+            also added a video perceptual track. The image datasets were augmented with a
+            small number of screen and gaming images.
+        </p>
+        <ul class="card-text">
+            <li><a href="https://downloads.compression.cc/clic2022_image_test.zip">Image
+            validation set</a> (130 MiB, same as CLIC 2022 test set)</li>
+            <li><a href="https://downloads.compression.cc/clic2024_image_test.zip">Image
+            test set</a> (102 MiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2022_video_valid_full.zip">Video
+            full validation set</a>
+            (2.2 GiB, same as CLIC 2022)</li>
+            <li><a href="https://downloads.compression.cc/clic2022_video_valid.zip">Video
+            validation set</a> (367 MiB, same as CLIC 2022)</li>
+            <li><a href="https://downloads.compression.cc/clic2024_video_test.zip">Video
+            test set</a> (300 MiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2021_perceptual_valid_crops.zip">Perceptual
+            image validation set, image crops</a> (2.2 GiB, same as CLIC 2021)</li>
+            <li><a href="https://downloads.compression.cc/clic2021_perceptual_valid_ratings.zip">Perceptual
+            image validation set, ratings</a> (244 KiB, same as CLIC 2021)</li>
+            <li><a href="https://downloads.compression.cc/clic2024_perceptual_image_test_crops.zip">Perceptual
+            image test set, image crops</a> (46 GiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2024_perceptual_image_test_ratings.zip">Perceptual
+            image test set, ratings</a> (5.9 MiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2022_video_test.zip">Perceptual
+            video validation set, originals</a> (180 MiB, same as CLIC 2022 video test
+            set)</li>
+            <li><a href="https://downloads.compression.cc/clic2024_perceptual_video_valid_reconstructions.zip">Perceptual
+            video validation set, reconstructions</a> (7.3 GiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2024_perceptual_video_valid_mos.zip">Perceptual
+            video validation set, mean opinion scores</a> (8 KiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2024_video_test.zip">Perceptual
+            video test set, originals</a> (300 MiB, same as video test set)</li>
+            <li><a href="https://downloads.compression.cc/clic2024_perceptual_video_test_reconstructions.zip">Perceptual
+            video test set, reconstructions</a> (44 GiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2024_perceptual_video_test_mos.zip">Perceptual
+            video test set, mean opinion scores</a> (8 KiB)</li>
+        </ul>
+<!-- This needs to be verified
+        <p class="card-text">
+            <strong>Licensing:</strong> The image datasets may be used under the terms of
+            the
+            <a href="https://unsplash.com/license/">Unsplash license</a>. The video
+            datasets may be used under the terms of the
+            <a href="https://www.pexels.com/license/">Pexels license</a>. The perceptual
+            datasets are derived from Unsplash images or Pexels videos, respectively, and
+            may be used under the terms of the
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+            Attribution-ShareAlike license</a>. For purposes of attribution, please refer
+            to the original source of the image or video content (e.g., Unsplash) as well
+            as the Challenge on Learned Image Compression.
+        </p>
+-->
+    </div>
+</div>
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title">CLIC 2025 datasets</h5>
+        <p class="card-text">
+            The seventh Challenge discontinued the perceptual tracks. Also, some raw
+            sequences were added to the video datasets.
+        </p>
+        <ul class="card-text">
+            <li><a href="https://downloads.compression.cc/clic2024_image_test.zip">Image
+            validation set</a> (102 MiB, same as CLIC 2024 test set)</li>
+            <li><a href="https://downloads.compression.cc/clic2025_image_test.zip">Image
+            test set</a> (116 MiB)</li>
+            <li><a href="https://downloads.compression.cc/clic2025_video_valid.zip">Video
+            validation set</a> (2.8 GiB, contains some sequences from the CLIC 2024 video
+            test set)</li>
+            <li><a href="https://downloads.compression.cc/clic2025_video_test.zip">Video
+            test set</a> (4.6 GiB)</li>
+        </ul>
+<!-- This needs to be verified
+        <p class="card-text">
+            <strong>Licensing:</strong> The image datasets may be used under the terms of
+            the
+            <a href="https://unsplash.com/license/">Unsplash license</a>. The video
+            datasets may be used under the terms of the
+            <a href="https://www.pexels.com/license/">Pexels license</a>. For purposes of
+            attribution, please refer to the original source of the image or video content
+            (e.g., Unsplash) as well as the Challenge on Learned Image Compression.
+        </p>
+-->
+    </div>
+</div>
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title">Licensing</h5>
+        <p class="card-text">
+            While we strive for licensing terms to be as permissive as possible, we still
+            need to verify the terms for individual archived datasets. Please contact us
+            via the <a href="https://groups.google.com/g/clic-list">mailing list</a> if
+            you intend to use the datasets.
+        </p>
+    </div>
+</div>
+                </main>
+            </div>
+        </div>
+
+
+        <script src="./datasets_files/feather-4.29.2.min.js"></script>
+        <script>
+            feather.replace()
+        </script>
+
+
+</body></html>
